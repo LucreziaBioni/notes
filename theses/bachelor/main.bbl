@@ -1,0 +1,432 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{ynt/global//global/global}
+    \entry{Altarelli:1977zs}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6349ee4a6aa6336ed3f3c3fc24787871}{%
+           family={Altarelli},
+           familyi={A\bibinitperiod},
+           given={Guido},
+           giveni={G\bibinitperiod}}}%
+        {{hash=e4f99fa1b31db590a7df474f2a1b63b7}{%
+           family={Parisi},
+           familyi={P\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{d1f95eb89ad584e0ac96f302f0078aaf}
+      \strng{fullhash}{d1f95eb89ad584e0ac96f302f0078aaf}
+      \strng{bibnamehash}{d1f95eb89ad584e0ac96f302f0078aaf}
+      \strng{authorbibnamehash}{d1f95eb89ad584e0ac96f302f0078aaf}
+      \strng{authornamehash}{d1f95eb89ad584e0ac96f302f0078aaf}
+      \strng{authorfullhash}{d1f95eb89ad584e0ac96f302f0078aaf}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nucl. Phys. B}
+      \field{title}{{Asymptotic Freedom in Parton Language}}
+      \field{volume}{126}
+      \field{year}{1977}
+      \field{pages}{298\bibrangedash 318}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1016/0550-3213(77)90384-4
+      \endverb
+    \endentry
+    \entry{Collins:1987pm}{article}{}
+      \name{author}{2}{}{%
+        {{hash=3b1f1fb59b9a5a362522e467b318810d}{%
+           family={Collins},
+           familyi={C\bibinitperiod},
+           given={John\bibnamedelima C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=99484734a127311639c64488ba6e6aaf}{%
+           family={Soper},
+           familyi={S\bibinitperiod},
+           given={Davison\bibnamedelima E.},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{a325c166821e27f6aec53c8ff4ecfc90}
+      \strng{fullhash}{a325c166821e27f6aec53c8ff4ecfc90}
+      \strng{bibnamehash}{a325c166821e27f6aec53c8ff4ecfc90}
+      \strng{authorbibnamehash}{a325c166821e27f6aec53c8ff4ecfc90}
+      \strng{authornamehash}{a325c166821e27f6aec53c8ff4ecfc90}
+      \strng{authorfullhash}{a325c166821e27f6aec53c8ff4ecfc90}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Ann. Rev. Nucl. Part. Sci.}
+      \field{title}{{The Theorems of Perturbative QCD}}
+      \field{volume}{37}
+      \field{year}{1987}
+      \field{pages}{383\bibrangedash 409}
+      \range{pages}{27}
+      \verb{doi}
+      \verb 10.1146/annurev.ns.37.120187.002123
+      \endverb
+    \endentry
+    \entry{ellis}{book}{}
+      \name{author}{4}{}{%
+        {{hash=57269400df8a9ddea71f0aa38b7ae4c5}{%
+           family={Ellis},
+           familyi={E\bibinitperiod},
+           given={R.\bibnamedelimi K.},
+           giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=ee19033300a54df2fa41db9881b4b723}{%
+           family={Stirling},
+           familyi={S\bibinitperiod}}}%
+        {{hash=80e389f3b90940a147e1f1920f13cf0b}{%
+           family={J.},
+           familyi={J\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=fab4c5289b2146af0bcda20af58ba567}{%
+           family={Webber},
+           familyi={W\bibinitperiod},
+           given={B.\bibnamedelimi R.},
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{0a6cb73e02fe74f22cf6f1a106e6fc5c}
+      \strng{fullhash}{1711e62a7c1718f92dc03a88b66177ab}
+      \strng{bibnamehash}{0a6cb73e02fe74f22cf6f1a106e6fc5c}
+      \strng{authorbibnamehash}{0a6cb73e02fe74f22cf6f1a106e6fc5c}
+      \strng{authornamehash}{0a6cb73e02fe74f22cf6f1a106e6fc5c}
+      \strng{authorfullhash}{1711e62a7c1718f92dc03a88b66177ab}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0521545891}
+      \field{series}{Cambridge Monographs on Particle Physics, Nuclear Physics and Cosmology}
+      \field{title}{QCD and Collider Physics}
+      \field{volume}{8}
+      \field{year}{1996}
+      \field{pages}{435}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1017/CBO9780511628788
+      \endverb
+    \endentry
+    \entry{Salam:2010nqg}{article}{}
+      \name{author}{1}{}{%
+        {{hash=cdd9546b48e743df2da267f924c11cb4}{%
+           family={Salam},
+           familyi={S\bibinitperiod},
+           given={Gavin\bibnamedelima P.},
+           giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{cdd9546b48e743df2da267f924c11cb4}
+      \strng{fullhash}{cdd9546b48e743df2da267f924c11cb4}
+      \strng{bibnamehash}{cdd9546b48e743df2da267f924c11cb4}
+      \strng{authorbibnamehash}{cdd9546b48e743df2da267f924c11cb4}
+      \strng{authornamehash}{cdd9546b48e743df2da267f924c11cb4}
+      \strng{authorfullhash}{cdd9546b48e743df2da267f924c11cb4}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Eur. Phys. J. C}
+      \field{title}{{Towards Jetography}}
+      \field{volume}{67}
+      \field{year}{2010}
+      \field{pages}{637\bibrangedash 686}
+      \range{pages}{50}
+      \verb{doi}
+      \verb 10.1140/epjc/s10052-010-1314-6
+      \endverb
+      \verb{eprint}
+      \verb 0906.1833
+      \endverb
+    \endentry
+    \entry{Hoeche:2014}{article}{}
+      \name{author}{1}{}{%
+        {{hash=4ea5ba95fe0317569bdcdff6d61d9623}{%
+           family={Höche},
+           familyi={H\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{4ea5ba95fe0317569bdcdff6d61d9623}
+      \strng{fullhash}{4ea5ba95fe0317569bdcdff6d61d9623}
+      \strng{bibnamehash}{4ea5ba95fe0317569bdcdff6d61d9623}
+      \strng{authorbibnamehash}{4ea5ba95fe0317569bdcdff6d61d9623}
+      \strng{authornamehash}{4ea5ba95fe0317569bdcdff6d61d9623}
+      \strng{authorfullhash}{4ea5ba95fe0317569bdcdff6d61d9623}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint}
+      \field{note}{Lectures presented at TASI 2014. 40 pages, 12 figures}
+      \field{title}{Introduction to parton-shower event generators}
+      \field{volume}{arXiv:1411.4085}
+      \field{year}{2014}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1411.4085
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1411.4085
+      \endverb
+    \endentry
+    \entry{Campbell:2017}{book}{}
+      \name{author}{3}{}{%
+        {{hash=4b04cb15d0d768a854f0de031a941c53}{%
+           family={Campbell},
+           familyi={C\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=47e73c38ca54e63717f2a805bb031420}{%
+           family={Huston},
+           familyi={H\bibinitperiod},
+           given={Joey},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7f3652b92bc33cd3874bc96547311d99}{%
+           family={Krauss},
+           familyi={K\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{b285dbd8adcb64280c84ff1b2662f32d}
+      \strng{fullhash}{b285dbd8adcb64280c84ff1b2662f32d}
+      \strng{bibnamehash}{b285dbd8adcb64280c84ff1b2662f32d}
+      \strng{authorbibnamehash}{b285dbd8adcb64280c84ff1b2662f32d}
+      \strng{authornamehash}{b285dbd8adcb64280c84ff1b2662f32d}
+      \strng{authorfullhash}{b285dbd8adcb64280c84ff1b2662f32d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-19-965274-7}
+      \field{title}{{The Black Book of Quantum Chromodynamics : a Primer for the LHC Era}}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.1093/oso/9780199652747.001.0001
+      \endverb
+    \endentry
+    \entry{Melnikov2018}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=2696cba494c55c2828a4d3a1d9b130d9}{%
+           family={Melnikov},
+           familyi={M\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=ee31cae4fadc1f2dfd7da24679add7e8}{%
+           family={Mulders},
+           familyi={M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=80570b016e9c134e440bbc85667755e0}{%
+           family={Zanderighi},
+           familyi={Z\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Geneva}%
+      }
+      \list{publisher}{1}{%
+        {CERN}%
+      }
+      \strng{namehash}{2696cba494c55c2828a4d3a1d9b130d9}
+      \strng{fullhash}{2696cba494c55c2828a4d3a1d9b130d9}
+      \strng{bibnamehash}{2696cba494c55c2828a4d3a1d9b130d9}
+      \strng{authorbibnamehash}{2696cba494c55c2828a4d3a1d9b130d9}
+      \strng{authornamehash}{2696cba494c55c2828a4d3a1d9b130d9}
+      \strng{authorfullhash}{2696cba494c55c2828a4d3a1d9b130d9}
+      \strng{editorbibnamehash}{20132a71cea789e0300b07adf423e12a}
+      \strng{editornamehash}{20132a71cea789e0300b07adf423e12a}
+      \strng{editorfullhash}{20132a71cea789e0300b07adf423e12a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2017 European School of High-Energy Physics, Evora, Portugal, 6–19 September 2017}
+      \field{note}{CERN-2018-006-SP}
+      \field{series}{CERN Yellow Reports: School Proceedings}
+      \field{title}{Lectures on QCD for hadron colliders}
+      \field{volume}{3/2018}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.23730/CYRSP-2018-003.37
+      \endverb
+    \endentry
+    \entry{Asteriadis2020}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=cefd77e212b646c5e08b2ca11c65db8f}{%
+           family={Asteriadis},
+           familyi={A\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Karlsruhe Institute of Technology (KIT), Institute for Experimental Particle Physics (EKP)}%
+      }
+      \strng{namehash}{cefd77e212b646c5e08b2ca11c65db8f}
+      \strng{fullhash}{cefd77e212b646c5e08b2ca11c65db8f}
+      \strng{bibnamehash}{cefd77e212b646c5e08b2ca11c65db8f}
+      \strng{authorbibnamehash}{cefd77e212b646c5e08b2ca11c65db8f}
+      \strng{authornamehash}{cefd77e212b646c5e08b2ca11c65db8f}
+      \strng{authorfullhash}{cefd77e212b646c5e08b2ca11c65db8f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{24}
+      \field{month}{7}
+      \field{title}{Application of the nested soft-collinear subtraction scheme to the description of deep inelastic scattering}
+      \field{type}{PhD Thesis}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{216}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.5445/IR/1000135340
+      \endverb
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'Asteriadis2020'}
+      \warn{\item Overwriting field 'month' with month value from field 'date' for entry 'Asteriadis2020'}
+    \endentry
+    \entry{Devoto:2023rpv}{article}{}
+      \name{author}{5}{}{%
+        {{hash=27bfd65c4d7203de00ef8dfce4e6f858}{%
+           family={Devoto},
+           familyi={D\bibinitperiod},
+           given={Federica},
+           giveni={F\bibinitperiod}}}%
+        {{hash=415b55859fd8bb4a7ad3888c6ad296b8}{%
+           family={Melnikov},
+           familyi={M\bibinitperiod},
+           given={Kirill},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e0dffa60f98bd32cc5442caa68b215fa}{%
+           family={Röntsch},
+           familyi={R\bibinitperiod},
+           given={Raoul},
+           giveni={R\bibinitperiod}}}%
+        {{hash=f83844b62e85b49751d5fba4b5789222}{%
+           family={Signorile-Signorile},
+           familyi={S\bibinithyphendelim S\bibinitperiod},
+           given={Chiara},
+           giveni={C\bibinitperiod}}}%
+        {{hash=7ed97f76338f3d0c718faeb65cb475bb}{%
+           family={Tagliabue},
+           familyi={T\bibinitperiod},
+           given={Davide\bibnamedelima Maria},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{cb6aaaab9d19df1715f822dedc88e0e6}
+      \strng{fullhash}{dc46b4883c5998c9105c3e153912233d}
+      \strng{bibnamehash}{cb6aaaab9d19df1715f822dedc88e0e6}
+      \strng{authorbibnamehash}{cb6aaaab9d19df1715f822dedc88e0e6}
+      \strng{authornamehash}{cb6aaaab9d19df1715f822dedc88e0e6}
+      \strng{authorfullhash}{dc46b4883c5998c9105c3e153912233d}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{JHEP}
+      \field{title}{{A fresh look at the nested soft-collinear subtraction scheme: NNLO QCD corrections to N-gluon final states in $ q\overline{q} $ annihilation}}
+      \field{volume}{02}
+      \field{year}{2024}
+      \field{pages}{016}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/JHEP02(2024)016
+      \endverb
+      \verb{eprint}
+      \verb 2310.17598
+      \endverb
+    \endentry
+    \entry{Devoto:2025jql}{article}{}
+      \name{author}{6}{}{%
+        {{hash=27bfd65c4d7203de00ef8dfce4e6f858}{%
+           family={Devoto},
+           familyi={D\bibinitperiod},
+           given={Federica},
+           giveni={F\bibinitperiod}}}%
+        {{hash=415b55859fd8bb4a7ad3888c6ad296b8}{%
+           family={Melnikov},
+           familyi={M\bibinitperiod},
+           given={Kirill},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e0dffa60f98bd32cc5442caa68b215fa}{%
+           family={Röntsch},
+           familyi={R\bibinitperiod},
+           given={Raoul},
+           giveni={R\bibinitperiod}}}%
+        {{hash=f83844b62e85b49751d5fba4b5789222}{%
+           family={Signorile-Signorile},
+           familyi={S\bibinithyphendelim S\bibinitperiod},
+           given={Chiara},
+           giveni={C\bibinitperiod}}}%
+        {{hash=7ed97f76338f3d0c718faeb65cb475bb}{%
+           family={Tagliabue},
+           familyi={T\bibinitperiod},
+           given={Davide\bibnamedelima Maria},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=907c935bb57a74a3d8d5c5d2e67e4a54}{%
+           family={Tresoldi},
+           familyi={T\bibinitperiod},
+           given={Matteo},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{cb6aaaab9d19df1715f822dedc88e0e6}
+      \strng{fullhash}{75d0ca8c889c34107f28409a758e3e75}
+      \strng{bibnamehash}{cb6aaaab9d19df1715f822dedc88e0e6}
+      \strng{authorbibnamehash}{cb6aaaab9d19df1715f822dedc88e0e6}
+      \strng{authornamehash}{cb6aaaab9d19df1715f822dedc88e0e6}
+      \strng{authorfullhash}{75d0ca8c889c34107f28409a758e3e75}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-ph}
+      \field{eprinttype}{arXiv}
+      \field{month}{9}
+      \field{title}{{Integrated subtraction terms and finite remainders for arbitrary processes with massless partons at colliders in the nested soft-collinear subtraction scheme}}
+      \field{year}{2025}
+      \verb{eprint}
+      \verb 2509.08594
+      \endverb
+    \endentry
+  \enddatalist
+  \missing{pauli}
+\endrefsection
+\endinput
+

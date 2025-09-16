@@ -1,0 +1,190 @@
+\documentclass[a4paper, 12pt]{book}
+\usepackage[english]{babel}
+%\usepackage{mathpazo}
+\input{imports.tex}
+
+\usepackage{overarrows}
+\usepackage{slashed}
+\usepackage{simpler-wick}
+
+% \usepackage{tikz}
+%\usepackage[compat=1.1.0]{tikz-feynman}
+
+
+% bibliography
+
+\usepackage{csquotes}
+\usepackage[
+backend = biber,
+style = numeric-comp,
+sorting = ynt
+]{biblatex}
+\addbibresource{bibl.bib}
+
+\renewbibmacro{in:}{}
+
+\AtEveryBibitem{%
+	\clearfield{publisher}%
+	\clearfield{month}%
+	\clearfield{numpages}%
+	\clearfield{issue}%
+	\clearfield{isbn}%
+}
+
+\DeclareFieldFormat[book,article]{journaltitle}{#1}
+\DeclareFieldFormat[book,article]{volume}{\mkbibbold{#1}}
+
+
+\title{Thesis}
+\author{Lucrezia Bioni}
+
+\begin{document}
+
+\frontmatter
+
+\customtitlepage{Physics}{Next-to-Leading Order QCD Corrections to Scattering Processes Using $\theta$-Parameters in the Nested Soft-Collinear Subtraction Scheme}{Prof. Raoul Horst Röntsch}{Lucrezia Bioni}{13655A}{2024--2025}
+\clearpage
+
+\chapter*{Abstract}
+\input{abstract.tex}
+
+\newpage
+
+\toc
+
+\pagestyle{contents}
+
+\mainmatter
+
+\chapter{Introduction}
+
+\section{The Standard Model}
+
+As Aristotle stated, women and men began to philosophize due to wonder. From antiquity, a profound sense of astonishment towards the natural world has driven humans to investigate phenomenological reality. This drive is so profound and innate in humanity that – starting with the first philosophers, called ``Pre-Socratics"  or ``natural philosophers" – it led them to inquire into the nature of the ``archè" ($\acute{\alpha}\rho\chi\acute{\eta}$), the primordial principle and fundamental constituent underlying all of nature. This enduring pursuit of fundamental knowledge evolved through the centuries and, in the last one, culminated in the experimental discovery of a multitude of subatomic particles, now understood to be the elementary constituents of matter. Their proliferation was such that it prompted the noted physicist Enrico Fermi to remark: ``If I could remember the names of all these particles, I'd be a botanist". This apparent complexity, however, has been successfully resolved through the development of a robust theoretical framework that classifies these particles and describes their interactions via gauge theories: the Standard Model (SM). \\
+The SM is formulated within the mathematical framework of Quantum Field Theory (QFT), which unifies the principles of Quantum Mechanics and Special Relativity to describe phenomena at high energies and subatomic scales. Its predictions have been rigorously tested and confirmed by experiments, most notably with the discovery of the Higgs boson in 2012.  Despite its success, there are significant efforts to discover Physics beyond the SM. This is driven not only by the natural attempt at falsification that should be applied to every scientific theory, but also by several phenomena that the model cannot explain. These include the existence of dark matter and dark energy, the observed matter-antimatter asymmetry, and the origin of neutrino masses \cite{Campbell:2017}. \\
+\subsection{Collider physics}
+The principal method of research in high-energy physics is collider physics \cite{ellis}. Using colliders, it is possible to artificially accelerate particles and reach the highest available center-of-mass energy. Operating at the energy frontier is crucial: higher-energy collisions enable events with greater momentum transfer and energy deposition. These events are essential because concentrating significant energy within a tiny volume allows us to excite new, heavy elementary particles from the vacuum, and study their properties. Experiments at the energy frontier are conducted at the Large Hadron Collider (LHC) at CERN: in a 27-kilometer ring, proton beams collide at a center-of-mass energy of 13 TeV. Although these energy scales have allowed us to study the known fundamental interactions – with the exception of gravity – in great detail, they have not been sufficient for the discovery of new particles. Since increasing the energy of the colliding particles is not feasible with existing technology, the focus of collider experiments in the next decade will shift towards higher experimental precision. However, testing the Standard Model with experimental results necessitates reliable theoretical predictions for hadron collider processes. \\
+\section{QCD and hard scattering processes}
+A theoretical description of hadron collisions is complicated primarily by our limited knowledge of the strong force, which binds the elementary constituents of hadrons. A way to overcome this obstacle becomes manifest when we consider how hadrons collide at high energies \cite{Asteriadis2020}. Typically, they undergo either elastic scattering or diffractive dissociation: in the first case, they collide but remain intact; in the second, they disintegrate into a small number of hadrons. However, on rare occasions, a more interesting phenomenon can occur: the elementary partons that compose the hadrons can interact and exchange a large amount of momentum. This is the case in so-called ``hard scattering processes", and their importance is related to a significant feature of the strong force: asymptotic freedom. The essence of this property is the weakening of the colour force at short distances \cite{ellis}, which is precisely what allows for a perturbative description of the strong interaction and the use well-defined approximation methods. Therefore, in these cases, it is possible to organize the calculation into different orders: 
+\begin{itemize}
+    \item the Leading Order (LO), which describes the simplest, tree-level interaction;
+    \item the Next-to-Leading Order (NLO), which adds important quantum corrections from virtual particle loops and the emission of an additional parton (real radiation);
+    \item the Next-to-Next-to-Leading Order (NNLO), which includes two-loop, one-loop with real emission, and double real-emission diagrams; and so on.
+\end{itemize}
+
+\subsection{Hadronic cross-section and factorization theorem}
+Strong interactions are described by Quantum Chromodynamics (QCD), a non-abelian gauge theory based on the SU(3) symmetry group. Their strength is given by the coupling constant, which is on the order of $\alpha_{\text{S}}\sim0.1$\footnote{This value is energy-dependent; $\alpha_{\text{S}}\sim0.1$ is typical at energies around 100 GeV.}: therefore, the strong force is about ten times stronger than the electromagnetic one (whose coupling constant is $\alpha\sim1/137$). The QCD Lagrangian is not analytically solvable, making it extremely difficult to understand proton dynamics from first principles. Therefore, an approach that focuses on the elementary quark and gluon fields, which are the fundamental degrees of freedom in QCD, is highly valuable. However, due to quark confinement\footnote{Quark confinement is the phenomenon that prevents quarks and gluons from propagating as free particles over macroscopic distances.}, this approach is only sensible at short distances. In this high-energy regime, the interacting partons can be approximated as being nearly free. \\
+A framework for describing these short-distance hard scattering processes is provided by the collinear factorization theorem \cite{Collins:1987pm}. Within this framework, colliding hadrons are treated as beams of partons, each carrying a certain fraction of the hadron's total momentum. The probability of finding a parton with a specific energy fraction is encoded in the Parton Distribution Functions (PDFs). These functions are universal, meaning they are independent of the specific scattering process being studied. Consequently, PDFs can be measured in one set of experiments and then used to make predictions for many others \cite{Melnikov2018}. The short-distance interaction of partons produces final states composed of Standard Model particles, such as leptons, gauge bosons, and additional QCD partons. The final-state partons, which are the direct products of the perturbative calculation, cannot be observed directly due to confinement. Instead, they evolve into collimated sprays of hadrons \cite{Salam:2010nqg}. We interpret these partons as the seeds of hadronic jets and define the resulting sprays as jets themselves. At high energies, the properties of these jets are largely determined by the perturbative dynamics of their initiating parton and are only mildly affected by non-perturbative QCD effects. \\
+The production cross section for final states involving QCD jets and other Standard Model particles in hard hadronic collisions is thus given by
+\begin{equation}
+    \text{d}\sigma = \sum_{a, b} \int_0^1 \text{d}x_1 \text{d}x_2 \, f_{a}(x_1, \mu_\text{F}) \, f_{b}(x_2,\mu_\text{F}) \, \text{d}\hat \sigma_{a,b}(x_1,x_2,\mu_\text{F},\mu_\text{R};\mathcal{O}) \, \left(1+ \mathcal{O}\left(\frac{\Lambda_{\text{QCD}}}{Q} \right)^n \right), \qquad n\geq1
+    \label{fact-theor}
+\end{equation}
+where $f_{a,b}$ are the parton distribution functions mentioned above, and $\mathcal{O}$ is an infrared-finite observable. \\
+The asymptotic freedom of QCD is what enables a perturbative description of the strong interaction. However, it is crucial to recognize that the precise mechanism allowing us to decouple the motion of partons from the proton's dynamics is the separation of energy scales involved. Interactions in the Standard Model typically probe energy scales on the order of $Q \sim 100  \, \text{GeV} - 1 \, \text{TeV}$, while the characteristic energy scale of hadronic structure and confinement is significantly lower, $\Lambda_{\text{QCD}} \sim 100 \, \text{MeV}$. This results in a small ratio, $\Lambda_{\text{QCD}}/Q \sim 10^{-2}$. The exact power $n$ with which non-perturbative effects are suppressed is not always immediately evident. In many practical applications, the leading power is $n=2$, implying that the theoretical error committed by factorizing the non-perturbative physics is of order $\mathcal{O}(\alpha_{\text{S}}^4) \sim 10^{-3}$ for $\alpha_S \sim 0.1$. \\
+This formalism establishes a clear distinction between the short-distance perturbative process and the long-distance non-perturbative physics. The boundary between these two regimes is defined by the factorization scale ($\mu_\text{F}$). Processes with a momentum transfer $Q > \mu_\text{F}$ are treated as the hard scatter of point-like partons, calculable within perturbation theory. Physics at scales $Q < \mu_\text{F}$, which describes how the partons are bound within the proton, is incorporated into the non-perturbative Parton Distribution Functions (PDFs). \\
+The other scale present in the factorized cross-section in Eq. \ref{fact-theor} is the renormalization scale ($\mu_\text{R}$). Its necessity arises because the calculation of partonic interactions in QCD using Feynman diagrams often results in ultraviolet (UV) divergences. These infinities do not indicate a fundamental error in the theory, but suggest a distinction between the bare parameters in the Lagrangian and physically observable quantities. The process of renormalization allows us to absorb these divergences into a redefinition of the Lagrangian's parameters, providing finite expressions for measurable quantities. The consequence of this procedure is that the coupling constant becomes a function of the energy scale, a phenomenon known as ``running" \cite{ellis}. The renormalization scale $\mu_\text{R}$ is the energy at which the coupling constant is defined, thereby encapsulating the quantum corrections of the theory. \\
+For simple processes dominated by a single characteristic energy scale $\mu$, it is conventional to set both $\mu_\text{F}$ and $\mu_\text{R}$ equal to that scale \cite{Campbell:2017}. Therefore, throughout this thesis, we set $\mu_\text{F} = \mu_\text{R} = \mu$. Since their exact values are arbitrary, a physical prediction (like a cross-section) must be independent of them\footnote{However, cross-sections calculated within fixed-order perturbative expansions exhibit a dependence on both the renormalization and factorization scales, $\mu$}.  \\
+Referring to Eq. \ref{fact-theor}, we can state that only the left-hand side represents a physically measurable quantity. The right-hand side, in contrast, consists of unobservable components: the parton distribution functions (PDFs), which are extracted from experimental data, and the partonic cross-section $\mathrm{d}\hat{\sigma}_{a,b}$, which is calculable within perturbation theory. It is therefore essential to understand how this latter quantity is computed.
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=0.7\textwidth]{imgs/hadron-collision.png}
+	\caption{Sktetch of an hard hadron-hadron collision at a collider like the LHC. The central red blob represents the hard interaction, a high-energy collision between two partons, calculable using perturbative QCD. The incoming and outgoing partons emit initial-state (blue) and final-state (red) radiation, producing many secondary particles. Softer underlying event activity (purple) arises from additional partonic interactions within the protons. A key feature is the hierarchy of energy scales: the hard process occurs at high energies ($Q>\Lambda_{\text{QCD}}$), while subsequent radiation and hadronization (green) take place at progressively lower scales, eventually transitioning to non-perturbative physics around $\Lambda_{\text{QCD}}$. Figure from \cite{Hoeche:2014}.}
+	\label{hadron-collision}
+\end{figure}
+
+\subsection{Partonic cross-section}
+We consider the inclusive\footnote{The inclusive cross-section counts every collision event that creates a specific particle, whether it appears alone, with jets, or with any other additional radiation. It gives the total production rate, ignoring the details of what else is produced alongside it.} production of $N$ jets at a hadron collider, together with a color-neutral system $X$
+\begin{equation}
+    pp \rightarrow X + N \, \mathrm{jets}  \, .
+\end{equation}
+The partonic cros section $\mathrm{d}\hat{\sigma}_{a,b}$ in Eq. \ref{fact-theor} can be expanded in powers of the strong and the electroweak coupling constants, $\alpha_{\text{S}}$ and $\alpha$,
+\begin{equation}
+    \text{d} \hat{\sigma}_{a,b} = \text{d} \hat{\sigma}_{a,b}^{(0,0)} + \alpha_s \text{d} \hat{\sigma}_{a,b}^{(1,0)} + \alpha_s^2 \text{d} \hat{\sigma}_{a,b}^{(2,0)} + \alpha_s^3 \text{d} \hat{\sigma}_{a,b}^{(3,0)} + \alpha \text{d} \hat{\sigma}_{a,b}^{(0,1)} + \alpha \alpha_s \text{d} \hat{\sigma}_{a,b}^{(1,1)} + \dots .
+\end{equation}
+Due to the different values of the coupling constants, at the same order they have a different impact on the final result: at NLO, QCD corrections account for $10\%$, while EW account for $1\%$; at NNLO, QCD corrections account for $1\%$. Throughout this thesis, we will focus on the calculation of NLO QCD corrections. \\
+The first term in this expansion $\text{d} \hat{\sigma}_{a,b}^{(0,0)} \equiv \text{d} \hat{\sigma}_{a,b}^{\text{LO}}$ is called Leading Order (LO), and it is defined as \cite{Devoto:2025jql}
+\begin{equation}
+    2s_{a,b} \, \text{d} \hat{\sigma}_{a,b}^{\text{LO}} = \langle F^{ab}_{\mathrm{LM}}[\dots] \rangle = \mathcal{N} \int \mathrm{d}\Phi (2\pi)^4 \delta^{(4)}(p_\mathcal{H_f}+p_X-p_a-p_b) \left|\mathcal{M}_0(p_a,p_b;p_{\mathcal{H}_f},p_X) \right|^2 \mathcal{O}(p_\mathcal{H},p_X).
+    \label{leading-order}
+\end{equation}
+With $\mathcal{H}_f$, we denote the list of final-state resolved particles, and $p_{\mathcal{H}_f}$ is their momentum, while $p_X$ denotes the momentum of the color-singlet in the hard process. $\mathcal{N}$ is a normalization factor: it takes into account color and spin averages as well as symmetry factors. With $s_{a,b}$, we express the partonic center-of-mass energy squared: $s=(p_a+p_b)^2=2 p_a\cdot p_b$, considering massless partons. $\mathcal{M}_0$ is the matrix element for the process considered, $\mathcal{O}$ is an IR-safe observable which ensures that the final state contains at least $N$ resolved jets, and $\mathrm{d}\Phi$ is the Lorentz-invariant phase space for the final-state particles
+\begin{equation}
+    \mathrm{d}\Phi=\prod_{i=3}^{N_p} [\mathrm{d}p_i], \qquad [\mathrm{d}p_i]=\frac{\mathrm{d}^3p_i}{(2\pi)^32E_i},
+\end{equation}
+where $N_p=N+2$ is the number of initial- and final-state partons, and $[\mathrm{d}p_i]$ is the phase-space element of a final-state parton $i$. Moreover, in Eq. \ref{leading-order}, summation over spins and colors of final-state partons, and averaging over spins and colors of initial-state partons are assumed.  \\
+The function $F^{ab}_{\mathrm{LM}}$ that appears in Eq. \ref{leading-order} is defined as in Section 2 of \cite{Devoto:2023rpv}
+\begin{equation}
+    F^{ab}_{\mathrm{LM}} = \mathrm{dLips}_X |\mathcal{M}_0|^2 \, \mathcal{O}
+    \label{flm}
+\end{equation}
+where $\mathrm{dLips}_X$ is the Lorentz-invariant phase space for the colorless particle $X$, including the momentum-conserving delta function. The integration over the final-state phase space of Eq. \ref{flm}, denoted with the angular brackets $\langle\dots\rangle$, gives exactly Eq. \ref{leading-order}. \\
+At leading order (LO), calculations are performed directly. The tree-level matrix elements can be computed easily using helicity techniques and colour-subamplitude decompositions \cite{Altarelli:1977zs}, and are then integrated, either numerically or analytically. \\
+
+
+
+QCD corrections, infrared poles and their cancellation. L'aggiunta di correzioni è ciò che consente di tenere conto di effetti a lunga distanza, e far sì che i risultati forniti non siano validi solo a distanze brevi.\\
+Le divergenze costituiscono termini non perturbativi nel nostro conto perturbativo, pertanto è importante trovare un modo di trattarle.
+\\
+
+
+Fixed order corrections \\
+There are two types of corrections: virtual and real. \\
+There are two challenges in computing corrections beyond LO: computing (multi)-loop virtual amplitudes and treating infrared divergences. 
+\\
+Nowadays, also next-to-leading order (NLO) calculations are feasible in a direct man-
+ner, as witnessed by the accelerated production rate of new NLO computations [3]. This
+achievement is the result of much theoretical progress in the last few years. This progress
+regards both efficient techniques for the evaluation of one-loop matrix elements [4] and com-
+pletely general algorithms [5–8] to handle and cancel infrared singularities when combining
+tree-level and one-loop contributions in the evaluation of physical quantities. \\
+ (Melnikov's notes ) \cite{Melnikov2018} \\
+Asymptotic freedom is central to our ability to describe hard scattering processes at the LHC in
+QCD perturbative theory since the smallness of the coupling constant is a pre-requisite for the success of
+perturbative description. Note that for typical LHC processes the strong coupling constant is small but not
+tiny. This implies that quite often QCD corrections need to be computed to higher orders to claim high
+precision. The technology for computing next-to-leading QCD corrections to many processes of interest
+was developed in mid 1990s [10,11] and an important ingredient was added about ten years ago [12,13].
+Since then, the development of theoretical methods for next-to-next-to-leading order (NNLO) computa-
+tions became of great interest to the community of theorists interested in precision LHC phenomenology.
+Very recently, we have seen the emergence of several key technologies for NNLO computations [14] and
+dramatic increase in the number of their applications to LHC physics [15].
+The use of QCD to describe hard scattering processes at the LHC is intimately connected with
+the detailed understanding of how scattering amplitudes behave in the so-called soft and collinear limits.
+The soft limit corresponds to a situation where energy of an emitted gluon becomes small
+
+
+
+\clearpage
+
+\chapter{NLO QCD corrections in the NSC Subtraction Scheme}
+
+\section{Draft}
+
+\clearpage
+
+\chapter{NLO QCD corrections with $\theta$-parameters in the NSC Subtraction Scheme}
+
+\section{Draft}
+
+\clearpage
+
+\bookmarksetupnext{level = -1}
+\begin{appendices}
+\pagestyle{append}
+
+\chapter{Draft appendix}
+
+\section{Draft}
+
+Lorem ipsum dolor sit amet \cite{pauli}.
+
+\clearpage
+\end{appendices}
+
+\bookmarksetupnext{level = -1}
+\pagestyle{biblio}
+\printbibliography[heading = bibintoc, title = {Bibliography}]
+
+\end{document}
