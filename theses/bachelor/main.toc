@@ -6,11 +6,11 @@
 \contentsline {section}{\numberline {1.2}QCD and hard scattering processes}{2}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Hadronic cross-section and factorization theorem}{2}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Partonic cross-section}{5}{subsection.1.2.2}%
-\contentsline {chapter}{\numberline {2}NLO QCD corrections in the NSC Subtraction Scheme}{7}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Draft}{7}{section.2.1}%
-\contentsline {chapter}{\numberline {3}NLO QCD corrections with $\theta $-parameters in the NSC Subtraction Scheme}{8}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Draft}{8}{section.3.1}%
-\contentsline {chapter}{\sffamily Appendices}{9}{section*.2}%
-\contentsline {chapter}{\numberline {A}Draft appendix}{11}{appendix.a.A}%
-\contentsline {section}{\numberline {A.1}Draft}{11}{section.a.A.1}%
-\contentsline {chapter}{Bibliography}{12}{appendix*.3}%
+\contentsline {chapter}{\numberline {2}NLO QCD corrections in the NSC Subtraction Scheme}{8}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Draft}{8}{section.2.1}%
+\contentsline {chapter}{\numberline {3}NLO QCD corrections with $\theta $-parameters in the NSC Subtraction Scheme}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Draft}{9}{section.3.1}%
+\contentsline {chapter}{\sffamily Appendices}{10}{section*.2}%
+\contentsline {chapter}{\numberline {A}Draft appendix}{12}{appendix.a.A}%
+\contentsline {section}{\numberline {A.1}Draft}{12}{section.a.A.1}%
+\contentsline {chapter}{Bibliography}{13}{appendix*.3}%

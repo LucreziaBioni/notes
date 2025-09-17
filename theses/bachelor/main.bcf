@@ -2378,8 +2378,11 @@
     <bcf:citekey order="12" intorder="1">Devoto:2025jql</bcf:citekey>
     <bcf:citekey order="13" intorder="1">Devoto:2023rpv</bcf:citekey>
     <bcf:citekey order="14" intorder="1">Altarelli:1977zs</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">Melnikov2018</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">pauli</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">Catani:1996vz</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">Campbell:2017</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">Campbell:2017</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">Melnikov2018</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">pauli</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="ynt">

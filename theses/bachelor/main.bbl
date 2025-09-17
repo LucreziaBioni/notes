@@ -133,6 +133,44 @@
       \verb 10.1017/CBO9780511628788
       \endverb
     \endentry
+    \entry{Catani:1996vz}{article}{}
+      \name{author}{2}{}{%
+        {{hash=06af12ababe84e89a9f7077eaf290e33}{%
+           family={Catani},
+           familyi={C\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=13368ab166d2b46e4f7dac0b98a491e2}{%
+           family={Seymour},
+           familyi={S\bibinitperiod},
+           given={M.\bibnamedelimi H.},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{4a6de31b174cd990c81f2ae825975781}
+      \strng{fullhash}{4a6de31b174cd990c81f2ae825975781}
+      \strng{bibnamehash}{4a6de31b174cd990c81f2ae825975781}
+      \strng{authorbibnamehash}{4a6de31b174cd990c81f2ae825975781}
+      \strng{authornamehash}{4a6de31b174cd990c81f2ae825975781}
+      \strng{authorfullhash}{4a6de31b174cd990c81f2ae825975781}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Nucl. Phys. B}
+      \field{note}{[Erratum: Nucl.Phys.B 510, 503--504 (1998)]}
+      \field{title}{{A General algorithm for calculating jet cross-sections in NLO QCD}}
+      \field{volume}{485}
+      \field{year}{1997}
+      \field{pages}{291\bibrangedash 419}
+      \range{pages}{129}
+      \verb{doi}
+      \verb 10.1016/S0550-3213(96)00589-5
+      \endverb
+      \verb{eprint}
+      \verb hep-ph/9605323
+      \endverb
+    \endentry
     \entry{Salam:2010nqg}{article}{}
       \name{author}{1}{}{%
         {{hash=cdd9546b48e743df2da267f924c11cb4}{%

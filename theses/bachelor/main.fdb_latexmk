@@ -1,14 +1,14 @@
 # Fdb version 4
-["biber main"] 1758053951.19211 "main.bcf" "main.bbl" "main" 1758053960.87612 0
-  "bibl.bib" 1758053845.83505 4030 b81a9765f11f34dd1e756325bf3445c8 ""
-  "main.bcf" 1758053960.68966 108867 2ec1c94b17734261817648d433049f55 "pdflatex"
+["biber main"] 1758101049.11145 "main.bcf" "main.bbl" "main" 1758103233.99528 0
+  "bibl.bib" 1758101036.64107 4493 60a3df7d52f4e04c0aca5172bb4e3153 ""
+  "main.bcf" 1758103233.90201 109074 df08d23222860a5f48223aa8c1338724 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1758053958.14688 "/home/lucrezia/notes/theses/bachelor/main.tex" "main.pdf" "main" 1758053960.87646 0
+["pdflatex"] 1758103232.58565 "/home/lucrezia/notes/theses/bachelor/main.tex" "main.pdf" "main" 1758103233.99552 0
   "/etc/texmf/web2c/texmf.cnf" 1757435331.11015 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/lucrezia/notes/theses/bachelor/main.tex" 1758053845.94605 20402 0acc327aacc31d5c9572225ffe36abaf ""
+  "/home/lucrezia/notes/theses/bachelor/main.tex" 1758103232.36758 23257 2f1ac3d7ade59f1688e37625631dd2cb ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcss1440.tfm" 1136768653 1536 20b080237b56d4b67bdb3a5b0a64b2f8 ""
@@ -267,13 +267,14 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1758053293 8214258 df287e4662add57d6d46bd72e2c2ff3f ""
   "abstract.tex" 1757433792.36141 913 ea444ce83063f404e968fa71ba41cf3c ""
   "imgs/hadron-collision.png" 1758053943.96706 172491 dfc1b45d2e7e2158c5ce2ab37f82252e ""
+  "imgs/real-and-virtual.png" 1758102810.30392 31482 19ac4c340fd7c35a21c606632a20b297 ""
   "imgs/unimi.jpg" 1757433835.956 151126 6aaf40e13c5552fffc380ab31d9b98c8 ""
   "imports.tex" 1757435708.66534 14757 32af4fa02af9a5d07c969a4d1badbe38 ""
-  "main.aux" 1758053960.68129 10607 90c613d69bba8b2174b35814626006e4 "pdflatex"
-  "main.bbl" 1758053952.2164 16703 cb8e5501441f16034803fbb93e1dfe05 "biber main"
-  "main.run.xml" 1758053960.69216 2340 1b757ab86a6d4d5749f3b0003150b0d9 "pdflatex"
-  "main.tex" 1758053845.94605 20402 0acc327aacc31d5c9572225ffe36abaf ""
-  "main.toc" 1758053960.69216 1221 602385227f1fd5d69b0d1d093d34ff0c "pdflatex"
+  "main.aux" 1758103233.89801 11881 b698dce8d896841f8f35c5843320a770 "pdflatex"
+  "main.bbl" 1758101049.68095 18204 da6cddbc9843d0c2139081dc85a65bad "biber main"
+  "main.run.xml" 1758103233.90366 2340 1b757ab86a6d4d5749f3b0003150b0d9 "pdflatex"
+  "main.tex" 1758103232.36758 23257 2f1ac3d7ade59f1688e37625631dd2cb ""
+  "main.toc" 1758103233.90366 1222 fd9f84ca7b57ebb8469ac0b022bfe1b8 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"
