@@ -2,6 +2,8 @@
 \usepackage[english]{babel}
 %\usepackage{mathpazo}
 \input{imports.tex}
+\usepackage[font=small]{caption}
+\newcommand{\um}{\mathfrak{m}}
 
 \usepackage{overarrows}
 \usepackage{slashed}
@@ -84,7 +86,7 @@ where $f_{a,b}$ are the parton distribution functions mentioned above, and $\mat
 The asymptotic freedom of QCD is what enables a perturbative description of the strong interaction. However, it is crucial to recognize that the precise mechanism allowing us to decouple the motion of partons from the proton's dynamics is the separation of energy scales involved. Interactions in the Standard Model typically probe energy scales on the order of $Q \sim 100  \, \text{GeV} - 1 \, \text{TeV}$, while the characteristic energy scale of hadronic structure and confinement is significantly lower, $\Lambda_{\text{QCD}} \sim 100 \, \text{MeV}$. This results in a small ratio, $\Lambda_{\text{QCD}}/Q \sim 10^{-2}$. The exact power $n$ with which non-perturbative effects are suppressed is not always immediately evident. In many practical applications, the leading power is $n=2$, implying that the theoretical error committed by factorizing the non-perturbative physics is of order $\mathcal{O}(\alpha_{\text{S}}^4) \sim 10^{-3}$ for $\alpha_S \sim 0.1$. \\
 This formalism establishes a clear distinction between the short-distance perturbative process and the long-distance non-perturbative physics. The boundary between these two regimes is defined by the factorization scale ($\mu_\text{F}$). Processes with a momentum transfer $Q > \mu_\text{F}$ are treated as the hard scatter of point-like partons, calculable within perturbation theory. Physics at scales $Q < \mu_\text{F}$, which describes how the partons are bound within the proton, is incorporated into the non-perturbative Parton Distribution Functions (PDFs). \\
 The other scale present in the factorized cross-section in Eq. \ref{fact-theor} is the renormalization scale ($\mu_\text{R}$). Its necessity arises because the calculation of partonic interactions in QCD using Feynman diagrams often results in ultraviolet (UV) divergences. These infinities do not indicate a fundamental error in the theory, but suggest a distinction between the bare parameters in the Lagrangian and physically observable quantities. The process of renormalization allows us to absorb these divergences into a redefinition of the Lagrangian's parameters, providing finite expressions for measurable quantities. The consequence of this procedure is that the coupling constant becomes a function of the energy scale, a phenomenon known as ``running" \cite{ellis}. The renormalization scale $\mu_\text{R}$ is the energy at which the coupling constant is defined, thereby encapsulating the quantum corrections of the theory. \\
-For simple processes dominated by a single characteristic energy scale $\mu$, it is conventional to set both $\mu_\text{F}$ and $\mu_\text{R}$ equal to that scale \cite{Campbell:2017}. Therefore, throughout this thesis, we set $\mu_\text{F} = \mu_\text{R} = \mu$. Since their exact values are arbitrary, a physical prediction (like a cross-section) must be independent of them\footnote{However, cross-sections calculated within fixed-order perturbative expansions exhibit a dependence on both the renormalization and factorization scales, $\mu$}.  \\
+For simple processes dominated by a single characteristic energy scale $\mu$, it is conventional to set both $\mu_\text{F}$ and $\mu_\text{R}$ equal to that scale \cite{Campbell:2017}. Therefore, throughout this thesis, we set $\mu_\text{F} = \mu_\text{R} = \mu$. Since their exact values are arbitrary, a physical prediction (like a cross-section) must be independent of them\footnote{However, cross-sections calculated within fixed-order perturbative expansions exhibit a dependence on both the renormalization and factorization scales, $\mu$.}.  \\
 Referring to Eq. \ref{fact-theor}, we can state that only the left-hand side represents a physically measurable quantity. The right-hand side, in contrast, consists of unobservable components: the parton distribution functions (PDFs), which are extracted from experimental data, and the partonic cross-section $\mathrm{d}\hat{\sigma}_{a,b}$, which is calculable within perturbation theory. It is therefore essential to understand how this latter quantity is computed.
 
 \begin{figure}[!ht]
@@ -122,65 +124,77 @@ The function $F^{ab}_{\mathrm{LM}}$ that appears in Eq. \ref{leading-order} is d
 where $\mathrm{dLips}_X$ is the Lorentz-invariant phase space for the colorless particle $X$, including the momentum-conserving delta function. The integration over the final-state phase space of Eq. \ref{flm}, denoted with the angular brackets $\langle\dots\rangle$, gives exactly Eq. \ref{leading-order}. \\
 At Leading Order (LO), calculations are performed directly. The tree-level matrix elements can be computed easily using helicity techniques and colour-subamplitude decompositions \cite{Altarelli:1977zs}, and are then integrated, either numerically or analytically. \\
 The strong coupling constant in hard scattering processes is small enough to allow for a perturbative description, but not enough to make higher-order corrections entirely negligible. Therefore, in order to claim high precision, we also need to compute QCD corrections. In this way, results are obtained that also include long-distance effects.  
-The NLO correction $\text{d} \hat{\sigma}_{a,b}^{(1,0)} \equiv \text{d} \hat{\sigma}_{a,b}^{\mathrm{NLO}} $ to a partonic cross section consists of three terms: the one-loop (virtual) contribution, the real emission contribution, and the contribution from the collinear renormalization of parton distribution functions
+The NLO correction $\text{d} \hat{\sigma}_{a,b}^{(1,0)} \equiv \text{d} \hat{\sigma}_{a,b}^{\mathrm{NLO}} $ to a partonic cross section consists of three terms: the one-loop (virtual) contribution, the real emission contribution, and the contribution related to parton distribution functions
 \begin{equation}
     \mathrm{d} \hat{\sigma}_{a,b}^{\mathrm{NLO}} = \mathrm{d} \hat{\sigma}_{a,b}^{\mathrm{V}} + \mathrm{d} \hat{\sigma}_{a,b}^{\mathrm{R}} + \mathrm{d} \hat{\sigma}_{a,b}^{\mathrm{pdf}}.
 \end{equation} 
 
-The last term, $\mathrm{d} \hat{\sigma}_{a,b}^{\mathrm{pdf}}$, is generated by the renormalization of the PDFs at LO, and its expression is known \cite{Catani:1996vz}. The other terms, $\mathrm{d} \hat{\sigma}_{a,b}^{\mathrm{V}}$ and $\mathrm{d} \hat{\sigma}_{a,b}^{\mathrm{R}}$, are related to either the emission of an additional leg in the Feynman diagram, i.e., an extra parton in the final state (real correction), or to the emission and reabsorption of a parton through a loop (virtual correction).
+The last term, $\mathrm{d} \hat{\sigma}_{a,b}^{\mathrm{pdf}}$, is generated by the renormalization of the PDFs at LO, and its expression is known \cite{Catani:1996vz}. The other terms, $\mathrm{d} \hat{\sigma}_{a,b}^{\mathrm{V}}$ and $\mathrm{d} \hat{\sigma}_{a,b}^{\mathrm{R}}$, are related to either the emission of an additional leg in the Feynman diagram, i.e., an extra parton in the final state (real correction), or to the emission and reabsorption of a parton through a loop (virtual correction).  \par\bigskip
 \begin{figure}[!ht]
 	\centering
-	\includegraphics[width=0.7\textwidth]{imgs/real-and-virtual.png}
+	\includegraphics[width=0.9\textwidth]{imgs/real-and-virtual.png}
 	\caption{Feynman diagrams for W boson production at hadron colliders. The diagram on the left corresponds to the leading-order (LO) calculation of the total cross-section. The diagrams shown in the middle and on the right represent the real and virtual corrections, respectively, which together constitute the next-to-leading-order (NLO) contributions to the total cross-section. Figure from \cite{Campbell:2017}}.
 	\label{hadron-collision}
 \end{figure}
+It is important to emphasize that the distinction between real and virtual corrections has no intrinsic physical meaning: it is not meaningful to speak of ``virtual" or ``real" radiation. This division is instead a computational tool, introduced to organize the calculation and manage the various contributions more effectively. \\ The treatment of these terms is non-trivial, as they exhibit divergences in specific energy regimes. The virtual contributions, for instance, contain ultraviolet (UV) singularities. These are removed through the process of renormalization\footnote{Throughout this thesis, we work with UV-renormalized matrix elements.}, a procedure that ensures physical observables, when expressed in terms of appropriately defined renormalized parameters, become insensitive to the high-energy UV region. \\ Furthermore, the low-momentum (soft) and small-angle (collinear) kinematic regions produce singularities in both the real and virtual contributions. These infrared (IR) singularities are not independent: the real and virtual corrections are fundamentally linked by their infrared behavior. The divergence of scattering amplitudes in the soft or collinear limit means these kinematic configurations provide the dominant contributions to cross-sections. Consequently, a precise and careful estimation of these limits of QCD amplitudes is of highest importance.
+
+\subsection{Infrared poles and their cancellation}
+In order to deal with IR divergences, it is convenient to employ dimensional regularization \cite{THOOFT1973455}. This technique involves the analytical continuation of momentum space from $4$ to $d=4-2\epsilon$ dimensions, where $\epsilon \in \mathbb{C}$ and $\mathrm{Re}(\epsilon)<0$. In this framework, divergences that manifest as $1/0$ poles in four dimensions instead appear as poles in $1/\epsilon$ in the complex dimensional plane. \\
+The virtual corrections $\mathrm{d} \hat{\sigma}_{a,b}^{\mathrm{V}}$ contain explicit infrared and collinear poles and are independent of the details of the hard matrix element \cite{Catani:1996vz}. In contrast, the real emission contribution $\mathrm{d} \hat{\sigma}_{a,b}^{\mathrm{R}}$ contains kinematic singularities that only become explicit $1/\epsilon$ poles upon integration over the phase space of the additional final-state parton. A naive integration over the entire radiation phase space is what we must avoid, as it would render the cross section inclusive rather than differential, discarding all information on the kinematics of the radiated parton. This information is often crucial since jet properties provide essential information for defining experimental signatures. \\
+We therefore require a method to extract the implicit $1/\epsilon$ poles from the real emission contributions without performing this integration. The key insight that allows us to overcome this obstacle is that in singular kinematic regions, real emissions are always unresolved, meaning they lack a distinct experimental signature. Consequently, we can safely integrate over the singular regions of their phase space without losing any physically observable information. \\
+Once the $1/\epsilon$ poles are extracted from both the virtual and real corrections, their sum is guaranteed to be free of infrared divergences due to the Bloch-Nordsieck \cite{PhysRev.52.54} and Kinoshita-Lee-Nauenberg theorems.\\
+Over time, various methods have been developed to perform fully differential QCD computations for hadron collider processes, both at NLO and NNLO. Many of these approaches, however, are extremely complex, non-transparent, and require significant CPU time to produce stable results. Among the existing methods, the one that most closely meets the criteria for an optimal solution is the Nested Soft-Collinear (NSC) Subtraction Scheme \cite{Caola:2017dug}, which will be detailed in Chapter \ref{NSC-SS}. The numerical stability and computational efficiency of this method can, however, be further improved. A step forward in this direction will be presented in Chapter \ref{NSC-SS-parameters}; this represents the original contribution of this thesis. \\
+Before entering into the details of the NSC Subtraction Scheme and its potential improvement, it is useful to first explore the origin of IR divergences in more depth and examine the specific structure of the infrared limit of NLO QCD amplitudes.
 
 
- \par\bigskip
-prima dico che questo serve per avere conti sensati anche a distanza maggiore, poi parto di correzioni virtuali e reali e pdf, spiegare cosa sono e che separazione è non fisica, e di come le prime siamo state risolte da Catani, le seconde da altri. In realtà si è arrivati anche a NNLO, ma con metodi non trasparenti e straightforward a sufficienza, per cui si è sviluppato NSC, che verrà illustrato nella prossima sezione. Perché il metodo sia efficace, deve essere computazionalmente ok (vedere tesi asteriadis). In più, per capire ostacolo principale sono divergenze. queste, per via del teorema bla bla bla, si devono cancellare. prima di vedere come NSC le gestisce, capiamo da dove hanno origine.
 
-
-QCD corrections, infrared poles and their cancellation. L'aggiunta di correzioni è ciò che consente di tenere conto di effetti a lunga distanza, e far sì che i risultati forniti non siano validi solo a distanze brevi.\\
-Le divergenze costituiscono termini non perturbativi nel nostro conto perturbativo, pertanto è importante trovare un modo di trattarle.
-\\
-
-
-Fixed order corrections \\
-There are two types of corrections: virtual and real. \\
-There are two challenges in computing corrections beyond LO: computing (multi)-loop virtual amplitudes and treating infrared divergences. 
-\\
-Nowadays, also next-to-leading order (NLO) calculations are feasible in a direct man-
-ner, as witnessed by the accelerated production rate of new NLO computations [3]. This
-achievement is the result of much theoretical progress in the last few years. This progress
-regards both efficient techniques for the evaluation of one-loop matrix elements [4] and com-
-pletely general algorithms [5–8] to handle and cancel infrared singularities when combining
-tree-level and one-loop contributions in the evaluation of physical quantities. \\
- (Melnikov's notes ) \cite{Melnikov2018} \\
-Asymptotic freedom is central to our ability to describe hard scattering processes at the LHC in
-QCD perturbative theory since the smallness of the coupling constant is a pre-requisite for the success of
-perturbative description. Note that for typical LHC processes the strong coupling constant is small but not
-tiny. This implies that quite often QCD corrections need to be computed to higher orders to claim high
-precision. The technology for computing next-to-leading QCD corrections to many processes of interest
-was developed in mid 1990s [10,11] and an important ingredient was added about ten years ago [12,13].
-Since then, the development of theoretical methods for next-to-next-to-leading order (NNLO) computa-
-tions became of great interest to the community of theorists interested in precision LHC phenomenology.
-Very recently, we have seen the emergence of several key technologies for NNLO computations [14] and
-dramatic increase in the number of their applications to LHC physics [15].
-The use of QCD to describe hard scattering processes at the LHC is intimately connected with
-the detailed understanding of how scattering amplitudes behave in the so-called soft and collinear limits.
-The soft limit corresponds to a situation where energy of an emitted gluon becomes small
+\subsection{The origin of infrared divergences in real-emission contributions}
+QCD amplitudes for real emission processes become singular in kinematic limits where the emitted massless parton, a gluon or a quark, becomes soft (low energy) or is emitted collinearly to another parton (gluon, quark or anti-quark). In these limits, the propagator of the emitted particle approaches its on-shell condition, leading to divergent behavior. \\
+To show explicitly these divergences, we must first express the phase-space integration measure (before applying dimensional regularization) in hyperspherical coordinates, considering the emitted massless particles ($|\mathbf{p}_i|=E_i, \, |\mathbf{p}_i|^2=0$)
+\begin{equation}
+    [\mathrm{d}p_\mathfrak{m}] \sim \mathrm{d}E_\um E_\um \mathrm{d}\theta_{i\um} \sin{\theta_{i\um}}
+\end{equation}
+where $\um$ indicates the unresolved parton, and $i$ is another parton in the process. \\
+First, we consider the case where the emitted particle $\um$ is a gluon. To obtain the real radiation corrections, we integrate the squared absolute value of the amplitude $|\mathcal{M}|^2$ for the process under consideration. The energy integral has limits from $0$ to $E_\mathrm{max}$ (which is defined by energy conservation), and the angular integral has limits from $0$ to $\pi$. Since this integral becomes singular in the limits $E_m \rightarrow 0$ (soft) and $\theta_{i\um} \rightarrow 0$ (collinear), we must examine the behavior of the amplitude in these regimes. \\
+For a generic QCD amplitude $\mathcal{M}$ involving $n$ partons with four-momenta $p_1, p_2, \dots, p_n$ and an additional soft gluon with vanishing four-momentum $p_\um$, the squared amplitude factorizes into (i) the squared amplitude for the hard process without the gluon and (ii) an eikonal factor that depends only on the color charges and momenta of the hard partons and the momentum of the soft gluon ($p_\um$) \cite{Catani:1999ss}
+\begin{equation}
+    \lim_{E_\um \rightarrow 0}|\mathcal{M}(p_1, p_2, \dots, p_n; p_\um)|^2= - 4\pi \alpha_s \mu^{2\epsilon} \sum_{i,j=1}^n \mathcal{S}_{ij}(p_\um) \vec{T}_i \cdot \vec{T_j} |\mathcal{M}_0(p_1, p_2, \dots, p_n)|^2,
+\end{equation}
+where the general eikonal factor is
+\begin{equation}
+    \mathcal{S}_{ij}(p_\um) = \frac{p_i \cdot p_j}{(p_i \cdot p_\um)(p_j \cdot p_\um)} \sim \frac{1}{E_\um^2}
+\end{equation}
+and the square of the color charges are $\vec{T}_i^2= C_F$ if $i$ is a quark or an anti-quark, and $\vec{T}_i^2= C_A$ if i is a gluon. \\
+Therefore, the energy integral does not converge for soft gluon emissions in any process
+\begin{equation}
+    \int_0^{E_{\mathrm{max}}} \frac{\mathrm{d}E_\um}{E_\um} \rightarrow \infty
+\end{equation}
+Whereas, in the collinear limit, i.e., the limit where a gluon is emitted parallel to a quark, the amplitude-squared factorizes into (i) a splitting function, which describes the probability for the quark to radiate the gluon collinearly at a given energy, and (ii) the squared hard amplitude, which now depends on the resulting quark momentum after the emission.
+\begin{equation}
+    \lim_{\theta_{i \um \rightarrow 0}}|\mathcal{M}(p_1, \dots, p_n; p_\um)|^2 \sim P_{f_{[i\um]}f_i} |\mathcal{M}_0(p_1, \dots, p_n)|^2 \sim \frac{1}{(p_i-p_\um)^2} \sim (1-\cos(\theta_{i\um}))^{-1}\sim \theta_{i\um}^{-2}
+\end{equation}
+so, even the angular integral for real emissions does not converge
+\begin{equation}
+    \int_0^{\pi} \frac{\mathrm{d}\theta_{i\um}}{E_{\theta_{i\um}}} \rightarrow \infty.
+\end{equation}
+The unresolved parton $\um$ could also be a quark or an antiquark. However, the emission of a soft quark leads to a convergent integral; consequently, no divergences are associated with soft quark or antiquark emissions. Divergences do arise in the collinear limit, but, as in the gluon case, the amplitude factorizes into a hard process involving a parton with rescaled momentum and a corresponding splitting function. \\
+It is important to consider the origin of these infinities. The presence of divergences is, in fact, a manifestation of long-distance effects: they signal that non-perturbative contributions are entering our perturbative calculation. This could be a problem, as we lack methods to treat non-perturbative QCD effects from first principles \cite{Melnikov2018}. Fortunately, however, as stated in the previous section, the divergences emerging from the real and virtual corrections cancel when summed together. Therefore, perturbative QCD corrections remain insensitive to the details of infrared physics.
 
 
 
 \clearpage
 
 \chapter{NLO QCD corrections in the NSC Subtraction Scheme}
+\label{NSC-SS}
+
+The Nested Soft-Collinear Subtrasction Scheme was introduced in Ref. \cite{Caola:2017dug}
 
 \section{Draft}
 
 \clearpage
 
 \chapter{NLO QCD corrections with $\theta$-parameters in the NSC Subtraction Scheme}
+\label{NSC-SS-parameters}
 
 \section{Draft}
 

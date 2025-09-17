@@ -19,6 +19,73 @@
 
 \refsection{0}
   \datalist[entry]{ynt/global//global/global}
+    \entry{PhysRev.52.54}{article}{}
+      \name{author}{2}{}{%
+        {{hash=0e6a07ef2ccba1965a86d5d3b61e7e26}{%
+           family={Bloch},
+           familyi={B\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=c9500695f9c56be89bd3f94d5e451efd}{%
+           family={Nordsieck},
+           familyi={N\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{0ad420fc541ee6f684d37637578497eb}
+      \strng{fullhash}{0ad420fc541ee6f684d37637578497eb}
+      \strng{bibnamehash}{0ad420fc541ee6f684d37637578497eb}
+      \strng{authorbibnamehash}{0ad420fc541ee6f684d37637578497eb}
+      \strng{authornamehash}{0ad420fc541ee6f684d37637578497eb}
+      \strng{authorfullhash}{0ad420fc541ee6f684d37637578497eb}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{2}
+      \field{journaltitle}{Phys. Rev.}
+      \field{month}{7}
+      \field{title}{Note on the Radiation Field of the Electron}
+      \field{volume}{52}
+      \field{year}{1937}
+      \field{pages}{54\bibrangedash 59}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1103/PhysRev.52.54
+      \endverb
+    \endentry
+    \entry{THOOFT1973455}{article}{}
+      \name{author}{1}{}{%
+        {{hash=41e744f86652e7481530ac9726d58511}{%
+           family={{'t Hooft}},
+           familyi={'\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{41e744f86652e7481530ac9726d58511}
+      \strng{fullhash}{41e744f86652e7481530ac9726d58511}
+      \strng{bibnamehash}{41e744f86652e7481530ac9726d58511}
+      \strng{authorbibnamehash}{41e744f86652e7481530ac9726d58511}
+      \strng{authornamehash}{41e744f86652e7481530ac9726d58511}
+      \strng{authorfullhash}{41e744f86652e7481530ac9726d58511}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0550-3213}
+      \field{journaltitle}{Nuclear Physics B}
+      \field{title}{Dimensional regularization and the renormalization group}
+      \field{volume}{61}
+      \field{year}{1973}
+      \field{pages}{455\bibrangedash 468}
+      \range{pages}{14}
+      \verb{doi}
+      \verb https://doi.org/10.1016/0550-3213(73)90376-3
+      \endverb
+    \endentry
     \entry{Altarelli:1977zs}{article}{}
       \name{author}{2}{}{%
         {{hash=6349ee4a6aa6336ed3f3c3fc24787871}{%
@@ -171,6 +238,43 @@
       \verb hep-ph/9605323
       \endverb
     \endentry
+    \entry{Catani:1999ss}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ffd9a06f1b41cb168b788d903ddd6f96}{%
+           family={Catani},
+           familyi={C\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f046d3b6fb7ce66e9b2c519b29a8796a}{%
+           family={Grazzini},
+           familyi={G\bibinitperiod},
+           given={Massimiliano},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{ea4ce681f22ab22bad259ad022f1cd50}
+      \strng{fullhash}{ea4ce681f22ab22bad259ad022f1cd50}
+      \strng{bibnamehash}{ea4ce681f22ab22bad259ad022f1cd50}
+      \strng{authorbibnamehash}{ea4ce681f22ab22bad259ad022f1cd50}
+      \strng{authornamehash}{ea4ce681f22ab22bad259ad022f1cd50}
+      \strng{authorfullhash}{ea4ce681f22ab22bad259ad022f1cd50}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Nucl. Phys. B}
+      \field{title}{{Infrared factorization of tree level QCD amplitudes at the next-to-next-to-leading order and beyond}}
+      \field{volume}{570}
+      \field{year}{2000}
+      \field{pages}{287\bibrangedash 325}
+      \range{pages}{39}
+      \verb{doi}
+      \verb 10.1016/S0550-3213(99)00778-6
+      \endverb
+      \verb{eprint}
+      \verb hep-ph/9908523
+      \endverb
+    \endentry
     \entry{Salam:2010nqg}{article}{}
       \name{author}{1}{}{%
         {{hash=cdd9546b48e743df2da267f924c11cb4}{%
@@ -232,6 +336,50 @@
       \endverb
       \verb{url}
       \verb https://arxiv.org/abs/1411.4085
+      \endverb
+    \endentry
+    \entry{Caola:2017dug}{article}{}
+      \name{author}{3}{}{%
+        {{hash=bbfb4ff95460567d636c0438543c5a5b}{%
+           family={Caola},
+           familyi={C\bibinitperiod},
+           given={Fabrizio},
+           giveni={F\bibinitperiod}}}%
+        {{hash=415b55859fd8bb4a7ad3888c6ad296b8}{%
+           family={Melnikov},
+           familyi={M\bibinitperiod},
+           given={Kirill},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e0dffa60f98bd32cc5442caa68b215fa}{%
+           family={Röntsch},
+           familyi={R\bibinitperiod},
+           given={Raoul},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{cfb8abdefb3312d0c330e0a19c22c2e2}
+      \strng{fullhash}{cfb8abdefb3312d0c330e0a19c22c2e2}
+      \strng{bibnamehash}{cfb8abdefb3312d0c330e0a19c22c2e2}
+      \strng{authorbibnamehash}{cfb8abdefb3312d0c330e0a19c22c2e2}
+      \strng{authornamehash}{cfb8abdefb3312d0c330e0a19c22c2e2}
+      \strng{authorfullhash}{cfb8abdefb3312d0c330e0a19c22c2e2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Eur. Phys. J. C}
+      \field{number}{4}
+      \field{title}{{Nested soft-collinear subtractions in NNLO QCD computations}}
+      \field{volume}{77}
+      \field{year}{2017}
+      \field{pages}{248}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1140/epjc/s10052-017-4774-0
+      \endverb
+      \verb{eprint}
+      \verb 1702.01352
       \endverb
     \endentry
     \entry{Campbell:2017}{book}{}
