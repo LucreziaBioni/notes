@@ -8,11 +8,11 @@
 \contentsline {subsection}{\numberline {1.2.2}Partonic cross-section}{5}{subsection.1.2.2}%
 \contentsline {subsection}{\numberline {1.2.3}Infrared poles and their cancellation}{7}{subsection.1.2.3}%
 \contentsline {subsection}{\numberline {1.2.4}The origin of infrared divergences in real-emission contributions}{7}{subsection.1.2.4}%
-\contentsline {chapter}{\numberline {2}NLO QCD corrections in the NSC Subtraction Scheme}{9}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Draft}{9}{section.2.1}%
-\contentsline {chapter}{\numberline {3}NLO QCD corrections with $\theta $-parameters in the NSC Subtraction Scheme}{10}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Draft}{10}{section.3.1}%
-\contentsline {chapter}{\sffamily Appendices}{11}{section*.4}%
-\contentsline {chapter}{\numberline {A}Draft appendix}{13}{appendix.a.A}%
-\contentsline {section}{\numberline {A.1}Draft}{13}{section.a.A.1}%
-\contentsline {chapter}{Bibliography}{14}{appendix*.5}%
+\contentsline {chapter}{\numberline {2}NLO QCD corrections in the NSC Subtraction Scheme}{10}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Draft}{10}{section.2.1}%
+\contentsline {chapter}{\numberline {3}NLO QCD corrections with $\theta $-parameters in the NSC Subtraction Scheme}{11}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Draft}{11}{section.3.1}%
+\contentsline {chapter}{\sffamily Appendices}{12}{section*.4}%
+\contentsline {chapter}{\numberline {A}Draft appendix}{14}{appendix.a.A}%
+\contentsline {section}{\numberline {A.1}Draft}{14}{section.a.A.1}%
+\contentsline {chapter}{Bibliography}{15}{appendix*.5}%
