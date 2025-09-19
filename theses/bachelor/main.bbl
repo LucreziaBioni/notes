@@ -238,6 +238,38 @@
       \verb hep-ph/9605323
       \endverb
     \endentry
+    \entry{Catani:1998bh}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ffd9a06f1b41cb168b788d903ddd6f96}{%
+           family={Catani},
+           familyi={C\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{ffd9a06f1b41cb168b788d903ddd6f96}
+      \strng{fullhash}{ffd9a06f1b41cb168b788d903ddd6f96}
+      \strng{bibnamehash}{ffd9a06f1b41cb168b788d903ddd6f96}
+      \strng{authorbibnamehash}{ffd9a06f1b41cb168b788d903ddd6f96}
+      \strng{authornamehash}{ffd9a06f1b41cb168b788d903ddd6f96}
+      \strng{authorfullhash}{ffd9a06f1b41cb168b788d903ddd6f96}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Lett. B}
+      \field{title}{{The Singular behavior of QCD amplitudes at two loop order}}
+      \field{volume}{427}
+      \field{year}{1998}
+      \field{pages}{161\bibrangedash 171}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1016/S0370-2693(98)00332-3
+      \endverb
+      \verb{eprint}
+      \verb hep-ph/9802439
+      \endverb
+    \endentry
     \entry{Catani:1999ss}{article}{}
       \name{author}{2}{}{%
         {{hash=ffd9a06f1b41cb168b788d903ddd6f96}{%
@@ -609,6 +641,65 @@
       \field{year}{2025}
       \verb{eprint}
       \verb 2509.08594
+      \endverb
+    \endentry
+    \entry{Devoto:2025kin}{article}{}
+      \name{author}{6}{}{%
+        {{hash=27bfd65c4d7203de00ef8dfce4e6f858}{%
+           family={Devoto},
+           familyi={D\bibinitperiod},
+           given={Federica},
+           giveni={F\bibinitperiod}}}%
+        {{hash=415b55859fd8bb4a7ad3888c6ad296b8}{%
+           family={Melnikov},
+           familyi={M\bibinitperiod},
+           given={Kirill},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e0dffa60f98bd32cc5442caa68b215fa}{%
+           family={Röntsch},
+           familyi={R\bibinitperiod},
+           given={Raoul},
+           giveni={R\bibinitperiod}}}%
+        {{hash=f83844b62e85b49751d5fba4b5789222}{%
+           family={Signorile-Signorile},
+           familyi={S\bibinithyphendelim S\bibinitperiod},
+           given={Chiara},
+           giveni={C\bibinitperiod}}}%
+        {{hash=7ed97f76338f3d0c718faeb65cb475bb}{%
+           family={Tagliabue},
+           familyi={T\bibinitperiod},
+           given={Davide\bibnamedelima Maria},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=907c935bb57a74a3d8d5c5d2e67e4a54}{%
+           family={Tresoldi},
+           familyi={T\bibinitperiod},
+           given={Matteo},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{cb6aaaab9d19df1715f822dedc88e0e6}
+      \strng{fullhash}{75d0ca8c889c34107f28409a758e3e75}
+      \strng{bibnamehash}{cb6aaaab9d19df1715f822dedc88e0e6}
+      \strng{authorbibnamehash}{cb6aaaab9d19df1715f822dedc88e0e6}
+      \strng{authornamehash}{cb6aaaab9d19df1715f822dedc88e0e6}
+      \strng{authorfullhash}{75d0ca8c889c34107f28409a758e3e75}
+      \field{extraname}{3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{JHEP}
+      \field{title}{{Towards a general subtraction formula for NNLO QCD corrections to processes at hadron colliders: final states with quarks and gluons}}
+      \field{volume}{08}
+      \field{year}{2025}
+      \field{pages}{122}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/JHEP08(2025)122
+      \endverb
+      \verb{eprint}
+      \verb 2503.15251
       \endverb
     \endentry
   \enddatalist

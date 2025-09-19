@@ -168,7 +168,7 @@ Therefore, the energy integral does not converge for soft gluon emissions in any
 \begin{equation}
     \int_0^{E_{\mathrm{max}}} \frac{\mathrm{d}E_\um}{E_\um} \rightarrow \infty.
 \end{equation}
-Whereas, in the collinear limit, i.e., the limit where a gluon is emitted parallel to a quark, the amplitude-squared factorizes into (i) a splitting function, which describes the probability for the quark to radiate the gluon collinearly at a given energy, and (ii) the squared hard amplitude, which now depends on the resulting quark momentum after the emission.
+Whereas, in the collinear limit, i.e., the limit where a gluon is emitted parallel to a quark, the amplitude-squared factorizes into (i) a splitting function, which describes the probability for the quark to radiate the gluon collinearly at a given energy, and (ii) the squared hard amplitude, which now depends on the resulting quark momentum after the emission
 \begin{equation}
     \lim_{\theta_{i \um \rightarrow 0}}|\mathcal{M}(p_1, \dots, p_n; p_\um)|^2 \sim P_{f_{[i\um]}f_i} |\mathcal{M}_0(p_1, \dots, p_n)|^2 \sim \frac{1}{(p_i-p_\um)^2} \sim (1-\cos(\theta_{i\um}))^{-1}\sim \theta_{i\um}^{-2}
 \end{equation}
@@ -188,7 +188,30 @@ However, achieving the cancellation of the $1/\epsilon$ poles by simply summing 
 \chapter{NLO QCD corrections in the NSC Subtraction Scheme}
 \label{NSC-SS}
 
-The Nested Soft-Collinear Subtrasction Scheme was introduced in Ref. \cite{Caola:2017dug}
+
+Singular limits of NLO QCD amplitudes and methods to use them to obtain NLO QCD cross section are well known. Moreover, all singular limits of QCD amplitudes required for computing NNLO QCD corrections have been known for about 20 years. Yet, it took quite some time before it was realized how to combine these NNLO limits and the ideas of NLO FKS subtraction to establish a valid subtraction scheme for NNLO computations. Among the many methods proposed, the NSC SS, introduced in \cite{Caola:2017dug}: it is very attractive because it is fully local, completely general and perfectly modular. \\
+In questo capitolo faremo un'overview dei principali risultati ottenuti. Siccome l'obiettivo di questa tesi è implementare dei parametri che consentano di avere un maggiore controllo sulla porzione di spazio delle fasi su cui si integra e siccome questi parametri compaiono solo nelle correzioni reali, ci concentreremo solo su queste ultime. Tra l'altro, le parti divergenti  per le virtual corrections possono essere separate usando Catani's representation of renormalized one-loop scattering amplitudes \cite{Catani:1998bh}. Inoltre, nonostante questi metodi siano stati implementati fino al NNLO, in questa tesi ci concentriamo sul NLO, perché - nella loro maggiore facilità - consentono di capire meglio come implementare i parametri. \\
+
+\section{Why a subtraction method}
+ricordiamo che vogliamo un metodo per estrarre le singolarità implicite senza integrating over momenta of any of the final state particles in order to keep the kinematics of all the final state particles intact. \\ 
+Paragrafo schema di sottrazione:
+Prima di tutto capiamo la logica dietro uno schema di sottrazione \\
+\section{Soft and Collinear operators}
+Paragrafo su Soft and Collinear operators:
+nel caso di NSC, si sottraggono i limiti singolari dei contributi reali sequenzialmente, usando operatori: dare definizione di operatori S e C. \\
+By definition, those operators act on everything that appears on the right of them.
+\section{Damping factors}
+Paragrafo su Damping factors: come si gestisce lo spazio delle fasi \\
+\section{Different channels}
+La potenza di NSC SS sta nel fatto che the subtractions for a generic process are built froma  relatively small set of basic ingredients. Paragrafo sui vari possibili canali, sul fatto che si possa descrivere un processo estremamente complesso sommando i vari contributi: conta solo se si abbia two initials (1902), two finals (1907) or one initial and one final (1910): illustro questi processi. (fare disegnetto con somma dei processi) \\
+\section{Soft limit}
+Paragrafo su soft singularities, e che forma hanno i contributi nei 3 processi considerati. \\
+\section{Collinear limit}
+Paragrafo su collinear singularities \\
+\section{Soft-collinear limit}
+Paragrafo su soft-collinear singularities \\
+\section{Cancellation of poles}
+è possibile dimostrare la cancellazione dei poli $1/\epsilon$ analiticamente e derivare i finite remainders. Non metto dimostrazione esplicita della cancellazione (sarebbe una ripetizione), ma cerco di spiegare la logica. 
 
 \section{Draft}
 
@@ -196,6 +219,8 @@ The Nested Soft-Collinear Subtrasction Scheme was introduced in Ref. \cite{Caola
 
 \chapter{NLO QCD corrections with $\theta$-parameters in the NSC Subtraction Scheme}
 \label{NSC-SS-parameters}
+
+Il lavoro esposto nel capitolo precedente può essere ulteriormente generalizzato, come è stato fatto nei paper \cite{Devoto:2023rpv,Devoto:2025kin}. In questo capitolo ripercorriamo tali risultati, implementando theta parameters. Lo facciamo perché uno dei principali difetti di NSC SS è che la sua efficienza è un po' impattata dalla numerical integration of the subtraction terms.
 
 \section{Draft}
 
