@@ -2,12 +2,12 @@
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}The Standard Model}{1}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Collider physics}{1}{subsection.1.1.1}%
-\contentsline {section}{\numberline {1.2}QCD and hard scattering processes}{2}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Hadronic cross-section and factorization theorem}{2}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Partonic cross-section}{5}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Infrared poles and their cancellation}{7}{subsection.1.2.3}%
-\contentsline {subsection}{\numberline {1.2.4}The origin of infrared divergences in real-emission contributions}{7}{subsection.1.2.4}%
+\contentsline {section}{\numberline {1.2}Collider physics}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.3}QCD and hard scattering processes}{2}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Hadronic cross-section and factorization theorem}{3}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Partonic cross-section}{4}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Infrared poles and their cancellation}{7}{section.1.6}%
+\contentsline {section}{\numberline {1.7}The origin of infrared divergences in real-emission contributions}{7}{section.1.7}%
 \contentsline {chapter}{\numberline {2}NLO QCD corrections in the NSC Subtraction Scheme}{10}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Why a subtraction method}{10}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Soft and Collinear operators}{11}{section.2.2}%

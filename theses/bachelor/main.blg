@@ -1,21 +1,21 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'main.blg'
-[35] biber:340> INFO - === Mon Sep 22, 2025, 10:01:07
-[42] Biber.pm:419> INFO - Reading 'main.bcf'
-[71] Biber.pm:979> INFO - Found 19 citekeys in bib section 0
-[77] Biber.pm:4419> INFO - Processing section 0
-[82] Biber.pm:4610> INFO - Looking for bibtex file 'bibl.bib' for section 0
-[82] bibtex.pm:1713> INFO - LaTeX decoding ...
-[92] bibtex.pm:1519> INFO - Found BibTeX data source 'bibl.bib'
-[168] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[168] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[168] Biber.pm:4239> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'en-US'
-[168] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[178] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[181] bbl.pm:763> INFO - Output to main.bbl
-[181] Biber.pm:131> WARN - legacy month field 'Jul' in entry 'Asteriadis2020' is not an integer - this will probably not sort properly.
-[181] Biber.pm:131> WARN - Overwriting field 'year' with year value from field 'date' for entry 'Asteriadis2020'
-[181] Biber.pm:131> WARN - Overwriting field 'month' with month value from field 'date' for entry 'Asteriadis2020'
-[181] Biber.pm:131> WARN - legacy month field 'Jul' in entry 'PhysRev.52.54' is not an integer - this will probably not sort properly.
-[181] Biber.pm:131> WARN - I didn't find a database entry for 'pauli' (section 0)
-[181] Biber.pm:133> INFO - WARNINGS: 5
+[57] biber:340> INFO - === Mon Sep 22, 2025, 20:02:26
+[70] Biber.pm:419> INFO - Reading 'main.bcf'
+[165] Biber.pm:979> INFO - Found 19 citekeys in bib section 0
+[179] Biber.pm:4419> INFO - Processing section 0
+[189] Biber.pm:4610> INFO - Looking for bibtex file 'bibl.bib' for section 0
+[190] bibtex.pm:1713> INFO - LaTeX decoding ...
+[204] bibtex.pm:1519> INFO - Found BibTeX data source 'bibl.bib'
+[315] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[315] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[315] Biber.pm:4239> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'en-US'
+[316] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[330] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[337] bbl.pm:763> INFO - Output to main.bbl
+[337] Biber.pm:131> WARN - legacy month field 'Jul' in entry 'Asteriadis2020' is not an integer - this will probably not sort properly.
+[337] Biber.pm:131> WARN - Overwriting field 'year' with year value from field 'date' for entry 'Asteriadis2020'
+[337] Biber.pm:131> WARN - Overwriting field 'month' with month value from field 'date' for entry 'Asteriadis2020'
+[337] Biber.pm:131> WARN - legacy month field 'Jul' in entry 'PhysRev.52.54' is not an integer - this will probably not sort properly.
+[337] Biber.pm:131> WARN - I didn't find a database entry for 'pauli' (section 0)
+[337] Biber.pm:133> INFO - WARNINGS: 5
