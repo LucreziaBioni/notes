@@ -200,6 +200,48 @@
       \verb 10.1017/CBO9780511628788
       \endverb
     \endentry
+    \entry{Frixione:1995ms}{article}{}
+      \name{author}{3}{}{%
+        {{hash=36ec2b0a28a3159dd489a8e0ce4c5e16}{%
+           family={Frixione},
+           familyi={F\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=632e5bd083d336dd390edb4ee3a6dd29}{%
+           family={Kunszt},
+           familyi={K\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=da9de51f40b407b668bd3d2d2638a4af}{%
+           family={Signer},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{134b87d45a7674de4f7dce7f172ed4b8}
+      \strng{fullhash}{134b87d45a7674de4f7dce7f172ed4b8}
+      \strng{bibnamehash}{134b87d45a7674de4f7dce7f172ed4b8}
+      \strng{authorbibnamehash}{134b87d45a7674de4f7dce7f172ed4b8}
+      \strng{authornamehash}{134b87d45a7674de4f7dce7f172ed4b8}
+      \strng{authorfullhash}{134b87d45a7674de4f7dce7f172ed4b8}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Nucl. Phys. B}
+      \field{title}{{Three jet cross-sections to next-to-leading order}}
+      \field{volume}{467}
+      \field{year}{1996}
+      \field{pages}{399\bibrangedash 442}
+      \range{pages}{44}
+      \verb{doi}
+      \verb 10.1016/0550-3213(96)00110-1
+      \endverb
+      \verb{eprint}
+      \verb hep-ph/9512328
+      \endverb
+    \endentry
     \entry{Catani:1996vz}{article}{}
       \name{author}{2}{}{%
         {{hash=06af12ababe84e89a9f7077eaf290e33}{%

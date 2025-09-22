@@ -148,6 +148,7 @@ Before entering into the details of the NSC Subtraction Scheme and its potential
 
 
 \subsection{The origin of infrared divergences in real-emission contributions}
+\label{origin-divergences}
 QCD amplitudes for real emission processes become singular in kinematic limits where the emitted massless parton, a gluon or a quark, becomes soft (low energy) or is emitted collinearly to another parton (gluon, quark or anti-quark). In these limits, the propagator of the emitted particle approaches its on-shell condition, leading to divergent behavior. \\
 To show explicitly these divergences, we must first express the phase-space integration measure (before applying dimensional regularization) in hyperspherical coordinates, considering the emitted massless particles ($|\mathbf{p}_i|=E_i, \, |\mathbf{p}_i|^2=0$)
 \begin{equation}
@@ -187,15 +188,29 @@ However, achieving the cancellation of the $1/\epsilon$ poles by simply summing 
 
 \chapter{NLO QCD corrections in the NSC Subtraction Scheme}
 \label{NSC-SS}
-
-
-Singular limits of NLO QCD amplitudes and methods to use them to obtain NLO QCD cross section are well known. Moreover, all singular limits of QCD amplitudes required for computing NNLO QCD corrections have been known for about 20 years. Yet, it took quite some time before it was realized how to combine these NNLO limits and the ideas of NLO FKS subtraction to establish a valid subtraction scheme for NNLO computations. Among the many methods proposed, the NSC SS, introduced in \cite{Caola:2017dug}: it is very attractive because it is fully local, completely general and perfectly modular. \\
-In questo capitolo faremo un'overview dei principali risultati ottenuti. Siccome l'obiettivo di questa tesi è implementare dei parametri che consentano di avere un maggiore controllo sulla porzione di spazio delle fasi su cui si integra e siccome questi parametri compaiono solo nelle correzioni reali, ci concentreremo solo su queste ultime. Tra l'altro, le parti divergenti  per le virtual corrections possono essere separate usando Catani's representation of renormalized one-loop scattering amplitudes \cite{Catani:1998bh}. Inoltre, nonostante questi metodi siano stati implementati fino al NNLO, in questa tesi ci concentriamo sul NLO, perché - nella loro maggiore facilità - consentono di capire meglio come implementare i parametri. \\
+The singular limits of NLO QCD amplitudes, as well as the methods for using them to compute NLO QCD cross sections, are well established. Furthermore, all the singular limits of QCD amplitudes necessary for calculating NNLO QCD corrections have been known for approximately two decades. However, it took significant time to determine how to combine these NNLO limits with the ideas from the NLO Frixione-Kunszt-Signer (FKS) subtraction scheme \cite{Frixione:1995ms} to construct a valid subtraction method for NNLO computations. Among the numerous proposed methods, the Nested Soft-Collinear Subtraction (NSC SS), introduced in \cite{Caola:2017dug}, is particularly attractive due to its fully local, completely general, and perfectly modular nature. \\
+This chapter provides an overview of the main results achieved. Since the objective of this thesis is to implement parameters that allow for greater control over the integrated phase-space region, and since these parameters appear only in the real corrections, we will focus exclusively on the latter. Moreover, the divergent parts of the virtual corrections can be isolated using Catani's representation of renormalized one-loop scattering amplitudes \cite{Catani:1998bh}. Although these methods have been implemented up to NNLO, this thesis will focus on the NLO case, as its relative simplicity offers a clearer understanding of how to implement the parameters.
 
 \section{Why a subtraction method}
-ricordiamo che vogliamo un metodo per estrarre le singolarità implicite senza integrating over momenta of any of the final state particles in order to keep the kinematics of all the final state particles intact. \\ 
-Paragrafo schema di sottrazione:
-Prima di tutto capiamo la logica dietro uno schema di sottrazione \\
+The desired method necessitates the isolation of singularities in the real corrections without integrating over the momenta of any of the final-state particles, in order to keep the kinematics of all the final-state particles intact. Thanks to the fact that soft or collinear radiated partons are unresolved and that infrared-safe observables are not altered by the presence of unresolved partons, we can integrate over the phase space of the unresolved partons without losing information about the final state. This element is the key that gives meaning to subtraction schemes. \\
+Suppose we have a function $\mathcal{S}$ that reproduces the leading singular behavior of $F^{ab}_{\mathrm{LM}}$ (defined in Eq. \ref{flm}) in all soft and collinear limits. Let $\um$ be the unresolved parton; we can then write the real-emission cross section as
+\begin{equation}
+    2s_{a,b} \mathrm{d} \hat{\sigma}_{a,b}^{\mathrm{R}} = \int [\mathrm{d}p_{\um}] F^{ab}_{\mathrm{LM}} = \int [\mathrm{d}p_{\um}] (F^{ab}_{\mathrm{LM}} - \mathcal{S}) + \int [\mathrm{d}p_{\um}] \mathcal{S}
+    \label{subtraction-flm}
+\end{equation}
+where $[\mathrm{d}p_{\um}]$ is the $d$-dimensional phase-space measure for the emitted gluon, now also incorporating the theta function to enforce energy conservation
+\begin{equation}
+    [\mathrm{d}p_{\um}] = \frac{\mathrm{d}^{d-1}p_\um}{(2 \pi)^{d-1}2E_\um} \theta(E_{\mathrm{max}}-E_\um),
+\end{equation}
+and $E_{\mathrm{max}}$ is an arbitrary energy scale that must be at least as large as the maximum energy allowed by the momentum-conserving $\delta$-functions in Eq. \ref{leading-order}.\\
+On the right-hand side of Eq. \ref{subtraction-flm}, the first term is integrable in four-dimensional phase space, since the leading singular behaviour of $F^{ab}_{\mathrm{LM}}$ is removed by the subtraction term $\mathcal{S}$. As this integration is performed numerically using Monte Carlo (MC) methods, it is clear that restricting the integration region to the minimal necessary volume is crucial for improving the efficiency of the computation. \\
+The second term involves only the unresolved parton $\um$, making it possible to integrate over its phase space without affecting the jet observables. Furthermore, this integration enables the extraction of $1/\epsilon$ poles, which describe the singular behavior of $\mathcal{S}$ and, consequently, of the amplitude itself. This allows for the cancellation of these poles with those arising from the virtual contributions. To understand how this mechanism operates, consider the integral
+\begin{equation}
+    I = \int_0^1 \mathrm{d}x \frac{1}{x^{1+\epsilon}} F(x)
+\end{equation}
+where $F(x)$ is an arbitrary function regular at $x=0$ \\
+In our specific case, the function $F(x)$ coincides with the lower-multiplicity $F^{ab}_{\mathrm{LM}}$ function, due to the factorization in the soft and collinear limits illustrated in Sec. \ref{origin-divergences}. This approach, therefore, resolves the problem of the dimensional mismatch between the integration domains of the virtual and real corrections.
+
 \section{Soft and Collinear operators}
 Paragrafo su Soft and Collinear operators:
 nel caso di NSC, si sottraggono i limiti singolari dei contributi reali sequenzialmente, usando operatori: dare definizione di operatori S e C. \\

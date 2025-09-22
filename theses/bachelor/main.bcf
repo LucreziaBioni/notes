@@ -2387,11 +2387,12 @@
     <bcf:citekey order="21" intorder="1">Caola:2017dug</bcf:citekey>
     <bcf:citekey order="22" intorder="1">Catani:1999ss</bcf:citekey>
     <bcf:citekey order="23" intorder="1">Melnikov2018</bcf:citekey>
-    <bcf:citekey order="24" intorder="1">Caola:2017dug</bcf:citekey>
-    <bcf:citekey order="25" intorder="1">Catani:1998bh</bcf:citekey>
-    <bcf:citekey order="26" intorder="1">Devoto:2023rpv</bcf:citekey>
-    <bcf:citekey order="26" intorder="2">Devoto:2025kin</bcf:citekey>
-    <bcf:citekey order="27" intorder="1">pauli</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">Frixione:1995ms</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">Caola:2017dug</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">Catani:1998bh</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">Devoto:2023rpv</bcf:citekey>
+    <bcf:citekey order="27" intorder="2">Devoto:2025kin</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">pauli</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="ynt">

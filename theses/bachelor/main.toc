@@ -10,17 +10,17 @@
 \contentsline {subsection}{\numberline {1.2.4}The origin of infrared divergences in real-emission contributions}{7}{subsection.1.2.4}%
 \contentsline {chapter}{\numberline {2}NLO QCD corrections in the NSC Subtraction Scheme}{10}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Why a subtraction method}{10}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Soft and Collinear operators}{10}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Soft and Collinear operators}{11}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Damping factors}{11}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Different channels}{11}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Soft limit}{11}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Collinear limit}{11}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Soft-collinear limit}{11}{section.2.7}%
-\contentsline {section}{\numberline {2.8}Cancellation of poles}{11}{section.2.8}%
-\contentsline {section}{\numberline {2.9}Draft}{11}{section.2.9}%
-\contentsline {chapter}{\numberline {3}NLO QCD corrections with $\theta $-parameters in the NSC Subtraction Scheme}{12}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Draft}{12}{section.3.1}%
-\contentsline {chapter}{\sffamily Appendices}{13}{section*.4}%
-\contentsline {chapter}{\numberline {A}Draft appendix}{15}{appendix.a.A}%
-\contentsline {section}{\numberline {A.1}Draft}{15}{section.a.A.1}%
-\contentsline {chapter}{Bibliography}{16}{appendix*.5}%
+\contentsline {section}{\numberline {2.5}Soft limit}{12}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Collinear limit}{12}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Soft-collinear limit}{12}{section.2.7}%
+\contentsline {section}{\numberline {2.8}Cancellation of poles}{12}{section.2.8}%
+\contentsline {section}{\numberline {2.9}Draft}{12}{section.2.9}%
+\contentsline {chapter}{\numberline {3}NLO QCD corrections with $\theta $-parameters in the NSC Subtraction Scheme}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Draft}{13}{section.3.1}%
+\contentsline {chapter}{\sffamily Appendices}{14}{section*.4}%
+\contentsline {chapter}{\numberline {A}Draft appendix}{16}{appendix.a.A}%
+\contentsline {section}{\numberline {A.1}Draft}{16}{section.a.A.1}%
+\contentsline {chapter}{Bibliography}{17}{appendix*.5}%
