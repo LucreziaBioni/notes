@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.16)  22 SEP 2025 20:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.16)  24 SEP 2025 23:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -780,14 +780,43 @@ Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
 \pgfopts@list@add@b@toks=\toks46
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/libraries/tikzlibraryexternal.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzexternalshared.code.tex))) (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/libraries/tikzlibraryexternal.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzexternalshared.code.tex))) (/usr/share/texlive/texmf-dist/tex/latex/tikz-feynman/tikz-feynman.sty
+Package: tikz-feynman 2016/02/05v1.1.0Feynman diagrams with TikZ
+ (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+) (/usr/share/texlive/texmf-dist/tex/latex/tikz-feynman/tikzlibraryfeynman.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen340
+\pgfdecoratedremainingdistance=\dimen341
+\pgfdecoratedinputsegmentcompleteddistance=\dimen342
+\pgfdecoratedinputsegmentremainingdistance=\dimen343
+\pgf@decorate@distancetomove=\dimen344
+\pgf@decorate@repeatstate=\count349
+\pgfdecorationsegmentamplitude=\dimen345
+\pgfdecorationsegmentlength=\dimen346
+)
+\tikz@lib@dec@box=\box89
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.markings.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.markings.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/graphs/tikzlibrarygraphs.code.tex
+File: tikzlibrarygraphs.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\tikz@lib@auto@number=\count350
+\tikz@qnode@count=\count351
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypatterns.code.tex
+File: tikzlibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.code.tex
+File: pgflibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/share/texlive/texmf-dist/tex/latex/tikz-feynman/tikzfeynman.keys.code.tex))) (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2022-09-14 v5.2n context-sensitive quotations (JAW)
-\csq@reset=\count349
-\csq@gtype=\count350
-\csq@glevel=\count351
-\csq@qlevel=\count352
-\csq@maxlvl=\count353
-\csq@tshold=\count354
+\csq@reset=\count352
+\csq@gtype=\count353
+\csq@glevel=\count354
+\csq@qlevel=\count355
+\csq@maxlvl=\count356
+\csq@tshold=\count357
 \csq@ltx@everypar=\toks47
  (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2022-09-14 v5.2n csquotes generic definitions (JAW)
@@ -800,53 +829,53 @@ File: csquotes.cfg
 Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
  (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count355
+\lrq@indent=\count358
  (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count356
-\c@listtotal=\count357
-\c@listcount=\count358
-\c@liststart=\count359
-\c@liststop=\count360
-\c@citecount=\count361
-\c@citetotal=\count362
-\c@multicitecount=\count363
-\c@multicitetotal=\count364
-\c@instcount=\count365
-\c@maxnames=\count366
-\c@minnames=\count367
-\c@maxitems=\count368
-\c@minitems=\count369
-\c@citecounter=\count370
-\c@maxcitecounter=\count371
-\c@savedcitecounter=\count372
-\c@uniquelist=\count373
-\c@uniquename=\count374
-\c@refsection=\count375
-\c@refsegment=\count376
-\c@maxextratitle=\count377
-\c@maxextratitleyear=\count378
-\c@maxextraname=\count379
-\c@maxextradate=\count380
-\c@maxextraalpha=\count381
-\c@abbrvpenalty=\count382
-\c@highnamepenalty=\count383
-\c@lownamepenalty=\count384
-\c@maxparens=\count385
-\c@parenlevel=\count386
-\blx@tempcnta=\count387
-\blx@tempcntb=\count388
-\blx@tempcntc=\count389
-\c@blx@maxsection=\count390
-\blx@maxsegment@0=\count391
-\blx@notetype=\count392
-\blx@parenlevel@text=\count393
-\blx@parenlevel@foot=\count394
-\blx@sectionciteorder@0=\count395
-\blx@sectionciteorderinternal@0=\count396
-\blx@entrysetcounter=\count397
-\blx@biblioinstance=\count398
+\c@tabx@nest=\count359
+\c@listtotal=\count360
+\c@listcount=\count361
+\c@liststart=\count362
+\c@liststop=\count363
+\c@citecount=\count364
+\c@citetotal=\count365
+\c@multicitecount=\count366
+\c@multicitetotal=\count367
+\c@instcount=\count368
+\c@maxnames=\count369
+\c@minnames=\count370
+\c@maxitems=\count371
+\c@minitems=\count372
+\c@citecounter=\count373
+\c@maxcitecounter=\count374
+\c@savedcitecounter=\count375
+\c@uniquelist=\count376
+\c@uniquename=\count377
+\c@refsection=\count378
+\c@refsegment=\count379
+\c@maxextratitle=\count380
+\c@maxextratitleyear=\count381
+\c@maxextraname=\count382
+\c@maxextradate=\count383
+\c@maxextraalpha=\count384
+\c@abbrvpenalty=\count385
+\c@highnamepenalty=\count386
+\c@lownamepenalty=\count387
+\c@maxparens=\count388
+\c@parenlevel=\count389
+\blx@tempcnta=\count390
+\blx@tempcntb=\count391
+\blx@tempcntc=\count392
+\c@blx@maxsection=\count393
+\blx@maxsegment@0=\count394
+\blx@notetype=\count395
+\blx@parenlevel@text=\count396
+\blx@parenlevel@foot=\count397
+\blx@sectionciteorder@0=\count398
+\blx@sectionciteorderinternal@0=\count399
+\blx@entrysetcounter=\count400
+\blx@biblioinstance=\count401
 \labelnumberwidth=\skip120
 \labelalphawidth=\skip121
 \biblabelsep=\skip122
@@ -858,9 +887,9 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \blx@bcfin=\read5
 \blx@bcfout=\write4
 \blx@langwohyphens=\language90
-\c@mincomprange=\count399
-\c@maxcomprange=\count400
-\c@mincompwidth=\count401
+\c@mincomprange=\count402
+\c@maxcomprange=\count403
+\c@mincompwidth=\count404
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def
@@ -870,74 +899,74 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'numeric-comp.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count402
-\c@savedafterword=\count403
-\c@annotator=\count404
-\c@savedannotator=\count405
-\c@author=\count406
-\c@savedauthor=\count407
-\c@bookauthor=\count408
-\c@savedbookauthor=\count409
-\c@commentator=\count410
-\c@savedcommentator=\count411
-\c@editor=\count412
-\c@savededitor=\count413
-\c@editora=\count414
-\c@savededitora=\count415
-\c@editorb=\count416
-\c@savededitorb=\count417
-\c@editorc=\count418
-\c@savededitorc=\count419
-\c@foreword=\count420
-\c@savedforeword=\count421
-\c@holder=\count422
-\c@savedholder=\count423
-\c@introduction=\count424
-\c@savedintroduction=\count425
-\c@namea=\count426
-\c@savednamea=\count427
-\c@nameb=\count428
-\c@savednameb=\count429
-\c@namec=\count430
-\c@savednamec=\count431
-\c@translator=\count432
-\c@savedtranslator=\count433
-\c@shortauthor=\count434
-\c@savedshortauthor=\count435
-\c@shorteditor=\count436
-\c@savedshorteditor=\count437
-\c@labelname=\count438
-\c@savedlabelname=\count439
-\c@institution=\count440
-\c@savedinstitution=\count441
-\c@lista=\count442
-\c@savedlista=\count443
-\c@listb=\count444
-\c@savedlistb=\count445
-\c@listc=\count446
-\c@savedlistc=\count447
-\c@listd=\count448
-\c@savedlistd=\count449
-\c@liste=\count450
-\c@savedliste=\count451
-\c@listf=\count452
-\c@savedlistf=\count453
-\c@location=\count454
-\c@savedlocation=\count455
-\c@organization=\count456
-\c@savedorganization=\count457
-\c@origlocation=\count458
-\c@savedoriglocation=\count459
-\c@origpublisher=\count460
-\c@savedorigpublisher=\count461
-\c@publisher=\count462
-\c@savedpublisher=\count463
-\c@language=\count464
-\c@savedlanguage=\count465
-\c@origlanguage=\count466
-\c@savedoriglanguage=\count467
-\c@pageref=\count468
-\c@savedpageref=\count469
+\c@afterword=\count405
+\c@savedafterword=\count406
+\c@annotator=\count407
+\c@savedannotator=\count408
+\c@author=\count409
+\c@savedauthor=\count410
+\c@bookauthor=\count411
+\c@savedbookauthor=\count412
+\c@commentator=\count413
+\c@savedcommentator=\count414
+\c@editor=\count415
+\c@savededitor=\count416
+\c@editora=\count417
+\c@savededitora=\count418
+\c@editorb=\count419
+\c@savededitorb=\count420
+\c@editorc=\count421
+\c@savededitorc=\count422
+\c@foreword=\count423
+\c@savedforeword=\count424
+\c@holder=\count425
+\c@savedholder=\count426
+\c@introduction=\count427
+\c@savedintroduction=\count428
+\c@namea=\count429
+\c@savednamea=\count430
+\c@nameb=\count431
+\c@savednameb=\count432
+\c@namec=\count433
+\c@savednamec=\count434
+\c@translator=\count435
+\c@savedtranslator=\count436
+\c@shortauthor=\count437
+\c@savedshortauthor=\count438
+\c@shorteditor=\count439
+\c@savedshorteditor=\count440
+\c@labelname=\count441
+\c@savedlabelname=\count442
+\c@institution=\count443
+\c@savedinstitution=\count444
+\c@lista=\count445
+\c@savedlista=\count446
+\c@listb=\count447
+\c@savedlistb=\count448
+\c@listc=\count449
+\c@savedlistc=\count450
+\c@listd=\count451
+\c@savedlistd=\count452
+\c@liste=\count453
+\c@savedliste=\count454
+\c@listf=\count455
+\c@savedlistf=\count456
+\c@location=\count457
+\c@savedlocation=\count458
+\c@organization=\count459
+\c@savedorganization=\count460
+\c@origlocation=\count461
+\c@savedoriglocation=\count462
+\c@origpublisher=\count463
+\c@savedorigpublisher=\count464
+\c@publisher=\count465
+\c@savedpublisher=\count466
+\c@language=\count467
+\c@savedlanguage=\count468
+\c@origlanguage=\count469
+\c@savedoriglanguage=\count470
+\c@pageref=\count471
+\c@savedpageref=\count472
 \shorthandwidth=\skip128
 \shortjournalwidth=\skip129
 \shortserieswidth=\skip130
@@ -961,19 +990,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
-\c@textcitecount=\count470
-\c@textcitetotal=\count471
-\c@textcitemaxnames=\count472
-\c@biburlbigbreakpenalty=\count473
-\c@biburlbreakpenalty=\count474
-\c@biburlnumpenalty=\count475
-\c@biburlucpenalty=\count476
-\c@biburllcpenalty=\count477
+\c@textcitecount=\count473
+\c@textcitetotal=\count474
+\c@textcitemaxnames=\count475
+\c@biburlbigbreakpenalty=\count476
+\c@biburlbreakpenalty=\count477
+\c@biburlnumpenalty=\count478
+\c@biburlucpenalty=\count479
+\c@biburllcpenalty=\count480
 \biburlbigskip=\muskip21
 \biburlnumskip=\muskip22
 \biburlucskip=\muskip23
 \biburllcskip=\muskip24
-\c@smartand=\count478
+\c@smartand=\count481
 )
 Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.bbx' found.
@@ -987,17 +1016,17 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count479
-\c@bbx:relatedtotal=\count480
+\c@bbx:relatedcount=\count482
+\c@bbx:relatedtotal=\count483
 )))
 Package biblatex Info: Trying to load citation style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.cbx' found.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
 File: numeric-comp.cbx 2023/03/05 v3.19 biblatex citation style (PK/MW)
-\c@cbx@tempcnta=\count481
-\c@cbx@tempcntb=\count482
-\c@cbx@tempcntc=\count483
-\c@cbx@tempcntd=\count484
+\c@cbx@tempcnta=\count484
+\c@cbx@tempcntb=\count485
+\c@cbx@tempcntc=\count486
+\c@cbx@tempcntd=\count487
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -1090,16 +1119,16 @@ LaTeX Font Info:    ... okay on input line 43.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count485
-\scratchdimen=\dimen340
-\scratchbox=\box89
-\nofMPsegments=\count486
-\nofMParguments=\count487
+\scratchcounter=\count488
+\scratchdimen=\dimen347
+\scratchbox=\box90
+\nofMPsegments=\count489
+\nofMParguments=\count490
 \everyMPshowfont=\toks48
-\MPscratchCnt=\count488
-\MPscratchDim=\dimen341
-\MPnumerator=\count489
-\makeMPintoPDFobject=\count490
+\MPscratchCnt=\count491
+\MPscratchDim=\dimen348
+\MPnumerator=\count492
+\makeMPintoPDFobject=\count493
 \everyMPtoPDFconversion=\toks49
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1110,9 +1139,13 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 Package hyperref Info: Link coloring ON on input line 43.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+
+
+Package tikz-feynman Warning: LuaTeX is required if you wish to have vertices automatically placed. You can disable this warning by setting /tikzfeynman/warn luatex=false on input line 43.
+
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
 )
 Package biblatex Info: Input encoding 'utf8' detected.
@@ -1191,59 +1224,100 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--68
 
 
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [2]
-Overfull \hbox (5.62048pt too wide) detected at line 89
+Overfull \hbox (5.62048pt too wide) detected at line 82
 [][][][]\OML/cmm/m/it/12 ^^[ \OT1/cmr/m/n/12 = [] [][] []\OML/cmm/m/it/12 x[][]x[] f[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]; ^^V[]\OT1/cmr/m/n/12 ) \OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]; ^^V[]\OT1/cmr/m/n/12 ) [][](\OML/cmm/m/it/12 x[]; x[]; ^^V[]; ^^V[]\OT1/cmr/m/n/12 ; \OMS/cmsy/m/n/12 O\OT1/cmr/m/n/12 )  [] \OML/cmm/m/it/12 ;  n \OMS/cmsy/m/n/12 ^^U \OT1/cmr/m/n/12 1
  []
 
+
+Overfull \hbox (7.30257pt too wide) in paragraph at lines 82--88
+\OT1/cmr/m/n/12 where $\OML/cmm/m/it/12 f[]$ \OT1/cmr/m/n/12 are the par-ton dis-tri-bu-tion func-tions men-tioned above; $\OML/cmm/m/it/12 a; b \OMS/cmsy/m/n/12 2 f\OML/cmm/m/it/12 g; d=[]; u=[]; s=[]; c=[]; b=[]\OMS/cmsy/m/n/12 g$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--88
+
+ []
+
 [3]
-<imgs/hadron-collision.png, id=122, 646.415pt x 575.14874pt>
+<imgs/hadron-collision.png, id=117, 646.415pt x 575.14874pt>
 File: imgs/hadron-collision.png Graphic file (type png)
 <use imgs/hadron-collision.png>
-Package pdftex.def Info: imgs/hadron-collision.png  used on input line 99.
+Package pdftex.def Info: imgs/hadron-collision.png  used on input line 91.
 (pdftex.def)             Requested size: 338.58632pt x 301.25552pt.
- [4] [5 <./imgs/hadron-collision.png>]
-<imgs/real-and-virtual.png, id=159, 1053.9375pt x 208.78pt>
+ [4 <./imgs/hadron-collision.png>] [5]
+<imgs/real-and-virtual.png, id=153, 1053.9375pt x 208.78pt>
 File: imgs/real-and-virtual.png Graphic file (type png)
 <use imgs/real-and-virtual.png>
-Package pdftex.def Info: imgs/real-and-virtual.png  used on input line 140.
+Package pdftex.def Info: imgs/real-and-virtual.png  used on input line 139.
 (pdftex.def)             Requested size: 435.32422pt x 86.23749pt.
  [6 <./imgs/real-and-virtual.png>]
-LaTeX Font Info:    Trying to load font information for U+euf on input line 160.
+LaTeX Font Info:    Trying to load font information for U+euf on input line 148.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
-Underfull \vbox (badness 2837) has occurred while \output is active []
 
- [7] [8] [9]
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/node distance' requires LuaTeX. It will be ignored. on input line 151.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/level distance' requires LuaTeX. It will be ignored. on input line 151.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/sibling distance' requires LuaTeX. It will be ignored. on input line 151.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/node distance' requires LuaTeX. It will be ignored. on input line 151.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/level distance' requires LuaTeX. It will be ignored. on input line 151.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/sibling distance' requires LuaTeX. It will be ignored. on input line 151.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/node distance' requires LuaTeX. It will be ignored. on input line 161.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/level distance' requires LuaTeX. It will be ignored. on input line 161.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/sibling distance' requires LuaTeX. It will be ignored. on input line 161.
+
+[7] [8]
 Chapter 2.
-
-Underfull \vbox (badness 1337) has occurred while \output is active []
-
- [10
+[9
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 224--225
+Underfull \hbox (badness 10000) in paragraph at lines 207--211
+
+ []
+
+[10]
+
+LaTeX Warning: Reference `origin-divergences' on page 11 undefined on input line 253.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 228--229
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 230--231
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--233
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--266
 
  []
 
@@ -1251,15 +1325,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 232--233
 Chapter 3.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 240.
+(hyperref)                removing `math shift' on input line 273.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\theta' on input line 240.
+(hyperref)                removing `\theta' on input line 273.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 240.
+(hyperref)                removing `math shift' on input line 273.
 
 [13
 
@@ -1271,12 +1345,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 ] [15]
 Appendix A.
 
-LaTeX Warning: Citation 'pauli' on page 16 undefined on input line 257.
+LaTeX Warning: Citation 'pauli' on page 16 undefined on input line 290.
 
 [16
 
 ]
-Overfull \hbox (43.8698pt too wide) in paragraph at lines 264--264
+Overfull \hbox (43.8698pt too wide) in paragraph at lines 297--297
 []\OT1/cmr/m/n/12 Stefan H^^?oche. \  In-tro-duc-tion to parton-shower event gen-er-a-tors". arXiv preprint \OT1/cmr/bx/n/12 arXiv:1411.4085
  []
 
@@ -1290,6 +1364,9 @@ L3 programming layer <2024-01-22>
  ***********
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -1297,18 +1374,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40152 strings out of 474222
- 817000 string characters out of 5748733
- 1940975 words of memory out of 5000000
- 61710 multiletter control sequences out of 15000+600000
+ 42729 strings out of 474222
+ 895270 string characters out of 5748733
+ 1943975 words of memory out of 5000000
+ 64232 multiletter control sequences out of 15000+600000
  582456 words of font info for 149 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 104i,12n,104p,2100b,1948s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 104i,12n,104p,2126b,1948s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1728.pfb>
-Output written on main.pdf (21 pages, 610019 bytes).
+Output written on main.pdf (21 pages, 611249 bytes).
 PDF statistics:
- 493 PDF objects out of 1000 (max. 8388607)
- 410 compressed objects within 5 object streams
- 89 named destinations out of 1000 (max. 500000)
+ 491 PDF objects out of 1000 (max. 8388607)
+ 408 compressed objects within 5 object streams
+ 87 named destinations out of 1000 (max. 500000)
  220 words of extra memory for PDF output out of 10000 (max. 10000000)
 
