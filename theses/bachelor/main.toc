@@ -8,10 +8,10 @@
 \contentsline {section}{\numberline {1.5}Partonic cross-section}{5}{section.1.5}%
 \contentsline {section}{\numberline {1.6}Infrared poles and their cancellation}{7}{section.1.6}%
 \contentsline {chapter}{\numberline {2}NLO QCD corrections in the NSC Subtraction Scheme}{9}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Properties of soft and collinear partons}{9}{section.2.1}%
+\contentsline {section}{\numberline {2.1}Properties of Soft and Collinear partons}{9}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Why a subtraction method}{10}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Soft and Collinear operators}{11}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Damping factors}{11}{section.2.4}%
+\contentsline {section}{\numberline {2.4}Damping factors}{12}{section.2.4}%
 \contentsline {section}{\numberline {2.5}Different channels}{12}{section.2.5}%
 \contentsline {section}{\numberline {2.6}Soft limit}{12}{section.2.6}%
 \contentsline {section}{\numberline {2.7}Collinear limit}{12}{section.2.7}%
@@ -19,7 +19,8 @@
 \contentsline {section}{\numberline {2.9}Cancellation of poles}{12}{section.2.9}%
 \contentsline {section}{\numberline {2.10}Draft}{12}{section.2.10}%
 \contentsline {chapter}{\numberline {3}NLO QCD corrections with $\theta $-parameters in the NSC Subtraction Scheme}{13}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Draft}{13}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Damping factors}{13}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Draft}{13}{section.3.2}%
 \contentsline {chapter}{\sffamily Appendices}{14}{section*.4}%
 \contentsline {chapter}{\numberline {A}Draft appendix}{16}{appendix.a.A}%
 \contentsline {section}{\numberline {A.1}Draft}{16}{section.a.A.1}%

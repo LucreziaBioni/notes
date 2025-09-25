@@ -188,7 +188,7 @@ Over time, various methods have been developed to perform fully differential QCD
 The singular limits of NLO QCD amplitudes, as well as the methods for using them to compute NLO QCD cross sections, are well established \cite{Frixione:1995ms,Catani:1996vz}. Furthermore, all the singular limits of QCD amplitudes necessary for calculating NNLO QCD corrections have been known for approximately two decades. However, it took significant time to determine how to combine these NNLO limits with the ideas from the NLO Frixione-Kunszt-Signer (FKS) subtraction scheme \cite{Frixione:1995ms} to construct a valid subtraction method for NNLO computations. Among the numerous proposed methods, the Nested Soft-Collinear Subtraction Scheme (NSC SS), introduced in \cite{Caola:2017dug}, is particularly attractive, for reasons that will become clear throughout the following discussion. \\
 This chapter provides an overview of the main results achieved. Since the objective of this thesis is to implement parameters that allow for greater control over the integrated phase-space region, and since these parameters appear only in the real corrections, we will focus exclusively on the latter. Moreover, the divergent parts of the virtual corrections can be isolated using Catani's representation of renormalized one-loop scattering amplitudes \cite{Catani:1998bh}. Although these methods have been implemented up to NNLO, this thesis will focus on the NLO case, as its relative simplicity offers a clearer understanding of how to implement the parameters.
 
-\section{Properties of soft and collinear partons}
+\section{Properties of Soft and Collinear partons}
 \label{properties}
 The desired method necessitates the isolation of singularities in the real corrections without integrating over the momenta of any of the final-state particles, in order to keep the kinematics of all the final-state particles intact. There are two key insights that allow us to overcome this obstacle. The first one is related to the behaviour of NLO QCD amplitudes at soft and collinear limits. \\For a generic QCD amplitude $\mathcal{M}$ involving $n$ partons with four-momenta $p_1, p_2, \dots, p_n$ and an additional soft gluon with vanishing four-momentum $p_\um$, the squared amplitude factorizes into (i) the squared amplitude for the hard process without the gluon and (ii) an eikonal factor that depends only on the color charges and momenta of the hard partons and the momentum of the soft gluon ($p_\um$) \cite{Catani:1999ss}
 \begin{equation}
@@ -197,12 +197,14 @@ The desired method necessitates the isolation of singularities in the real corre
 \end{equation}
 where the general eikonal factor is
 \begin{equation}
-    \mathcal{S}_{ij}(p_\um) = \frac{p_i \cdot p_j}{(p_i \cdot p_\um)(p_j \cdot p_\um)} \sim \frac{1}{E_\um^2}
+    \mathcal{S}_{ij}(p_\um) = \frac{p_i \cdot p_j}{(p_i \cdot p_\um)(p_j \cdot p_\um)}  \,, 
+    %\sim \frac{1}{E_\um^2}
 \end{equation}
 and the square of the color charges are $\vec{T}_i^2= C_F$ if $i$ is a quark or an anti-quark, and $\vec{T}_i^2= C_A$ if i is a gluon. \\
 Whereas, in the collinear limit, i.e., the limit where a gluon is emitted parallel to a quark, the amplitude-squared factorizes into (i) a splitting function, which describes the probability for the quark to radiate the gluon collinearly at a given energy, and (ii) the squared hard amplitude, which now depends on the resulting quark momentum after the emission
 \begin{equation}
-    \lim_{\theta_{i \um \rightarrow 0}}|\mathcal{M}(p_1, \dots, p_n; p_\um)|^2 \sim P_{f_{[i\um]}f_i} |\mathcal{M}_0(p_1, \dots, p_n)|^2 \sim \frac{1}{(p_i-p_\um)^2} \sim (1-\cos(\theta_{i\um}))^{-1}\sim \theta_{i\um}^{-2}.
+    \lim_{\theta_{i \um \rightarrow 0}}|\mathcal{M}(p_1, \dots, p_n; p_\um)|^2 \sim P_{f_{[i\um]}f_i} |\mathcal{M}_0(p_1, \dots, p_n)|^2  \,.
+    %\sim \frac{1}{(p_i-p_\um)^2} \sim (1-\cos(\theta_{i\um}))^{-1}\sim \theta_{i\um}^{-2}.
     \label{ampl-coll}
 \end{equation}
 The unresolved parton $\um$ could also be a quark or an antiquark. However, the emission of a soft quark leads to a convergent integral; consequently, no divergences are associated with soft quark or antiquark emissions. Divergences do arise in the collinear limit, but, as in the gluon case, the amplitude factorizes into a hard process involving a parton with rescaled momentum and a corresponding splitting function. \\
@@ -214,16 +216,17 @@ Let us first present the core idea of the subtraction formalism. We consider the
 \begin{equation}
     I = \int_0^1 \mathrm{d}x \, \frac{1}{x^{1+\epsilon}} F(x),
 \end{equation}
-where $F(x)$ is an arbitrary function regular at $x=0$. The integrand diverges at the lower limit, and this singularity is regulated by the parameter $\epsilon$, which uktimately produces a $1/\epsilon$ pole upon integration. We want to isolate this pole analitically, and define the integral in such a way that the limit $\epsilon \to 0$ can be taken safely. To achieve this, we write $F(x)=[F(x)-F(0)]+F(0)$
+where $F(x)$ is an arbitrary function regular at $x=0$. The integrand diverges at the lower limit, and this singularity is regulated by the parameter $\epsilon$, which ultimately produces a $1/\epsilon$ pole upon integration. We want to isolate this pole analitically, and define the integral in such a way that the limit $\epsilon \to 0$ can be taken safely. To achieve this, we write $F(x)=[F(x)-F(0)]+F(0)$
 \begin{equation}
     I = \int _0^1 \mathrm{d}x \, \frac{1}{x^{1+\epsilon}} [F(x)-F(0)]+F(0)\int_0^1 \mathrm{d}x \, \frac{1}{x^{1+\epsilon}},
 \end{equation}
 and, performing the integration in the second term, we get
 \begin{equation}
     I = \int_0^1 \frac{\mathrm{d}x}{x}[F(x)-F(0)] - \frac{1}{\epsilon}F(0) + \mathcal{O}(\epsilon).
+    \label{extraction-poles}
 \end{equation}
 This equation demonstrates that we have successfully isolated the $1/\epsilon$ pole in $I$ and regulated the integrand. As a result, the $\epsilon \to 0$ limit can now be taken safely, leaving an integral that is regular at $x=0$ and can be evaluated numerically.\\
-Now, suppose we have a function $\mathcal{S}$ that reproduces the leading singular behavior of $F^{ab}_{\mathrm{LM}}$ (defined in Eq. \ref{flm}) in all soft and collinear limits. Let $\um$ be the unresolved parton; we can then write the real-emission cross section as
+Now, suppose we have a function $\mathcal{S}$ that reproduces the leading singular behaviour of $F^{ab}_{\mathrm{LM}}$ (defined in Eq. \ref{flm}) in all soft and collinear limits, and that can be integrated in the $d$-dimensional phase space of the unresolved parton $\um$. We can then write the real-emission cross section as
 \begin{equation}
     2s_{a,b} \mathrm{d} \hat{\sigma}_{a,b}^{\mathrm{R}} = \int [\mathrm{d}p_{\um}] F^{ab}_{\mathrm{LM}} = \int [\mathrm{d}p_{\um}] (F^{ab}_{\mathrm{LM}} - \mathcal{S}) + \int [\mathrm{d}p_{\um}] \mathcal{S}
     \label{subtraction-flm}
@@ -234,24 +237,16 @@ where $[\mathrm{d}p_{\um}]$ is the $d$-dimensional phase-space measure for the e
 \end{equation}
 and $E_{\mathrm{max}}$ is an arbitrary energy scale that must be at least as large as the maximum energy allowed by the momentum-conserving $\delta$-functions in Eq. \ref{leading-order}.\\
 On the right-hand side of Eq. \ref{subtraction-flm}, the first term is integrable in four-dimensional phase space, since the leading singular behaviour of $F^{ab}_{\mathrm{LM}}$ is removed by the subtraction term $\mathcal{S}$. As this integration is performed numerically using Monte Carlo (MC) methods, it is clear that restricting the integration region to the minimal necessary volume is crucial for improving the efficiency of the computation. \\
-The second term involves only the unresolved parton $\um$, making it possible to integrate over its phase space without affecting the jet observables. Furthermore, this integration enables the extraction of $1/\epsilon$ poles, which describe the singular behavior of $\mathcal{S}$ and, consequently, of the amplitude itself. This allows for the cancellation of these poles with those arising from the virtual contributions.
-
-
-
+The second term involves only the unresolved parton $\um$, making it possible to integrate over its phase space without affecting the jet observables. Furthermore, as showed in Eq. \ref{extraction-poles}, this integration enables the extraction of $1/\epsilon$ poles, which describe the singular behaviour of $\mathcal{S}$ and, consequently, of the amplitude itself. Moreover, it resolves the problem of the dimensional mismatch between the integration domains of the virtual and real corrections. Thus, the cancellation of the poles with those arising from the virtual contributions becomes possible.
 
 \section{Soft and Collinear operators}
-differenza tra vari approcci è scelta di S \\
-grazie alla fattorizzazione mostrata nel paragrafo \ref{properties}, S = soft limit di F o collinear limit di F, e si fattorizza in parte che non dipende da unresolved parton e parte che vi dipende e la cui integrazione porta a esplicitare i poli.
-
-
-Paragrafo su Soft and Collinear operators:
-nel caso di NSC, si sottraggono i limiti singolari dei contributi reali sequenzialmente, usando operatori: dare definizione di operatori S e C. \\
-By definition, those operators act on everything that appears on the right of them.
-
-
-
-In our specific case, the function $F(x)$ coincides with the lower-multiplicity $F^{ab}_{\mathrm{LM}}$ function, due to the factorization in the soft and collinear limits illustrated in Sec. \ref{origin-divergences}. This approach, therefore, resolves the problem of the dimensional mismatch between the integration domains of the virtual and real corrections.
-
+Different subtraction schemes are characterized by different forms for $\mathcal{S}$, or, equivalently, $F(0)$. The FKS subtraction scheme, which constitutes the basis for the NSC method, constructs $\mathcal{S}$ directly from the soft and collinear limits. The efficacy of this approach becomes clear if we consider the behaviour of the amplitudes in these limits, as detailed in Section \ref{properties}: in both the soft and collinear cases, the amplitude squared factorizes into a  lower-multiplicity function $F^{ab}_{\mathrm{LM}}$, which is independent of the unresolved parton $\um$, and a singular term, whose integration over the phase space of parton $\um$ gives the explicit pole. Therefore, we introduce two operators that perform soft and collinear projections
+\begin{equation}
+    S_i A = \lim_{E_i \to 0} A \, , \qquad C_{ij}A = \lim_{\rho_{ij}\to 0}A \, ,
+\end{equation}
+where $\rho_{ij}= 1 - \vec{n}_i \cdot \vec{n}_j = 1 - \cos{\theta_{ij}}$, with $\vec{n}_i$ a unit vector that describes the direction of the momentum of the $i$-th particle in ($d-1$)-dimensional space, and $\theta_{ij}$ the angle between partons $i$ and $j$. These operators apply to all terms that follow them. \\
+Thus, we identify $\mathcal{S}$ as the action of the soft and/or collinear operators on $F^{ab}_{\mathrm{LM}}$. As these operators capture the leading asymptotic behaviour of the product of the matrix element squared, the observable, and the phase space – namely, the definition of $F^{ab}_{\mathrm{LM}}$ in Eq. \ref{flm}, if this quantity is, instead, integrable, the operator acts as an annihilator. \\
+The singularities are isolated and extracted sequentially, in a nested manner: first, we remove the soft singularities, and then the collinear and soft-collinear ones.
 
 \section{Damping factors}
 Paragrafo su Damping factors: come si gestisce lo spazio delle fasi \\
@@ -274,6 +269,9 @@ Paragrafo su soft-collinear singularities \\
 \label{NSC-SS-parameters}
 
 Il lavoro esposto nel capitolo precedente può essere ulteriormente generalizzato, come è stato fatto nei paper \cite{Devoto:2023rpv,Devoto:2025kin}. In questo capitolo ripercorriamo tali risultati, implementando theta parameters. Lo facciamo perché uno dei principali difetti di NSC SS è che la sua efficienza è un po' impattata dalla numerical integration of the subtraction terms.
+
+\section{Damping factors}
+Quando ho tanti partoni nel final state, introduco damping factor per identificare quello unresolved. Vedere 2310, pagine 6-8.
 
 \section{Draft}
 
