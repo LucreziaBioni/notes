@@ -436,6 +436,7 @@
       \strng{authorbibnamehash}{cfb8abdefb3312d0c330e0a19c22c2e2}
       \strng{authornamehash}{cfb8abdefb3312d0c330e0a19c22c2e2}
       \strng{authorfullhash}{cfb8abdefb3312d0c330e0a19c22c2e2}
+      \field{extraname}{1}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -543,6 +544,96 @@
       \verb 10.23730/CYRSP-2018-003.37
       \endverb
     \endentry
+    \entry{Caola:1902}{article}{}
+      \name{author}{3}{}{%
+        {{hash=bbfb4ff95460567d636c0438543c5a5b}{%
+           family={Caola},
+           familyi={C\bibinitperiod},
+           given={Fabrizio},
+           giveni={F\bibinitperiod}}}%
+        {{hash=415b55859fd8bb4a7ad3888c6ad296b8}{%
+           family={Melnikov},
+           familyi={M\bibinitperiod},
+           given={Kirill},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e0dffa60f98bd32cc5442caa68b215fa}{%
+           family={Röntsch},
+           familyi={R\bibinitperiod},
+           given={Raoul},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{cfb8abdefb3312d0c330e0a19c22c2e2}
+      \strng{fullhash}{cfb8abdefb3312d0c330e0a19c22c2e2}
+      \strng{bibnamehash}{cfb8abdefb3312d0c330e0a19c22c2e2}
+      \strng{authorbibnamehash}{cfb8abdefb3312d0c330e0a19c22c2e2}
+      \strng{authornamehash}{cfb8abdefb3312d0c330e0a19c22c2e2}
+      \strng{authorfullhash}{cfb8abdefb3312d0c330e0a19c22c2e2}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Eur. Phys. J. C}
+      \field{number}{5}
+      \field{title}{{Analytic results for color-singlet production at NNLO QCD with the nested soft-collinear subtraction scheme}}
+      \field{volume}{79}
+      \field{year}{2019}
+      \field{pages}{386}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1140/epjc/s10052-019-6880-7
+      \endverb
+      \verb{eprint}
+      \verb 1902.02081
+      \endverb
+    \endentry
+    \entry{Caola:1907}{article}{}
+      \name{author}{3}{}{%
+        {{hash=bbfb4ff95460567d636c0438543c5a5b}{%
+           family={Caola},
+           familyi={C\bibinitperiod},
+           given={Fabrizio},
+           giveni={F\bibinitperiod}}}%
+        {{hash=415b55859fd8bb4a7ad3888c6ad296b8}{%
+           family={Melnikov},
+           familyi={M\bibinitperiod},
+           given={Kirill},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e0dffa60f98bd32cc5442caa68b215fa}{%
+           family={Röntsch},
+           familyi={R\bibinitperiod},
+           given={Raoul},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{cfb8abdefb3312d0c330e0a19c22c2e2}
+      \strng{fullhash}{cfb8abdefb3312d0c330e0a19c22c2e2}
+      \strng{bibnamehash}{cfb8abdefb3312d0c330e0a19c22c2e2}
+      \strng{authorbibnamehash}{cfb8abdefb3312d0c330e0a19c22c2e2}
+      \strng{authornamehash}{cfb8abdefb3312d0c330e0a19c22c2e2}
+      \strng{authorfullhash}{cfb8abdefb3312d0c330e0a19c22c2e2}
+      \field{extraname}{3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Eur. Phys. J. C}
+      \field{number}{12}
+      \field{title}{{Analytic results for decays of color singlets to $gg$ and $q \bar q$ final states at NNLO QCD with the nested soft-collinear subtraction scheme}}
+      \field{volume}{79}
+      \field{year}{2019}
+      \field{pages}{1013}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1140/epjc/s10052-019-7505-x
+      \endverb
+      \verb{eprint}
+      \verb 1907.05398
+      \endverb
+    \endentry
     \entry{Asteriadis2020}{thesis}{}
       \name{author}{1}{}{%
         {{hash=cefd77e212b646c5e08b2ca11c65db8f}{%
@@ -577,6 +668,55 @@
       \endverb
       \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'Asteriadis2020'}
       \warn{\item Overwriting field 'month' with month value from field 'date' for entry 'Asteriadis2020'}
+    \endentry
+    \entry{Asteriadis:1910}{article}{}
+      \name{author}{4}{}{%
+        {{hash=7d1a3414593862a1d5e4019e3b449bd4}{%
+           family={Asteriadis},
+           familyi={A\bibinitperiod},
+           given={Konstantin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=bbfb4ff95460567d636c0438543c5a5b}{%
+           family={Caola},
+           familyi={C\bibinitperiod},
+           given={Fabrizio},
+           giveni={F\bibinitperiod}}}%
+        {{hash=415b55859fd8bb4a7ad3888c6ad296b8}{%
+           family={Melnikov},
+           familyi={M\bibinitperiod},
+           given={Kirill},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e0dffa60f98bd32cc5442caa68b215fa}{%
+           family={Röntsch},
+           familyi={R\bibinitperiod},
+           given={Raoul},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{a960e372f24f15c9ccbe9abaeeb118e8}
+      \strng{fullhash}{5894179df690c077654ebdc49f72239a}
+      \strng{bibnamehash}{a960e372f24f15c9ccbe9abaeeb118e8}
+      \strng{authorbibnamehash}{a960e372f24f15c9ccbe9abaeeb118e8}
+      \strng{authornamehash}{a960e372f24f15c9ccbe9abaeeb118e8}
+      \strng{authorfullhash}{5894179df690c077654ebdc49f72239a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Eur. Phys. J. C}
+      \field{number}{1}
+      \field{title}{{Analytic results for deep-inelastic scattering at NNLO QCD with the nested soft-collinear subtraction scheme}}
+      \field{volume}{80}
+      \field{year}{2020}
+      \field{pages}{8}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1140/epjc/s10052-019-7567-9
+      \endverb
+      \verb{eprint}
+      \verb 1910.13761
+      \endverb
     \endentry
     \entry{Devoto:2023rpv}{article}{}
       \name{author}{5}{}{%

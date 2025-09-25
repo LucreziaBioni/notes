@@ -16,12 +16,12 @@
 \contentsline {section}{\numberline {2.6}Soft limit}{12}{section.2.6}%
 \contentsline {section}{\numberline {2.7}Collinear limit}{12}{section.2.7}%
 \contentsline {section}{\numberline {2.8}Soft-collinear limit}{12}{section.2.8}%
-\contentsline {section}{\numberline {2.9}Cancellation of poles}{12}{section.2.9}%
-\contentsline {section}{\numberline {2.10}Draft}{12}{section.2.10}%
-\contentsline {chapter}{\numberline {3}NLO QCD corrections with $\theta $-parameters in the NSC Subtraction Scheme}{13}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Damping factors}{13}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Draft}{13}{section.3.2}%
-\contentsline {chapter}{\sffamily Appendices}{14}{section*.4}%
-\contentsline {chapter}{\numberline {A}Draft appendix}{16}{appendix.a.A}%
-\contentsline {section}{\numberline {A.1}Draft}{16}{section.a.A.1}%
-\contentsline {chapter}{Bibliography}{17}{appendix*.5}%
+\contentsline {section}{\numberline {2.9}Cancellation of poles}{13}{section.2.9}%
+\contentsline {section}{\numberline {2.10}Draft}{13}{section.2.10}%
+\contentsline {chapter}{\numberline {3}NLO QCD corrections with $\theta $-parameters in the NSC Subtraction Scheme}{14}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Damping factors}{14}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Draft}{14}{section.3.2}%
+\contentsline {chapter}{\sffamily Appendices}{15}{section*.4}%
+\contentsline {chapter}{\numberline {A}Draft appendix}{17}{appendix.a.A}%
+\contentsline {section}{\numberline {A.1}Draft}{17}{section.a.A.1}%
+\contentsline {chapter}{Bibliography}{18}{appendix*.5}%
