@@ -260,8 +260,9 @@ where $\bar{ S}_\um= \mathbb{1} - S_\um$, $\bar{ C}_\um= \mathbb{1} - C_\um$, $\
 
 
 \section{Modularity of the scheme}
-One of the most interesting features of the NSC subtraction scheme is that the subtractions for a generic process, no matter how complicated, are built from a relatively small set of basic ingredients. Indeed, the soft contributions are straightforward to compute, while, for the nested-soft-collinear ones, we only need to consider pairs of partons. This leads to three possible cases: both partons are initial state, both are final state, or one is initial and one is final. These three possibilities have been studied in \cite{Caola:1902}, \cite{Caola:1907}, and \cite{Asteriadis:1910}, respectively. \\
-In general, for each of the processes under consideration, corrections from different partonic channels should be taken into account. In the following discussion, however, we will focus on one contribution per process. This is because our current aim is to present only the main results from the cited works, in order to illustrate the functioning of the NSC subtraction scheme. Furthermore, as previously mentioned, we will highlight only the form of the real-emission NLO corrections in the soft and collinear limits. \\
+One of the most interesting features of the NSC subtraction scheme is its modular structure: the subtractions for a generic process, no matter how complicated, are built from a relatively small set of basic ingredients. Indeed, the soft contributions are straightforward to compute, while, for the nested-soft-collinear ones, we only need to consider pairs of partons. This leads to three possible cases: both partons are initial state, both are final state, or one is initial and one is final. These three possibilities have been studied in \cite{Caola:1902}, \cite{Caola:1907}, and \cite{Asteriadis:1910}, respectively. \\
+In general, several partonic channels contribute to each process. In the following discussion, however, we will focus on one representative channel for each case. Our goal is not to reproduce the full results, but rather to highlight the main features of the NSC subtraction scheme as presented in the cited works.
+\\
 Ref. \cite{Caola:1902} provides the analytic formulas for the production of a generic color-singlet final state $V$ at a hadron collider, i.e., $q_1\bar{q}_2 \to V$ (which we will call $\mathcal{P}_{1,0}$), such as the Drell-Yan process, illustrated in the following diagram
 \begin{equation*}
     \mathcal{P}_{1,0}: \quad q_1 + \bar{q}_2 \to e^+ + e^- \qquad \qquad
@@ -315,11 +316,11 @@ The real emission contribution refers to the process $\mathcal{P}_{1,1}: q_1\bar
     \end{feynman}
   \end{tikzpicture}
 \end{equation*}
-Instead, Ref. \cite{Caola:1907} considers the decay of a color-singlet particle $Q$ into quarks and gluons, and, in particular, the process $\mathcal{P}_{2,0}: Q \to f_i f_j + X$, where ${f_i,f_j}$ can be either ${g,g}$ or ${q,\bar{q}}$. We will focus on the discussion of the decay to a $gg$ final state since its singularity structure is more complex: once the corrections for $Q \to gg$ are understood, the corrections for $Q\to q \bar{q}$ are easily derived. This process, if for instance $Q$ is the Higgs boson, is represented by the following diagram
+Instead, Ref. \cite{Caola:1907} considers the decay of a color-singlet particle $Q$ into quarks and gluons, and, in particular, the process $\mathcal{P}_{2,0}: Q \to f_i f_j + X$, where $\{f_i,f_j\}$ can be either $\{g,g\}$ or $\{q,\bar{q}\}$. We will focus on the discussion of the decay to a $gg$ final state since its singularity structure is more complex: once the corrections for $Q \to gg$ are understood, the corrections for $Q\to q \bar{q}$ are easily derived. This process, if for instance $Q$ is the Higgs boson, is represented by the following diagram
 \begin{equation*}
     \mathcal{P}_{2,0}: H \to g_1 + g_2 \qquad \qquad
     \begin{tikzpicture}[baseline = (current bounding box.center), thin]
-    \begin{feynman} []
+    \begin{feynman} [inline = (r.base)]
       \vertex (a) {\(H\)};                   
       \vertex[right=1.5cm of a, circle, draw, minimum size=1pt, inner sep=0pt,] (b) {\(\times\)};   
       \vertex[above right =1.5cm of b] (c);
@@ -336,18 +337,18 @@ Instead, Ref. \cite{Caola:1907} considers the decay of a color-singlet particle 
 where $\otimes$ denotes the effective local vertex, which encapsulates the top-quark loop contribution. \\NLO QCD contributions come from the following process
 \begin{equation*}
   \mathcal{P}_{2,1}: H \to g_1 + g_2 + g_3\qquad
-  \begin{tikzpicture}[baseline=(current bounding box.center), scale=1.0, every node/.style={font=\small}]
-    \begin{feynman}
+  \begin{tikzpicture}[baseline = (current bounding box.center), thin]
+    \begin{feynman} [inline = (r.base)]
       % Higgs
-      \vertex (H) at (-2,0) {\(H\)};
+      \vertex (H) at (-1.5,0) {\(H\)};
       % Vertice efficace Hgg (⊗)
       \vertex (Heff) at (0,0) [circle, draw, minimum size=10pt, inner sep=0pt] {\(\times\)};
       % Nodo intermedio per il 3-gluon vertex
-      \vertex (gvert) at (2,0) [dot] {};
+      \vertex (gvert) at (1,0) [dot] {};
       % gluoni finali
-      \vertex (g1) at (4,1.2) {};
-      \vertex (g2) at (4,0.0) {};
-      \vertex (g3) at (4,-1.2) {};
+      \vertex (g1) at (2,1.2) {};
+      \vertex (g2) at (2,0.0) {};
+      \vertex (g3) at (2,-1.2) {};
 
       % connessioni
       \diagram* {
@@ -439,8 +440,7 @@ The real emission contribution at NLO refers to the process $\mathcal{P}_{3,0}: 
 \end{tikzpicture}
 \end{minipage}
 \end{equation*}
-
-
+In the following sections we will highlight the form of the real-emission NLO corrections in the soft and collinear limits for each of these representative processes.
 
 \section{Soft limit}
 Paragrafo su soft singularities, e che forma hanno i contributi nei 3 processi considerati. \\
