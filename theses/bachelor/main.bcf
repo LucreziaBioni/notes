@@ -2394,9 +2394,12 @@
     <bcf:citekey order="27" intorder="1">Caola:1902</bcf:citekey>
     <bcf:citekey order="28" intorder="1">Caola:1907</bcf:citekey>
     <bcf:citekey order="29" intorder="1">Asteriadis:1910</bcf:citekey>
-    <bcf:citekey order="30" intorder="1">Devoto:2023rpv</bcf:citekey>
-    <bcf:citekey order="30" intorder="2">Devoto:2025kin</bcf:citekey>
-    <bcf:citekey order="31" intorder="1">pauli</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">Caola:1902</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">Caola:1907</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">Asteriadis:1910</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">Devoto:2023rpv</bcf:citekey>
+    <bcf:citekey order="33" intorder="2">Devoto:2025kin</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">pauli</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="ynt">
