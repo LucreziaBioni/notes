@@ -194,14 +194,14 @@ The desired method necessitates the isolation of singularities in the real corre
     \lim_{E_\um \rightarrow 0}|\mathcal{M}(p_1, p_2, \dots, p_n; p_\um)|^2= - 4\pi \alpha_s \mu^{2\epsilon} \sum_{i,j=1}^n \mathcal{S}_{ij}(p_\um) \vec{T}_i \cdot \vec{T_j} |\mathcal{M}_0(p_1, p_2, \dots, p_n)|^2,
     \label{ampl-soft}
 \end{equation}
-where the general eikonal factor is
+where the \emph{general eikonal factor} is
 \begin{equation}
     \mathcal{S}_{ij}(p_\um) = \frac{p_i \cdot p_j}{(p_i \cdot p_\um)(p_j \cdot p_\um)}  \,, 
     %\sim \frac{1}{E_\um^2}
     \label{eikonal}
 \end{equation}
 and the square of the color charges are $\vec{T}_i^2= C_F$ if $i$ is a quark or an anti-quark, and $\vec{T}_i^2= C_A$ if $i$ is a gluon. \\
-Whereas, in the collinear limit, i.e., the limit where a gluon is emitted parallel to a quark, the amplitude-squared factorizes into (i) a splitting function, which describes the probability for the quark to radiate the gluon collinearly at a given energy, and (ii) the squared hard amplitude, which now depends on the resulting quark momentum after the emission
+Whereas, in the collinear limit, i.e., the limit where a gluon is emitted parallel to a quark, the amplitude-squared factorizes into (i) a \emph{splitting function}, which describes the probability for the quark to radiate the gluon collinearly at a given energy, and (ii) the squared hard amplitude, which now depends on the resulting quark momentum after the emission
 \begin{equation}
     \lim_{\theta_{i \um \rightarrow 0}}|\mathcal{M}(p_1, \dots, p_n; p_\um)|^2 \sim P_{f_{[i\um]}f_i} |\mathcal{M}_0(p_1, \dots , p_i + p_\um, \dots, p_n)|^2  \,.
     %\sim \frac{1}{(p_i-p_\um)^2} \sim (1-\cos(\theta_{i\um}))^{-1}\sim \theta_{i\um}^{-2}.
@@ -453,11 +453,16 @@ Our goal is to present the explicit expression for the real-emission contributio
 I_{\mathrm{T}}(\epsilon) = I_{\mathrm{V}}(\epsilon) + I_{\mathrm{S}} (\epsilon)+ I_{\mathrm{C}}(\epsilon) , ,
 \end{equation}
 is finite as $\epsilon \to 0$, where $I_{\mathrm{V}}(\epsilon)$ is related to $I_1(\epsilon)$.
-
+  
 \section{Soft limit}
-Let $\um$ be the index that characterizes the unresolved parton. To define the expression of the last term on the right-hand side of Eq. \ref{subtraction-flm} in the soft limit, it is necessary to integrate over the phase space of the parton $\um$ in Eq. \ref{ampl-soft}, i.e., the result of the action of the soft operator on the squared matrix element. Before performing the integration, we note that it is convenient to express the phase-space measure $[\mathrm{d}p_\um]$ from Eq. \ref{measure} in hyperspherical coordinates. For massless partons (where $|p_\um|=E_\um$), this measure becomes
+Let $\um$ be the index that characterizes the unresolved parton. To define the expression of the last term on the right-hand side of Eq. \ref{subtraction-flm} in the soft limit, it is necessary to integrate over the phase space of the parton $\um$ in Eq. \ref{ampl-soft}, i.e., the result of the action of the soft operator on the squared matrix element. In this case, we can express Eq. \ref{ampl-soft} as
+\begin{equation}
+  \langle \Delta^{(\um)}F_{\mathrm{LM}}(\um) \rangle = \langle S_{(\um)}F_{\mathrm{LM}}(\um) \rangle + \langle \bar{S}_{(\um)}F_{\mathrm{LM}}(\um) \rangle \, ,
+\end{equation}
+where the soft operator acting on the splitting function yields  $S_\um \Delta^{\um} = 1$. Before performing the integration, we note that it is convenient to express the phase-space measure $[\mathrm{d}p_\um]$ from Eq. \ref{measure} in hyperspherical coordinates. For massless partons (where $|p_\um|=E_\um$), this measure becomes
 \begin{equation}
   [\mathrm{d}p_\um] = \frac{E_\um^{d-3} \,\mathrm{d}E_\um  \, \mathrm{d}\Omega_{d-1}}{2 (2 \pi)^{d-1}} \, \theta(E_{\mathrm{max}}-E_\um) \, ,
+  \label{measure-ps}
 \end{equation}
 where ${d}\Omega_{d-1}$ is the ($d-1$)-dimensional solid-angle element. Using the bare QCD coupling $g_{s,b}^2 = 4\pi\alpha_s$ and considering $N_p$ partons at Leading Order, we obtain
 \begin{equation}
@@ -470,7 +475,7 @@ specify if it depends on the unresolved parton $\um$. Recall that $\rho_{ij} = 1
 \end{equation}
 Regarding the angular integral, we utilize a standard result, given for instance in Appendix G.2 of \cite{Asteriadis:1910}
 \begin{equation}
-  \int \frac{\mathrm{d}\Omega_{d-1}}{2 (2 \pi)^{d-1}} \frac{\rho_{ij}}{\rho_{ik}\rho_jk} = - \frac{2^{1-2\epsilon}}{\epsilon} \left[\frac{1}{8 \pi^2} \frac{(4\pi)^{\epsilon}}{\Gamma(1-\epsilon)}  \right]\eta_{ij}^{-\epsilon} K_{ij} \, ,
+  \int \frac{\mathrm{d}\Omega_{d-1}}{2 (2 \pi)^{d-1}} \frac{\rho_{ij}}{\rho_{ik}\rho_{jk} } = - \frac{2^{1-2\epsilon}}{\epsilon} \left[\frac{1}{8 \pi^2} \frac{(4\pi)^{\epsilon}}{\Gamma(1-\epsilon)}  \right]\eta_{ij}^{-\epsilon} K_{ij} \, ,
 \end{equation}
 with
 \begin{equation}
@@ -489,6 +494,7 @@ where we have introduced the short-hand notation
 with $\alpha_s(\mu)$ the running coupling costant, and $\gamma_E$ the Euler-Mascheroni constant. Therefore, the integrated soft-counterterm reads
 \begin{equation}
   \langle S_\um F_{\mathrm{LM}} (\um) \rangle = [\alpha_s] \langle I_{\mathrm{S}}(\epsilon) \cdot F_{\mathrm{LM}}\rangle \, , 
+  \label{soft-regulated}
 \end{equation}
 with 
 \begin{equation}
@@ -534,15 +540,158 @@ where $m_H$ is the mass of the Higgs boson, and $1/3$ is a symmetry factor. \\
 %  K_{ij} = \left[ \frac{\Gamma^2(1-\epsilon)}{\Gamma(1-2\epsilon)} \right] \eta_{ij}^{1+\epsilon} \, {}_2F_1(1,1,1-\epsilon,1-\eta_{ij}) \, .
 %\end{equation}
 
-\section{Collinear limit}
+\section{Collinear and Soft-Collinear limits}
+We observe that the last term in Eq. \ref{soft-regulated} is regulated in the soft limit, but it still contains collinear divergences. To isolate and remove them, we rewrite the expression as 
+\begin{equation}
+  \langle \Delta^{(\um)}F_{\mathrm{LM}}(\um) \rangle = \langle S_{(\um)}F_{\mathrm{LM}}(\um) \rangle + \sum_{i=1}^{N_p} \langle \bar{S}_{(\um)}C_{i\um} \Delta^{(\um)} F_{\mathrm{LM}}(\um) \rangle + \langle \bar{S}_{(\um)} \bar{C}_{i\um} \Delta^{(\um)} \omega^{\um i} F_{\mathrm{LM}}(\um) \rangle \, ,
+\end{equation}
+where the final term on the right-hand side is completely finite and can be integrated in four dimensions. \\
+The collinear limits are a local phenomenon. Their analysis requires only the identification of the partons involved in the splitting: specifically, whether they are quarks or gluons and if they are in the initial or final state. The remaining details of the hard scattering process are irrelevant. When a final-state parton $\um$ becomes collinear with another final-state parton $i$, the process is described by $[i\um]^* \to i(z) + \um(\bar{z})$. In this splitting, the variable $z = 1 - E_{\um}/E_{[i\um]}$ defines the energy fraction carried by parton $i$, while parton $\um$ carries the complementary fraction $1-z$. Conversely, when an outgoing parton $\um$ becomes collinear with an incoming parton $i$, they are clustered into a parton $[i\um]$. This process is described as $i \to [i\um]^* + \um$, with $z = 1 - E_{\um}/E_i$. The specific identity of the parton $[i\um]$ that enters the hard process depends on this configuration, leading to different splitting functions in Eq. \ref{ampl-coll}: a gluon clustered with any type of parton preserves the latter's flavours, while a quark clustered with an antiquark gives a gluon. It is precisely this property that ensures the modularity of the NSC scheme, as previously discussed. \\
+
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=1.0\textwidth]{imgs/splitting.png}
+	\caption{Graphical representation of the convention used for collinear factorization. The upper diagram illustrates the final-state splitting process, whereas the lower diagram represents the initial-state splitting process. We observe that for Final-State Radiation (FSR), the action of the operator $C_{i\um}$ on $\Delta^{(\um)}$ introduces an additional factor of $z$, a feature that is absent in Initial-State Radiation (ISR). Figure from \cite{Devoto:2025kin}.}
+	\label{hadron-collision}
+\end{figure}
+
+
+\subsection{Initial state}
+We consider the situation where a gluon $\um$ in the final state becomes collinear to a quark $a$ in the initial state. This could happen, for instance, in the case of process $\mathcal{P}_1^{\mathrm{NLO}}$. The squared matrix element, which is used to define the function $F_{\mathrm{LM}}$, has a dependence on the energy fraction variable $z=1-E_\um/E_a$. As a direct consequence of this dependence, the integral over the collinear gluon's energy cannot be performed. Nevertheless, we can still carry out the angular integration over the relative angle between the emitted gluon $\um$ and the incoming parton $a$. \\
+We begin by examining how the cross section factorizes upon the application of the collinear operator
+\begin{equation}
+  C_{a\um} \Delta^{(\um)} F_{\mathrm{LM}} = \frac{g^2_{s,b}}{p_a \cdot p_\um} \frac{P_{qq}(z)}{z} F_{\mathrm{LM}}(z\cdot a_q) \, ,
+\end{equation}
+where $z \cdot a_q$ denotes a quark whose momentum is the product of $z$ and the momentum of the incoming quark $a$. This relationship is the fundamental reason we cannot integrate over $E_\um$. The corresponding splitting function for this limit is
+\begin{equation}
+  P_{qq}(z) = C_F \left[\frac{1+z^2}{1-z}-\epsilon(1-z)\right]\, .
+\end{equation}
+If, instead, both the soft and collinear operators are applied, one obtains
+\begin{equation}
+  C_{a\um} S_{\um} F_{\mathrm{LM}} (a_q, \um) = \lim_{z \to 1}  C_{a\um} F_{\mathrm{LM}} (a_q, \um)= \frac{g^2_{s,b}}{p_a \cdot p_\um} \frac{2 C_F}{1-z} F_{\mathrm{LM}}( a_q) \, .
+\end{equation}
+Also in this case, it is convenient to perform the integration in hyperspherical coordinates. Furthermore, it is useful to implement a change of variables by parametrizing the gluon energy as $E_\um = (1-z)E_a$, which implies that the measure transforms as $\mathrm{d}E_\um=-E_a \mathrm{d}z$. Therefore, Eq. \ref{measure-ps} becomes
+\begin{equation}
+  [\mathrm{d}p_\um] = \frac{E_a^{d-2}\, (1-z)^{d-3} \, \mathrm{d}z \, \mathrm{d}\Omega ^{d-1}}{2 \, (2\pi)^{d-1}} \theta(z-z_{\mathrm{min}}) \, ,
+\end{equation}
+where $z_{\mathrm{min}} = 1 - E_{\mathrm{max}}/E_a$, and $d=4-2\epsilon$. We also note that $p_a \cdot p_\um = E_a E_\um \rho_{a\um}=(1-z)E_a^2\rho_{a \um}$. We can therefore proceed with the integration. For the moment, we will only explicitly perform the phase space integration for partons $a$ and $\um$, which are directly involved in the change of variables
+\begin{equation}
+  \begin{split}
+  & \int [\mathrm{d}p_\um]\int[\mathrm{d}p_a] \, C_{a\um} \bar{S}_\um F_{\mathrm{LM}} (a_q, \um) = \\
+  & = g^2_{s,b} \int[\mathrm{d}p_a] \int \frac{\mathrm{d}\Omega ^{d-1}}{2 (2\pi)^{d-1}} \, E_a^{-2\epsilon} \int_{z_{\mathrm{min}}}^{1} \mathrm{d}z (1-z)^{-2\epsilon} \frac{1}{ \rho_{a \um}} \left[\frac{P_{qq}(z)}{z} F_{\mathrm{LM}}(z \cdot a_q) - \frac{2 C_F}{1-z}F_{\mathrm{LM}} (a_q) \right] \, .
+  \label{coll-pass}
+  \end{split}
+\end{equation}
+Now we solve the angular integral using the following equation, Eq. G.5 in \cite{Asteriadis:1910}
+\begin{equation}
+  \int \frac{\mathrm{d}\Omega ^{d-1}}{2 (2\pi)^{d-1}} \frac{1}{\rho_{a \um}}= -\frac{2^{-2\epsilon}}{\epsilon} \left[ \frac{(4\pi)^{\epsilon}}{8\pi^2 \, \Gamma(1-\epsilon)}\right] \left[\frac{\Gamma^2(1-\epsilon)}{\Gamma(1-2\epsilon)} \right] \, .
+\end{equation}
+Moreover, we use the shorthand notation $[\alpha_s]$ in Eq. \ref{coupling}. Thus, Eq. \ref{coll-pass} becomes
+\begin{equation}
+  \begin{split}
+  & \int [\mathrm{d}p_\um]\int[\mathrm{d}p_a] \, C_{a\um} \bar{S}_\um \Delta^{(\um)} F_{\mathrm{LM}} (a_q, \um) = \\
+  & = [\alpha_s] \int[\mathrm{d}p_a] \left(-\frac{1}{\epsilon}\right) \left(\frac{4E_a^2}{\mu^2}\right)^{-\epsilon} \frac{\Gamma^2(1-\epsilon)}{\Gamma(1-2\epsilon)} \int_{z_{\mathrm{min}}}^{1} \mathrm{d}z (1-z)^{-2\epsilon} \left[ \frac{P_{qq}(z)}{z} F_{\mathrm{LM}}(z \cdot a_q) - \frac{2 C_F}{1-z}F_{\mathrm{LM}} (a_q) \right] \,.
+  \label{coll-pass-1}
+  \end{split}
+\end{equation}
+According to the momentum conservation constraint in Eq. \ref{leading-order}, $E_{\max}$ must be greater than or equal to the maximum energy that a final-state parton can carry. Consequently, $E_{\max} \geq E_a$ and thus $z_{\mathrm{min}} \leq 0$. This implies that $F_{\mathrm{LM}}(z \cdot a_q) = 0$ for $z \in [z_{\mathrm{min}}, 0]$,  while the second term on the right-hand side of Eq. \ref{coll-pass-1} extends all the way down to $z_{\mathrm{min}}$. Furthermore, in $P_{qq}$, we isolate the term that is singular in the $z \to 1$ limit in the following way
+\begin{equation}
+  P_{qq}(z) = \frac{2 C_F}{1-z} + P_{qq,\mathrm{reg}} (z), \qquad P_{qq,\mathrm{reg}} (z) = - C_F [(1+z)+\epsilon(1-z)] \, ,
+\end{equation}
+and write
+\begin{equation}
+  \begin{split}
+  & \int [\mathrm{d}p_\um]\int[\mathrm{d}p_a] \, C_{a\um} \bar{S}_\um \Delta^{(\um)} F_{\mathrm{LM}} (a_q, \um) = \\
+  & = -\frac{[\alpha_s]}{\epsilon} \int[\mathrm{d}p_a] \left(\frac{2E_a}{\mu}\right)^{-2\epsilon} \frac{\Gamma^2(1-\epsilon)}{\Gamma(1-2\epsilon)} \Biggl\{ \int_{0}^{1} \mathrm{d}z \Biggl[  \left( \frac{2C_F}{(1-z)^{1+2\epsilon}} + \frac{P_{qq, \mathrm{reg}}(z)}{(1-z)^{2\epsilon}} \right) \times \\
+  & \times \frac{F_{\mathrm{LM}}(z\cdot a_q)}{z} - \frac{2 C_F}{(1-z)^{1+2\epsilon}} F_{\mathrm{LM}}(a_q) \Biggr] + C_F \frac{(E_{\mathrm{max}}/E_a)^{-2\epsilon}-1}{\epsilon} F_{\mathrm{LM}}(a_q)  \Biggr\} \,.
+  \label{coll-pass-1}
+  \end{split}
+\end{equation}
+Now we identify $G(z)=F_{\mathrm{LM}}(z \cdot a_q)/z$, and use the definition of the plus distribution
+\begin{equation}
+  \frac{1}{(1-z)^{1+2\epsilon}} = \sum_{n=0}^{\infty} \frac{(-2\epsilon)^n}{n!} \frac{\log^n{(1-z)}}{1-z} \,,
+\end{equation}
+and the following equation
+\begin{equation}
+  \int_0^1 \mathrm{d}z \, \mathcal{D}_n(z) G(z) = \int_0^1 \mathrm{d}z \frac{\log^n{(1-z)}}{1-z} \, \left(G(z)-G(1)\right) \, ,
+\end{equation}
+and we get 
+\begin{equation}
+  \begin{split}
+  & \int [\mathrm{d}p_\um]\int[\mathrm{d}p_a] \, C_{a\um} \bar{S}_\um \Delta^{(\um)} F_{\mathrm{LM}} (a_q, \um) = \\
+  & = -\frac{[\alpha_s]}{\epsilon} \int[\mathrm{d}p_a] \left(\frac{2E_a}{\mu}\right)^{-2\epsilon} \frac{\Gamma^2(1-\epsilon)}{\Gamma(1-2\epsilon)} \Biggl\{ \int_0^1 \frac{\mathrm{d}z}{(1-z)^{2\epsilon}} P_{qq,\mathrm{reg}(z)} \frac{F_{\mathrm{LM}}(z\cdot a_q)}{z} + \\
+  & + 2C_F \sum_{n=0}^{\infty} \frac{(-2\epsilon)^n}{n!} \int_0^1 \mathrm{d}z \, \mathcal{D}_n(z) \, \frac{F_{\mathrm{LM}}(z\cdot a_q)}{z} + \int_0^1 C_F \frac{(E_{\mathrm{max}}/E_a)^{-2\epsilon}-1}{\epsilon} F_{\mathrm{LM}}(a_q) \Biggr\} \, .  
+  \label{coll-pass-2}
+  \end{split}
+\end{equation}
+Moreover, we introduce the following definition
+\begin{equation}
+  \hat{P}_{qq}^{(0)}(z) = C_F \left[ 2 \mathcal{D}_0 (z)-(1+z)+\frac{3}{2} \delta(1-z) \right],
+\end{equation}
+that is the Leading-Order Altarelli-Parisi splitting kernel, and
+\begin{equation}
+  \mathcal{P}_{qq}^{\mathrm{fin}}= - \frac{C_F}{\epsilon} \left[2 \sum_{n=1}^{\infty} \frac{(-2\epsilon)^n}{n!} \, \mathcal{D}_n(z)+(1-z)^{-2\epsilon} \, P_{qq, \mathrm{reg}}(z)+(1-z) \right] \, .
+\end{equation}
+These definitions appear in the definition of the \emph{generalized splitting function}, which allows us to express the result in a more compact form. 
+\begin{equation}
+  \mathcal{P}_{qq}^{\mathrm{gen}} = \left(\frac{2E_a}{\mu}\right)^{-2\epsilon} \frac{\Gamma^2(1-\epsilon)}{\Gamma(1-2\epsilon)} \left[-P^{(0)}_{qq}+\epsilon \mathcal{P}_{qq}^{\mathrm{fin}}\right] \, .
+  \label{gen-splitt-funct}
+\end{equation}
+It is also useful to introduce the \emph{generalized initial-state anomalous dimension}, which reads
+\begin{equation}
+  \Gamma_{a,q} = \left(\frac{2E_a}{\mu}\right)^{-2\epsilon} \frac{\Gamma^2(1-\epsilon)}{\Gamma(1-2\epsilon)} \left(\gamma_q + \vec{T}_q^2 \,\frac{1-e^{-2\epsilon L_a}}{\epsilon}\right) \, ,
+  \label{generalized-anom-dim-in}
+\end{equation}
+where $\gamma_q$ is the anomalous dimension of the initial-state parton $a=q$, which can be found in Appendix \ref{anomalous-dimension}, and $L_a =\log{(E_{\mathrm{max}}/E_a)}$. Therefore, the integrated soft-collinear counterterm for a gluon going collinear to a quark $a$ in the initial state reads
+\begin{equation}
+  \left< C_{a\um} \bar{S}_\um \Delta^{(\um)} F_{\mathrm{LM}} (\um) \right> = [\alpha_s] \left< \frac{\Gamma_{a,q}}{\epsilon} F_{\mathrm{LM}} \right> + \frac{[\alpha_s]}{\epsilon}\left< \mathcal{P}_{qq}^{\mathrm{gen}} \otimes F_{\mathrm{LM}} \right> \, ,
+  \label{initial-state-collinear}
+\end{equation}
+where we also used the shorthand notation
+\begin{equation}
+  \mathcal{P}_{qq}^{\mathrm{gen}} \otimes F_{\mathrm{LM}} = \int_0^1 \, \mathrm{d}z \, \mathcal{P}_{qq}^{\mathrm{gen}}(z) \, \frac{F_{\mathrm{LM}}(z \cdot a_q)}{z} \, .
+  \label{convolution}
+\end{equation}
+\\
+Let us now consider the situation where a final-state gluon $\um$ becomes collinear with an initial-state gluon $a$. The calculation remains analogous to the previous case, but the form of some functions changes. Specifically, the splitting function is now $P_{gg}$, whose expression is given in Eq. \ref{splitting-functions}. Furthermore, the leading-order Altarelli-Parisi splitting kernel is now $\hat{P}_{gg}^{(0)}(z)$, reported in \ref{altarelli-parisi}. The integrated soft-collinear counterterm in this case has the same form as in Eq. \ref{initial-state-collinear}, but uses the generalized anomalous dimension for a gluon $\Gamma_{a,g}$ (defined as in \ref{generalized-anom-dim-in}, with $g$ in place of $q$), and the term from Eq. \ref{convolution} now involves the generalized splitting function $\mathcal{P}_{gg}^{\mathrm{gen}}$. This function has the form \ref{gen-splitt-funct}, adapted for the case of a gluon collinear to another gluon. \\
+
+Finally, we consider the case where a final-state quark $\um$ becomes collinear with another initial-state parton $a$, which can be either a quark or a gluon. As stated previously, quarks do not give rise to soft singularities. Therefore, in this scenario, the term involving the anomalous dimension in Eq. \ref{initial-state-collinear} is absent. Only the term from Eq. \ref{convolution} remains, which is connected to the splitting functions $P_{qg}$ and $P_{gq}$ given in \ref{splitting-functions}, and to the Altarelli-Parisi splitting kernels $\hat{P}_{qg}^{(0)}$ and $\hat{P}_{gq}^{(0)}$ listed in \ref{altarelli-parisi}.
+
+
+\subsection{Final state}
+Let us now consider a situation where a final-state gluon $\um$ becomes collinear with another final-state gluon $i$. This can occur, for example, in the case of the $\mathcal{P}_2^{\mathrm{NLO}}$ process. In this case, the function $F_{\mathrm{FL}}$ depends on the energy fraction $z=1-E_\um/E_{[i\um]}=E_i/E_{[i\um]}$, and, under the action of the collinear operator, it factorizes in the following way
+\begin{equation}
+  C_{i \um} \Delta^{(\um)} F_{\mathrm{LM}} (\um) = \frac{g^2_{s,b}}{p_i \cdot p_\um} z P_{gg}(z) F_{\mathmakebox{LM}}(i\um)\, ,
+\end{equation}
+where the argument of the function $F_{LM}$ on the right-hand side shows the dependence on the momentum of the single final-state gluon $[i\um]$ resulting from the merging of the two collinear gluons, and
+\begin{equation}
+  P_{gg}(z)= 2C_A \left[ \frac{z}{1-z}+\frac{1-z}{z}+z(1-z)\right] \equiv P_{qq}(1-z) \, .
+\end{equation}
+We perform the integration in hyperspherical coordinates over the phase space of the gluons involved in the collinear limit, namely $i$ and $\um$. To facilitate the subsequent change of variables, we isolate, from the angular integral, the integration over the relative angle between partons $i$ and $\um$, i.e., $\theta_{[i\um]}$, and in particular we highlight the variable $\eta_{i\um}=\rho_{i\um}/2$
+\begin{equation}
+  \begin{split}
+  & \int [\mathrm{d}p_i] \int [\mathrm{d}p_\um] \, C_{i\um} \Delta^{(\um)} F_{\mathrm{LM}} = \\
+  & = \int \frac{\mathrm{d}\Omega^{d-2}}{2(2\pi)^{d-1}} 2^{-2\epsilon} \int_0^1 \frac{\mathrm{d}\eta_{i\um}}{(\eta_{i\um}(1-\eta_{i\um}))^{\epsilon}} \int [\mathrm{d}\Omega_i] \int \mathrm{d}E_\um E_\um^{1-2\epsilon} \int \mathrm{d}E_i E_i^{1-2\epsilon} \frac{g_{s,b}^2 P_{gg} F_{\mathrm{LM}} (i\um) }{(1-z) E_{i\um}^{2}\eta_{i\um}} \, .
+  \end{split}
+\end{equation}
+We now employ the following integrals
+\begin{equation}
+  \int \frac{\mathrm{d}\Omega^{d-2}}{2(2\pi)^{d-1}} = \frac{1}{8\pi^2} \frac{(4\pi){\epsilon}}{\Gamma(1-\epsilon)} \, ,
+\end{equation}
+and  \\
+
+
+
+
+faccio i conti, mostro che non ottengo la consueta generalised final-state anomalous dimension, ma devo sommare i casi per ottenerla. \\
 Discorso generale su come ottengo operatore $I_C$ nell'initial state e nel final state, e in generale che forma hanno le correzioni in questo caso. \\
-Speigo che, siccome collinear limit è locale, piuttosto che focalizzarmi su un processo specifico, mostro cosa succede quando le varie tipologie di partoni diventano collineari: in base alla situazione, entrerà nel processo hard un partone diverso, e questo fa sì che si hanno diverse splitting functions.
 Operator $I_\mathrm{C}$
 \begin{equation}
   I_C(\epsilon) = \sum_{i=1}^{N_p} \frac{\Gamma_{i,f_i}}{\epsilon}
 \end{equation}
 
-\section{Soft-collinear limit}
+
 
 \section{Cancellation of poles}
  
@@ -553,9 +702,6 @@ Operator $I_\mathrm{C}$
 \label{NSC-SS-parameters}
 
 Il lavoro esposto nel capitolo precedente può essere ulteriormente generalizzato, come è stato fatto nei paper \cite{Devoto:2023rpv,Devoto:2025kin}. In questo capitolo ripercorriamo tali risultati, implementando theta parameters. Lo facciamo perché uno dei principali difetti di NSC SS è che la sua efficienza è un po' impattata dalla numerical integration of the subtraction terms.
-
-\section{Damping factors}
-Quando ho tanti partoni nel final state, introduco damping factor per identificare quello unresolved. Vedere 2310, pagine 6-8.
 
 \section{Draft}
 Soft limit
@@ -613,6 +759,7 @@ We report in this section useful constants that are used throughout the thesis. 
 The expressions for quark and gluons anomalous dimensions are 
 \begin{equation}
   \gamma_q = \frac{3}{2}C_F \, \qquad \gamma_g = \frac{11}{6}C_a - \frac{2}{3}T_R n_f \, ,
+  \label{anomalous-dimension}
 \end{equation}
 where $T_R=1/2$, and $n_f$ is the number of massless quarks flavors. \\
 Moreover, we introduce the following shorthand
@@ -657,6 +804,36 @@ Instead, if we act with the collinear operator $C_{lm}$, i.e., when partons $l$ 
 \end{equation}
 with $z_{i,m}= \frac{E_m}{E_i+E_m}$, and partons $1$ and $2$ in the initial state.
 
+\section{Splitting functions}
+A splitting function describes the probability that a high-energy parton will split into two other partons. There are two main types of splittings: final-state and initial-state. In a final-state splitting, a parton produced in a collision splits after the main interaction. We write this process as $[i\um]^* \to i(z) + \um(1-z)$, where $[i\um]$ is the original ``mother" parton, $i$ and $\um$ are the two new ``daughter" partons, $z$ is the fraction of the mother's energy carried by parton $i$, defined as $z = 1 - E_\um / E_{[i\um]}$. The probability for this splitting is given by the spin-averaged \emph{final-state splitting function}, $P_{f_{[i\um]}f_i}(z)$. Its form depends on whether the partons involved are quarks ($q$) or gluons ($g$). The functions are
+\begin{equation}
+  \begin{split}
+    & P_{qq}(z) = C_F \left[\frac{1+z^2}{1-z}-\epsilon(1-z)\right]\, , \\
+    & P_{gg}(z)= 2C_A \left[ \frac{z}{1-z}+\frac{1-z}{z}+z(1-z)\right] \equiv P_{qq}(1-z) \, , \\
+    & P_{qg}(z) = T_R \left[1-\frac{2z(1-z)}{1-\epsilon}\right] \, , \\
+    & P_{gg} (z) = 2 C_A \left[\frac{z}{1-z}+\frac{1-z}{z}+z(1-z)\right] \, .
+  \end{split}
+  \label{splitting-functions}
+\end{equation}
+In an initial-state splitting, a parton coming from one of the colliding protons radiates another parton before the main collision. We write this as $i \to [i\um]^* + \um$, where $i$ is the initial incoming parton from the proton, $[i\um]$ is the parton that enters the hard scattering, $\um$ is the radiated parton, and $z$ is the fraction of the initial parton's energy taken into the hard process, $z = 1 - E_\um / E_i$. The probability for this is given by the \emph{initial-state splitting function}, $P_{f_{[i\um]}f_i, \mathrm{i}}(z)$. These functions are not independent; they are directly related to the final-state ones by the following relations
+\begin{equation}
+  \begin{split}
+    & P_{qq, \mathrm{i}} (z) = -zP_{qq}(1/z) \equiv P_{qq}(z) \, , \\
+    & P_{qg, \mathrm{i}} (z) = \left[\frac{2N_c}{2(1-\epsilon)(N_c^2-1)}\right]zP_{qg}(1/z) \equiv P_{gq} \, , \\
+    & P_{gq, \mathrm{i}} (z) = \left[\frac{2(1-\epsilon)(N_c^2-1)}{2N_c}\right]z P_{gq}(1/z) \equiv P_{qg}(z) \, , \\
+    & P_{gg, \mathrm{i}} (z) = -zP_{gg}(1/z) \equiv P_{gg}(z) \, .
+  \end{split}
+\end{equation}
+Finally, for reference, we also use the conventional leading-order Altarelli-Parisi splitting functions \cite{ellis}. They are written as 
+\begin{equation}
+  \begin{split}
+    \hat{P}_{qq}^{(0)}(z) = C_F \left[ 2 \mathcal{D}_0 (z)-(1+z)+\frac{3}{2} \delta(1-z) \right], \qquad \qquad  \\
+    \hat{P}_{qg}^{(0)}(z) = T_R \left[(1-z)^2+z^2\right] \, , \qquad \qquad\qquad\qquad\quad\qquad \, \,\\
+    \hat{P}_{gq}^{(0)}(z) = C_F \left[\frac{1+(1-z)^2}{z}\right] \, , \qquad \qquad\qquad\qquad\quad\qquad \, \, \\
+    \hat{P}_{gg}^{(0)}(z) = 2C_A \left[\mathcal{D}_0 (z)+z(1-z)+\frac{1}{z}-2\right] + \beta_0\delta(1-z) \,.
+  \end{split}
+  \label{altarelli-parisi}
+\end{equation}
 
 \clearpage
 \end{appendices}

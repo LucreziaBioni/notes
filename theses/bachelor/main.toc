@@ -13,14 +13,15 @@
 \contentsline {section}{\numberline {2.3}Soft and Collinear operators}{11}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Modularity of the scheme}{12}{section.2.4}%
 \contentsline {section}{\numberline {2.5}Soft limit}{13}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Collinear limit}{15}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Soft-collinear limit}{15}{section.2.7}%
-\contentsline {section}{\numberline {2.8}Cancellation of poles}{15}{section.2.8}%
-\contentsline {chapter}{\numberline {3}NLO QCD corrections with $\theta $-parameters in the NSC Subtraction Scheme}{16}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Damping factors}{16}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Draft}{16}{section.3.2}%
-\contentsline {chapter}{\sffamily Appendices}{18}{section*.4}%
-\contentsline {chapter}{\numberline {A}Useful definitions}{20}{appendix.a.A}%
-\contentsline {section}{\numberline {A.1}Constants}{20}{section.a.A.1}%
-\contentsline {section}{\numberline {A.2}Partitions at NLO}{20}{section.a.A.2}%
-\contentsline {chapter}{Bibliography}{22}{appendix*.5}%
+\contentsline {section}{\numberline {2.6}Collinear and Soft-Collinear limits}{15}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Initial state}{16}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Final state}{19}{subsection.2.6.2}%
+\contentsline {section}{\numberline {2.7}Cancellation of poles}{20}{section.2.7}%
+\contentsline {chapter}{\numberline {3}NLO QCD corrections with $\theta $-parameters in the NSC Subtraction Scheme}{21}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Draft}{21}{section.3.1}%
+\contentsline {chapter}{\sffamily Appendices}{23}{section*.5}%
+\contentsline {chapter}{\numberline {A}Useful definitions}{25}{appendix.a.A}%
+\contentsline {section}{\numberline {A.1}Constants}{25}{section.a.A.1}%
+\contentsline {section}{\numberline {A.2}Partitions at NLO}{25}{section.a.A.2}%
+\contentsline {section}{\numberline {A.3}Splitting functions}{26}{section.a.A.3}%
+\contentsline {chapter}{Bibliography}{28}{appendix*.6}%

@@ -1,15 +1,16 @@
 # Fdb version 4
-["biber main"] 1759337695.93288 "main.bcf" "main.bbl" "main" 1759393383.16338 0
+["biber main"] 1759596441.46084 "main.bcf" "main.bbl" "main" 1759616649.22775 0
   "bibl.bib" 1758812628.28698 9056 9fe92f2305cbf5011a78c9f11cecd518 ""
-  "main.bcf" 1759393383.0263 110455 d6590c2d821325aeee6290f606523b1f "pdflatex"
+  "main.bcf" 1759616649.14072 110727 313a63d5ffbd16c2104edc0faf97ac1e "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1759393380.8576 "/home/lucrezia/notes/theses/bachelor/main.tex" "main.pdf" "main" 1759393383.16383 0
+["pdflatex"] 1759616647.44439 "/home/lucrezia/notes/theses/bachelor/main.tex" "main.pdf" "main" 1759616649.22795 0
   "/etc/texmf/web2c/texmf.cnf" 1757435331.11015 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/lucrezia/notes/theses/bachelor/main.tex" 1759393378.596 63980 fc46a7a4e4c61d78a680ab6610b3e8af ""
+  "/home/lucrezia/notes/theses/bachelor/main.tex" 1759616645.80254 81794 efb399872aa4a19e1e1f86c9beec060e ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcss1440.tfm" 1136768653 1536 20b080237b56d4b67bdb3a5b0a64b2f8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcss1728.tfm" 1136768653 1536 364bdffde34bf3d55decb399e48992cc ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -21,10 +22,12 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm" 1246382020 908 2921f8a10601f252058503cc6570e581 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm" 1246382020 940 75ac932a52f80982a9f8ea75d03a34cf ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1246382020 940 228d6584342e91276bf566bcf9716b83 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/bbold/bbold10.tfm" 1266369035 788 aa2bfd021367054a224c4cf5a9967398 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/bbold/bbold12.tfm" 1266369035 768 568afddd613f4818fa95373954d5df42 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/bbold/bbold17.tfm" 1266369035 764 607f727332240adc1f07865e629ec73a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/bbold/bbold6.tfm" 1266369035 764 bc340104b2499eb440977e2d302aad8b ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/bbold/bbold8.tfm" 1266369035 768 b3927d32cc38bf306f676b7e9ddf7414 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm" 1136768653 1344 8a0be4fe4d376203000810ad4dc81558 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm" 1136768653 1332 1fde11373e221473104d6cc5993f046e ""
@@ -293,6 +296,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty" 1700082560 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1636152094 2900 1537cc8184ad1792082cd229ecc269f4 ""
+  "/usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb" 1758053254.04447 90944 dacec9e1206365a1c204a7fc6d00fb08 ""
   "/usr/share/texmf/fonts/type1/public/cm-super/sfss1728.pfb" 1758053254.04491 91468 74533647d615f4cea328e39d71fe88e4 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1758053264.41786 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
@@ -300,13 +304,14 @@
   "abstract.tex" 1757433792.36141 913 ea444ce83063f404e968fa71ba41cf3c ""
   "imgs/hadron-collision.png" 1758053943.96706 172491 dfc1b45d2e7e2158c5ce2ab37f82252e ""
   "imgs/real-and-virtual.png" 1758102810.30392 31482 19ac4c340fd7c35a21c606632a20b297 ""
+  "imgs/splitting.png" 1759399568.69299 72214 510ec01060066184176b4da4c18023f7 ""
   "imgs/unimi.jpg" 1757433835.956 151126 6aaf40e13c5552fffc380ab31d9b98c8 ""
   "imports.tex" 1757435708.66534 14757 32af4fa02af9a5d07c969a4d1badbe38 ""
-  "main.aux" 1759393383.02188 20055 e8872cd43a0d7c2894fef34be192988c "pdflatex"
-  "main.bbl" 1759337696.5258 34148 018a5bf606091bb77265b26448ddf1e8 "biber main"
-  "main.run.xml" 1759393383.0284 2340 1b757ab86a6d4d5749f3b0003150b0d9 "pdflatex"
-  "main.tex" 1759393378.596 63980 fc46a7a4e4c61d78a680ab6610b3e8af ""
-  "main.toc" 1759393383.0284 2059 df2a1c3d2528810595fc8d74a6012c7f "pdflatex"
+  "main.aux" 1759616649.13572 22967 596ada1a0431d5e720201de47bafc1bd "pdflatex"
+  "main.bbl" 1759596442.3859 34148 018a5bf606091bb77265b26448ddf1e8 "biber main"
+  "main.run.xml" 1759616649.14259 2340 1b757ab86a6d4d5749f3b0003150b0d9 "pdflatex"
+  "main.tex" 1759616645.80254 81794 efb399872aa4a19e1e1f86c9beec060e ""
+  "main.toc" 1759616649.14259 2170 58bf4c845403957f2a1d1e0557284fc1 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"
