@@ -464,7 +464,7 @@ where the soft operator acting on the splitting function yields  $S_\um \Delta^{
   [\mathrm{d}p_\um] = \frac{E_\um^{d-3} \,\mathrm{d}E_\um  \, \mathrm{d}\Omega_{d-1}}{2 (2 \pi)^{d-1}} \, \theta(E_{\mathrm{max}}-E_\um) \, ,
   \label{measure-ps}
 \end{equation}
-where ${d}\Omega_{d-1}$ is the ($d-1$)-dimensional solid-angle element. Using the bare QCD coupling $g_{s,b}^2 = 4\pi\alpha_s$ and considering $N_p$ partons at Leading Order, we obtain
+where ${d}\Omega_{d-1}$ is the ($d-1$)-dimensional hyperspherical measure. Using the bare QCD coupling $g_{s,b}^2 = 4\pi\alpha_s$ and considering $N_p$ partons at Leading Order, we obtain
 \begin{equation}
   \langle S_\um F_{\mathrm{LM}} (\um) \rangle = \int \mathrm{d}E_\um E_\um^{d-5} \, \theta(E_{\mathrm{max}}-E_\um)  \int \frac{\mathrm{d}\Omega_{d-1}}{2 (2 \pi)^{d-1}} (-g_{s,b}^2) \sum_{(i \neq j)}^{N_p} \frac{\rho_{ij}}{\rho_{im}\rho_{jm}} (\vec{T}_i \cdot \vec{T}_j) F_{\mathrm{LM}} \, ,
 \end{equation}
@@ -510,7 +510,7 @@ In the case of $\mathcal{P}_{2}^{\mathrm{NLO}}$, each of the three gluons involv
 \begin{equation}
   \langle S_3 F_\mathrm{LM}(1,2,3) \rangle = [\alpha_s] \frac{1}{3} \frac{2 C_A (m_H/\mu)^{-2 \epsilon}}{\epsilon^2} \eta_{12}^{-\epsilon}[1+\epsilon^2(\mathrm{Li}_2(1-\eta_{12})-\zeta_2)+\mathcal{O}(\epsilon^2)]F_\mathrm{LM}(1,2),
 \end{equation}
-where $m_H$ is the mass of the Higgs boson, and $1/3$ is a symmetry factor. \\
+where $m_H$ is the mass of the Higgs boson, $\zeta_2 = \pi^2/6$, and $1/3$ is a symmetry factor. \\
 
 
 %For the process $\mathcal{P}_{2}^{\mathrm{NLO}}$, it is convenient to partition the phase space so that some partons are identified as ``hard" and cannot generate infrared singularities. To achieve this, we use the scalar product of the gluons' four-momenta $s_{ij}=2p_i\cdot p_j$ and energy-momentum conservation (considering massless partons)
@@ -595,7 +595,7 @@ Moreover, we use the shorthand notation $[\alpha_s]$ in Eq. \ref{coupling}. Thus
   \label{coll-pass-1}
   \end{split}
 \end{equation}
-According to the momentum conservation constraint in Eq. \ref{leading-order}, $E_{\max}$ must be greater than or equal to the maximum energy that a final-state parton can carry. Consequently, $E_{\max} \geq E_a$ and thus $z_{\mathrm{min}} \leq 0$. This implies that $F_{\mathrm{LM}}(z \cdot a_q) = 0$ for $z \in [z_{\mathrm{min}}, 0]$,  while the second term on the right-hand side of Eq. \ref{coll-pass-1} extends all the way down to $z_{\mathrm{min}}$. Furthermore, in $P_{qq}$, we isolate the term that is singular in the $z \to 1$ limit in the following way
+According to the momentum conservation constraint in Eq. \ref{leading-order}, $E_{\max}$ must be greater than or equal to the maximum energy that a final-state parton can carry. Consequently, $E_{\max} \geq E_a$ and thus $z_{\mathrm{min}} \leq 0$. This implies that $F_{\mathrm{LM}}(z \cdot a_q) = 0$ for $z \in \big[z_{\mathrm{min}}, 0 \big)$,  while the second term on the right-hand side of Eq. \ref{coll-pass-1} extends all the way down to $z_{\mathrm{min}}$. Furthermore, in $P_{qq}$, we isolate the term that is singular in the $z \to 1$ limit in the following way
 \begin{equation}
   P_{qq}(z) = \frac{2 C_F}{1-z} + P_{qq,\mathrm{reg}} (z), \qquad P_{qq,\mathrm{reg}} (z) = - C_F [(1+z)+\epsilon(1-z)] \, ,
 \end{equation}
@@ -643,7 +643,7 @@ It is also useful to introduce the \emph{generalized initial-state anomalous dim
   \Gamma_{a,q} = \left(\frac{2E_a}{\mu}\right)^{-2\epsilon} \frac{\Gamma^2(1-\epsilon)}{\Gamma(1-2\epsilon)} \left(\gamma_q + \vec{T}_q^2 \,\frac{1-e^{-2\epsilon L_a}}{\epsilon}\right) \, ,
   \label{generalized-anom-dim-in}
 \end{equation}
-where $\gamma_q$ is the anomalous dimension of the initial-state parton $a=q$, which can be found in Appendix \ref{anomalous-dimension}, and $L_a =\log{(E_{\mathrm{max}}/E_a)}$. Therefore, the integrated soft-collinear counterterm for a gluon going collinear to a quark $a$ in the initial state reads
+where $\gamma_q$ is the anomalous dimension of the initial-state parton $a=q$, which can be found in Appendix \ref{anomalous-dimension}, and $L_a =\log{(E_{\mathrm{max}}/E_a)}$. Therefore, the integrated soft-collinear counterterm for a gluon $\um$ going collinear to a quark $a$ in the initial state reads
 \begin{equation}
   \left< C_{a\um} \bar{S}_\um \Delta^{(\um)} F_{\mathrm{LM}} (\um) \right> = [\alpha_s] \left< \frac{\Gamma_{a,q}}{\epsilon} F_{\mathrm{LM}} \right> + \frac{[\alpha_s]}{\epsilon}\left< \mathcal{P}_{qq}^{\mathrm{gen}} \otimes F_{\mathrm{LM}} \right> \, ,
   \label{initial-state-collinear}
@@ -660,7 +660,7 @@ Finally, we consider the case where a final-state quark $\um$ becomes collinear 
 
 
 \subsection{Final state}
-Let us now consider a situation where a final-state gluon $\um$ becomes collinear with another final-state gluon $i$. This can occur, for example, in the case of the $\mathcal{P}_2^{\mathrm{NLO}}$ process. In this case, the function $F_{\mathrm{FL}}$ depends on the energy fraction $z=1-E_\um/E_{[i\um]}=E_i/E_{[i\um]}$, and, under the action of the collinear operator, it factorizes in the following way
+Let us now consider a situation where a final-state gluon $\um$ becomes collinear with another final-state gluon $i$. This can occur, for example, in the case of the $\mathcal{P}_2^{\mathrm{NLO}}$ process. In this case, the function $F_{\mathrm{LM}}$ depends on the energy fraction $z=1-E_\um/E_{i\um}=E_i/E_{i\um}$, and, under the action of the collinear operator, it factorizes in the following way
 \begin{equation}
   C_{i \um} \Delta^{(\um)} F_{\mathrm{LM}} (\um) = \frac{g^2_{s,b}}{p_i \cdot p_\um} z P_{gg}(z) F_{\mathmakebox{LM}}(i\um)\, ,
 \end{equation}
@@ -669,31 +669,79 @@ where the argument of the function $F_{LM}$ on the right-hand side shows the dep
   P_{gg}(z)= 2C_A \left[ \frac{z}{1-z}+\frac{1-z}{z}+z(1-z)\right] \equiv P_{qq}(1-z) \, .
 \end{equation}
 We perform the integration in hyperspherical coordinates over the phase space of the gluons involved in the collinear limit, namely $i$ and $\um$. To facilitate the subsequent change of variables, we isolate, from the angular integral, the integration over the relative angle between partons $i$ and $\um$, i.e., $\theta_{[i\um]}$, and in particular we highlight the variable $\eta_{i\um}=\rho_{i\um}/2$
+\begin{align}
+  \int [\mathrm{d}p_i] \int [\mathrm{d}p_\um] \, C_{i\um} \Delta^{(\um)} F_{\mathrm{LM}} 
+  &= \int \frac{\mathrm{d}\Omega^{d-2}}{2(2\pi)^{d-1}} 2^{-2\epsilon} \int_0^1 \frac{\mathrm{d}\eta_{i\um}}{(\eta_{i\um}(1-\eta_{i\um}))^{\epsilon}} \nonumber \\
+  &\quad \times \int [\mathrm{d}\Omega_i] \int \mathrm{d}E_\um E_\um^{1-2\epsilon} \int \mathrm{d}E_i E_i^{1-2\epsilon} 
+  \frac{g_{s,b}^2 P_{gg} F_{\mathrm{LM}} (i\um) }{(1-z) E_{i\um}^{2}\eta_{i\um}} .
+\end{align}
+We now employ the following integrals
+\begin{equation}
+  \int \frac{\mathrm{d}\Omega^{d-2}}{2(2\pi)^{d-1}} = \frac{1}{8\pi^2} \frac{(4\pi)^{\epsilon}}{\Gamma(1-\epsilon)} \, , \qquad \int_0^1 \frac{\mathrm{d}\eta_{i\um}}{(\eta_{i\um}(1-\eta_{i\um}))^{\epsilon}} \frac{1}{\eta_{i\um}} = - \frac{1}{\epsilon} \frac{\Gamma^2(1-\epsilon)}{\Gamma(1-2\epsilon)} \, , 
+\end{equation}
+and the abbreviated notation $[\alpha_s]$. Furthermore, as anticipated, we perform a change of variables: from integration in $\mathrm{d}E_i$ and $\mathrm{d}E_\um$, which had the integration range $[0,E_{\mathrm{max}}]\times [0,E_{\mathrm{max}}]$, we move to the variables $z$ and $E_{i\um}$, in the range $[1,z_{\mathrm{min}}]\times [0,E_{\mathrm{max}}]$, with $z_{\mathrm{min}}=1-E_{\mathrm{max}}/E_{i\um}$. We thus obtain
+\begin{align}
+  \int [\mathrm{d}p_i] \int [\mathrm{d}p_\um] \, C_{i\um} \Delta^{(\um)} F_{\mathrm{LM}} 
+  &= [\alpha_s] \mu^{2\epsilon}2^{-2\epsilon}\left[- \frac{1}{\epsilon} \frac{\Gamma^2(1-\epsilon)}{\Gamma(1-2\epsilon)} \right] \int [\mathrm{d}\Omega_i]\int_0^{E_{\mathrm{max}}} \mathrm{d}E_{i\um} \nonumber \\
+  &\quad \times \int_{z_{\mathrm{min}}}^{1} \mathrm{d}z \, z^{1-2\epsilon} \, E_{i\um}^{1-4\epsilon} \,(1-z)^{-2\epsilon}P_{gg}(z)F_{\mathrm{LM}}(i\um) .
+\end{align}
+Now, we rename the variable $[i\um]$ as $i$. Furthermore, we observe that the function $F_{\mathrm{LM}}(i\um)=F_{\mathrm{LM}}(z^{-1}\cdot i)$ depends on $z$ and that $z_{\mathrm{min}}\leq0$, due to the same considerations made earlier. Therefore, we can state that $F_{\mathrm{LM}}(z \cdot a_q) = 0$ for $z \in [z_{\mathrm{min}}, 0)$. We thus obtain
 \begin{equation}
   \begin{split}
   & \int [\mathrm{d}p_i] \int [\mathrm{d}p_\um] \, C_{i\um} \Delta^{(\um)} F_{\mathrm{LM}} = \\
-  & = \int \frac{\mathrm{d}\Omega^{d-2}}{2(2\pi)^{d-1}} 2^{-2\epsilon} \int_0^1 \frac{\mathrm{d}\eta_{i\um}}{(\eta_{i\um}(1-\eta_{i\um}))^{\epsilon}} \int [\mathrm{d}\Omega_i] \int \mathrm{d}E_\um E_\um^{1-2\epsilon} \int \mathrm{d}E_i E_i^{1-2\epsilon} \frac{g_{s,b}^2 P_{gg} F_{\mathrm{LM}} (i\um) }{(1-z) E_{i\um}^{2}\eta_{i\um}} \, .
+  & = [\alpha_s] \, \frac{1}{\epsilon} \int[\mathrm{d}p_i] \left(\frac{2E_i}{\mu} \right)^{-2\epsilon} \frac{\Gamma^2(1-\epsilon)}{\Gamma(1-2\epsilon)} \cdot \left( - \int_0^1 \mathrm{d}z \, z^{1-2\epsilon} \, (1-z)^{-2\epsilon} \, P_{gg}(z)\right) \, F_{\mathrm{LM}} .
   \end{split}
 \end{equation}
-We now employ the following integrals
+We now add the soft-collinear term. Since the limit $E_{\um} \to 0$ is equivalent to $z \to 1$, we express the soft operator as $S_z$. We observe that, after applying the soft limit, the function $F_{\mathrm{LM}}$ does not depend on $z$, and therefore we cannot use the same argument as before to restrict the integration range. However, we can rewrite the integral over the interval $[z_{\mathrm{min}},1]$ as an integral over $(0,1]$ minus the integral over $(0,z_{\mathrm{min}}]$. By doing so, we obtain
+\begin{align}
+  \int [\mathrm{d}p_i] \int [\mathrm{d}p_\um] \, C_{i\um} S_{\um} \Delta^{(\um)} F_{\mathrm{LM}} 
+  &= [\alpha_s] \, \frac{1}{\epsilon} \int[\mathrm{d}p_i] \left(\frac{2E_i}{\mu} \right)^{-2\epsilon} \frac{\Gamma^2(1-\epsilon)}{\Gamma(1-2\epsilon)} \nonumber \\
+  & \times \left[ - \int_0^1 \mathrm{d}z \, S_z \, z^{1-2\epsilon} (1-z)^{-2\epsilon} P_{gg}(z) - \frac{C_A}{\epsilon} \left(1-\frac{E_{\text{max}}}{E_i}\right) \right] F_{\mathrm{LM}} .
+\end{align}
+Putting together the obtained results, the integrated soft-collinear counterterm for a gluon $\um$ going collinear to a quark $i$ in the final state reads
 \begin{equation}
-  \int \frac{\mathrm{d}\Omega^{d-2}}{2(2\pi)^{d-1}} = \frac{1}{8\pi^2} \frac{(4\pi){\epsilon}}{\Gamma(1-\epsilon)} \, ,
+  \left<  C_{i\um} \bar{S}_{\um} \Delta^{(\um)} F_{\mathrm{LM}}\right> = \frac{[\alpha_s]}{\epsilon} \left< \Gamma_{i,g \to gg} \, F_{\mathrm{LM}}\right> \, ,
 \end{equation}
-and  \\
-
-
-
-
-faccio i conti, mostro che non ottengo la consueta generalised final-state anomalous dimension, ma devo sommare i casi per ottenerla. \\
-Discorso generale su come ottengo operatore $I_C$ nell'initial state e nel final state, e in generale che forma hanno le correzioni in questo caso. \\
-Operator $I_\mathrm{C}$
+where $\Gamma_{g,g \to gg}$ is the \emph{generalized final-state anomalous dimension}, which, in the general case, has the form
 \begin{equation}
-  I_C(\epsilon) = \sum_{i=1}^{N_p} \frac{\Gamma_{i,f_i}}{\epsilon}
+  \Gamma_{i,f_{[i\um]}\to f_i f_\um} = \left[\left(\frac{2E_i}{\mu}\right)^{-2\epsilon} \frac{\Gamma^2(1-\epsilon)}{\Gamma(1-2\epsilon)}\right] \, \gamma^{22}_{z,f_{[i\um]} \to f_i f_\um} (L_i) \, ,
+  \label{gen-final-anom-dim}
 \end{equation}
+where 
+\begin{align}
+  \gamma^{nk}_{g(z),f_{[i\um]}} (L_i) 
+  &= - \int_0^1 \mathrm{d}z \, \bar{S}_z \left[z^{-n\epsilon}(1-z)^{-k\epsilon}g(z)P_{f_{[i\um]}f_i}(z)\right] \nonumber \\
+  &\quad + 2 \delta_{f_{[i\um]}f_i} \vec{T}^2_{f_{[i\um]}} \frac{1-e^{-k \epsilon L_i}}{k\epsilon} g(1) ,
+  \label{gen-an-dim}
+\end{align}
+and $L_i=\log{\left(E_{\mathrm{max}}/E_i\right)}$. We observe that the quantity in Eq. \ref{gen-final-anom-dim} differs from the conventional collinear anomalous dimension that arises from integrals of the collinear splitting functions without additional factors of $z=z_{i,\um}$. Furthermore, the expansion in $\epsilon$ of $\Gamma_{g,g \to gg}$ is $\Gamma_{g,g \to gg}=\frac{11}{6}C_A+2C_AL_i+\mathcal{O}(\epsilon)$, which yields exactly the term proportional to $C_A$ in the gluon anomalous dimension but lacks the term proportional to $n_f$, i.e., the number of quark flavours. To see how the conventional collinear anomalous dimension emerges, we need to consider the contribution from other two partons going collinear: when an unresolved (anti)quark $\um$ goes collinear to another (anti)quark $i$ in the final state. The calculation in this case is identical to the previous one, with the difference that $S_q = 0$, and with the splitting function $P_{gq}(z)$ (see \ref{splitting-functions}). Therefore, the second term on the right-hand side of Eq. \ref{gen-an-dim} vanishes: indeed, $f_{[i\um]}=g$ and $f_i=q$, hence $\delta_{f_{[i\um]}f_i}=0$. Due to the symmetries of the splitting and the fact that it does not depend on the quark flavour\footnote{For details, see Section 3 of \cite{Devoto:2025kin}.}, this contribution is given by the corresponding result multiplied by a factor of $2n_f$.
+\begin{equation}
+  \left<  C_{i\um} \bar{S}_{\um} \Delta^{(\um)} F_{\mathrm{LM}}\right> = \frac{[\alpha_s]}{\epsilon} \left< 2n_f \, \Gamma_{i,g \to q \bar{q}} \, F_{\mathrm{LM}}\right> \, ,
+\end{equation}
+The sum of the two contributions allows us to recover the conventional collinear anomalous dimension, which we define as
+\begin{equation}
+  \Gamma_{i,g} = \Gamma_{i,g \to gg} + 2n_f \Gamma_{i,g \to q \bar{q}} \, ,
+\end{equation}
+which, when expanded in $\epsilon$, takes the form $\Gamma_{i,g}=\gamma_g + 2 \vec{T}_g^2 L_i + \mathcal{O}(\epsilon)$, and contains precisely the gluon anomalous dimension $\gamma_g$. \\
+
+We are left to analyze the cases in which a gluon $\um$ becomes collinear to a quark $i$ in the final state, and the opposite case, i.e., in which a quark $\um$ becomes collinear to a quark $i$ in the final state. Again, the calculations are analogous to the situation illustrated at the beginning of the paragraph, but the splitting functions differ: when a gluon $\um$ is collinear to a quark $i$, one uses $P_{qq}(z)$, while in the opposite case one uses $P_{qg}(z)$, both of which can be found in Eq. \ref{splitting-functions}. Also in this latter case, the soft limit is absent, and the delta function in \ref{gen-an-dim} vanishes. To obtain the conventional collinear anomalous dimension, it is again necessary to sum the two contributions, yielding
+\begin{equation}
+  \Gamma_{i,q} = \Gamma_{i,q \to qg} + \Gamma_{i,q \to gq} \,.
+\end{equation}
+What allows us to recover the conventional quark anomalous dimension is the fact that the weight factors $z_{i\um}$ cancel out when combining the two splittings.
 
 
+\subsection{Hard-collinear operator}
+The study of all possible combinations of partons that can become collinear allows us to express the integrated soft-collinear counterterm in a general form, which reads
+\begin{equation}
+  \left< \bar{S}_{i\um} C_{i\um} \Delta^{(\um)} F_{\mathrm{LM}}(\um)\right> = [\alpha_s] \left< I_{\mathrm{C}}(\epsilon) \cdot F_{\mathrm{LM}} \right> + \frac{[\alpha_s]}{\epsilon} \left[\left< P_{aa}^{\mathrm{gen}} \otimes F_{\mathrm{LM}} \right> + \left< F_{\mathrm{LM}} \otimes P_{bb}^{\mathrm{gen}}  \right>\right] \, , 
+\end{equation}
+where $a$ and $b$  indicate the initial-state partons, and where we have introduced the hard collinear operator
+\begin{equation}
+  I_{\mathrm{C}}(\epsilon) = \sum_{i=1}^{N_p} \frac{\Gamma_{i,f_i}}{\epsilon}  \, ,
+\end{equation}
+con $N_p$  being the total number of partons involved.
 
-\section{Cancellation of poles}
  
 
 \clearpage
@@ -701,7 +749,9 @@ Operator $I_\mathrm{C}$
 \chapter{NLO QCD corrections with $\theta$-parameters in the NSC Subtraction Scheme}
 \label{NSC-SS-parameters}
 
-Il lavoro esposto nel capitolo precedente può essere ulteriormente generalizzato, come è stato fatto nei paper \cite{Devoto:2023rpv,Devoto:2025kin}. In questo capitolo ripercorriamo tali risultati, implementando theta parameters. Lo facciamo perché uno dei principali difetti di NSC SS è che la sua efficienza è un po' impattata dalla numerical integration of the subtraction terms.
+Il lavoro esposto nel capitolo precedente può essere ulteriormente generalizzato, come è stato fatto nei paper \cite{Devoto:2023rpv,Devoto:2025kin}. In questo capitolo ripercorriamo tali risultati, implementando theta parameters. Lo facciamo perché uno dei principali difetti di NSC SS è che la sua efficienza è un po' impattata dalla numerical integration of the subtraction terms. \\
+
+Specificare che nel caso 2310, $n_f=0$, pertanto non serve fare somma di contributi diversi per ottenere anomalous dimension.
 
 \section{Draft}
 Soft limit
@@ -809,8 +859,8 @@ A splitting function describes the probability that a high-energy parton will sp
 \begin{equation}
   \begin{split}
     & P_{qq}(z) = C_F \left[\frac{1+z^2}{1-z}-\epsilon(1-z)\right]\, , \\
-    & P_{gg}(z)= 2C_A \left[ \frac{z}{1-z}+\frac{1-z}{z}+z(1-z)\right] \equiv P_{qq}(1-z) \, , \\
-    & P_{qg}(z) = T_R \left[1-\frac{2z(1-z)}{1-\epsilon}\right] \, , \\
+    & P_{qg}(z)= C_F \left[\frac{1+(1-z)^2}{z}-\epsilon z\right] \equiv P_{qq}(1-z)\, , \\
+    & P_{gq}(z) = T_R \left[1-\frac{2z(1-z)}{1-\epsilon}\right] \, , \\
     & P_{gg} (z) = 2 C_A \left[\frac{z}{1-z}+\frac{1-z}{z}+z(1-z)\right] \, .
   \end{split}
   \label{splitting-functions}
@@ -826,13 +876,13 @@ In an initial-state splitting, a parton coming from one of the colliding protons
 \end{equation}
 Finally, for reference, we also use the conventional leading-order Altarelli-Parisi splitting functions \cite{ellis}. They are written as 
 \begin{equation}
-  \begin{split}
-    \hat{P}_{qq}^{(0)}(z) = C_F \left[ 2 \mathcal{D}_0 (z)-(1+z)+\frac{3}{2} \delta(1-z) \right], \qquad \qquad  \\
-    \hat{P}_{qg}^{(0)}(z) = T_R \left[(1-z)^2+z^2\right] \, , \qquad \qquad\qquad\qquad\quad\qquad \, \,\\
-    \hat{P}_{gq}^{(0)}(z) = C_F \left[\frac{1+(1-z)^2}{z}\right] \, , \qquad \qquad\qquad\qquad\quad\qquad \, \, \\
-    \hat{P}_{gg}^{(0)}(z) = 2C_A \left[\mathcal{D}_0 (z)+z(1-z)+\frac{1}{z}-2\right] + \beta_0\delta(1-z) \,.
-  \end{split}
-  \label{altarelli-parisi}
+\begin{aligned}
+    \hat{P}_{qq}^{(0)}(z) &= C_F \left[ 2 \mathcal{D}_0(z) - (1+z) + \frac{3}{2} \delta(1-z) \right], \\
+    \hat{P}_{qg}^{(0)}(z) &= T_R \left[ (1-z)^2 + z^2 \right], \\
+    \hat{P}_{gq}^{(0)}(z) &= C_F \left[ \frac{1+(1-z)^2}{z} \right], \\
+    \hat{P}_{gg}^{(0)}(z) &= 2C_A \left[ \mathcal{D}_0(z) + z(1-z) + \frac{1}{z} - 2 \right] + \beta_0\delta(1-z).
+\end{aligned}
+\label{altarelli-parisi}
 \end{equation}
 
 \clearpage

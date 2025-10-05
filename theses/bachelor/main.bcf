@@ -2403,10 +2403,11 @@
     <bcf:citekey order="36" intorder="1">Devoto:2025kin</bcf:citekey>
     <bcf:citekey order="37" intorder="1">Devoto:2025kin</bcf:citekey>
     <bcf:citekey order="38" intorder="1">Asteriadis:1910</bcf:citekey>
-    <bcf:citekey order="39" intorder="1">Devoto:2023rpv</bcf:citekey>
-    <bcf:citekey order="39" intorder="2">Devoto:2025kin</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">Devoto:2025kin</bcf:citekey>
     <bcf:citekey order="40" intorder="1">Devoto:2023rpv</bcf:citekey>
-    <bcf:citekey order="41" intorder="1">ellis</bcf:citekey>
+    <bcf:citekey order="40" intorder="2">Devoto:2025kin</bcf:citekey>
+    <bcf:citekey order="41" intorder="1">Devoto:2023rpv</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">ellis</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="ynt">
