@@ -238,12 +238,13 @@ where $[\mathrm{d}p_{\um}]$ is the $d$-dimensional phase-space measure for the e
 \end{equation}
 and $E_{\mathrm{max}}$ is an arbitrary energy scale that must be at least as large as the maximum energy allowed by the momentum-conserving $\delta$-functions in Eq. \ref{leading-order}.\\
 On the right-hand side of Eq. \ref{subtraction-flm}, the first term is integrable in four-dimensional phase space, since the leading singular behaviour of $F^{ab}_{\mathrm{LM}}$ is removed by the subtraction term $\mathcal{S}$. As this integration is performed numerically using Monte Carlo (MC) methods, it is clear that restricting the integration region to the minimal necessary volume is crucial for improving the efficiency of the computation. \\
-The second term involves only the unresolved parton $\um$, making it possible to integrate over its phase space without affecting the jet observables. Furthermore, as showed in Eq. \ref{extraction-poles}, this integration enables the extraction of $1/\epsilon$ poles, which describe the singular behaviour of $\mathcal{S}$ and, consequently, of the amplitude itself. Moreover, it resolves the problem of the dimensional mismatch between the integration domains of the virtual and real corrections. Thus, the cancellation of the poles with those arising from the virtual contributions becomes possible.
+The second term involves only the unresolved parton $\um$, making it possible to integrate over its phase space without affecting the jet observables. Furthermore, as showed in Eq. \ref{extraction-poles}, this integration enables the extraction of $1/\epsilon$ poles, which describe the singular behaviour of $\mathcal{S}$ and, consequently, of the amplitude itself. Moreover, it resolves the problem of the dimensional mismatch between the integration domains of the virtual and real corrections. Thus, the cancellation of the poles with those arising from the virtual contributions becomes possible \cite{Devoto:2025kin}.
 
 \section{Soft and Collinear operators}
 Different subtraction schemes are characterized by different forms for $\mathcal{S}$, or, equivalently, $F(0)$. The FKS subtraction scheme, which constitutes the basis for the NSC method, constructs $\mathcal{S}$ directly from the soft and collinear limits. The efficacy of this approach becomes clear if we consider the behaviour of the amplitudes in these limits, as detailed in Section \ref{properties}: in both the soft and collinear cases, the amplitude squared factorizes into a  lower-multiplicity function $F^{ab}_{\mathrm{LM}}$, which is independent of the unresolved parton $\um$, and a singular term, whose integration over the phase space of parton $\um$ gives the explicit pole. Therefore, we introduce two operators that perform soft and collinear projections
 \begin{equation}
     S_i A = \lim_{E_i \to 0} A \, , \qquad C_{ij}A = \lim_{\rho_{ij}\to 0}A \, ,
+    \label{projections}
 \end{equation}
 where $\rho_{ij}= 1 - \vec{n}_i \cdot \vec{n}_j = 1 - \cos{\theta_{ij}}$, with $\vec{n}_i$ a unit vector that describes the direction of the momentum of the $i$-th particle in ($d-1$)-dimensional space, and $\theta_{ij}$ the angle between partons $i$ and $j$. These operators apply to all terms that follow them. \\
 Thus, we identify $\mathcal{S}$ as the action of the soft and/or collinear operators on $F^{ab}_{\mathrm{LM}}$. As these operators capture the leading asymptotic behaviour of the product of the matrix element squared, the observable, and the phase space – namely, the definition of $F^{ab}_{\mathrm{LM}}$ in Eq. \ref{flm}, if this quantity is, instead, integrable, the operator acts as an annihilator (e.g., $S_q = S_{\bar{q}}=0$). \\
@@ -263,6 +264,7 @@ The damping factor $\Delta^{(i)}$ acts as an annihilator, vanishing when any par
 
 
 \section{Modularity of the scheme}
+\label{modularity-scheme}
 One of the most interesting features of the NSC subtraction scheme is its modular structure: the subtractions for a generic process, no matter how complicated, are built from a relatively small set of basic ingredients. Indeed, the soft contributions are straightforward to compute, while, for the nested-soft-collinear ones, we only need to consider pairs of partons. This leads to three possible cases: both partons are initial state, both are final state, or one is initial and one is final. These three possibilities have been studied in \cite{Caola:1902}, \cite{Caola:1907}, and \cite{Asteriadis:1910}, respectively. Therefore, in order to better understand the workings of the NSC subtraction scheme with all its subtleties, the following sections will present a general treatment, while making explicit reference to specific examples, namely the processes discussed in \cite{Caola:1902} and \cite{Caola:1907}.
 \\
 Ref. \cite{Caola:1902} provides the analytic formulas for the production of a generic color-singlet final state $V$ at a hadron collider, i.e., $q_1\bar{q}_2 \to V$ (which we will call $\mathcal{P}_{1}^{\mathrm{LO}}$), such as the Drell-Yan process, illustrated in the following diagram
@@ -448,16 +450,17 @@ where $\otimes$ denotes the effective local vertex, which encapsulates the top-q
 %In the following sections we will highlight the form of the real-emission NLO corrections in the soft and collinear limits for each of these representative processes. 
 %
 
-Our goal is to present the explicit expression for the real-emission contributions in a form similar to that of Catani's $I_1(\epsilon)$ function defined in Ref.\cite{Catani:1998bh}, by introducing two operators, $I_{\mathrm{S}}$ and $I_{\mathrm{C}}(\epsilon)$, which parametrize the poles arising from the soft and collinear limits, respectively. The corrections will then be given by the product of these functions with the leading-order kinematics, so that the sum
+Our goal is to present the explicit expression for the real-emission contributions in a form similar to that of Catani's $I_1(\epsilon)$ function defined in Ref.\cite{Catani:1998bh}, by introducing two operators, $I_{\mathrm{S}}(\epsilon)$ and $I_{\mathrm{C}}(\epsilon)$, which parametrize the poles arising from the soft and collinear limits, respectively. The corrections will then be given by the product of these functions with the leading-order kinematics, so that the sum
 \begin{equation}
 I_{\mathrm{T}}(\epsilon) = I_{\mathrm{V}}(\epsilon) + I_{\mathrm{S}} (\epsilon)+ I_{\mathrm{C}}(\epsilon) , ,
 \end{equation}
 is finite as $\epsilon \to 0$, where $I_{\mathrm{V}}(\epsilon)$ is related to $I_1(\epsilon)$.
   
 \section{Soft limit}
-Let $\um$ be the index that characterizes the unresolved parton. To define the expression of the last term on the right-hand side of Eq. \ref{subtraction-flm} in the soft limit, it is necessary to integrate over the phase space of the parton $\um$ in Eq. \ref{ampl-soft}, i.e., the result of the action of the soft operator on the squared matrix element. In this case, we can express Eq. \ref{ampl-soft} as
+Let $\um$ be the index that characterizes the unresolved parton. To define the expression of the last term on the right-hand side of Eq. \ref{subtraction-flm} in the soft limit, it is necessary to integrate over the phase space of the parton $\um$ in Eq. \ref{ampl-soft}, i.e., the result of the action of the soft operator on the squared matrix element. In this case, we can express Eq. \ref{subtraction-flm} as
 \begin{equation}
   \langle \Delta^{(\um)}F_{\mathrm{LM}}(\um) \rangle = \langle S_{(\um)}F_{\mathrm{LM}}(\um) \rangle + \langle \bar{S}_{(\um)}F_{\mathrm{LM}}(\um) \rangle \, ,
+  \label{soft-limit-sum}
 \end{equation}
 where the soft operator acting on the splitting function yields  $S_\um \Delta^{\um} = 1$. Before performing the integration, we note that it is convenient to express the phase-space measure $[\mathrm{d}p_\um]$ from Eq. \ref{measure} in hyperspherical coordinates. For massless partons (where $|p_\um|=E_\um$), this measure becomes
 \begin{equation}
@@ -541,12 +544,12 @@ where $m_H$ is the mass of the Higgs boson, $\zeta_2 = \pi^2/6$, and $1/3$ is a 
 %\end{equation}
 
 \section{Collinear and Soft-Collinear limits}
-We observe that the last term in Eq. \ref{soft-regulated} is regulated in the soft limit, but it still contains collinear divergences. To isolate and remove them, we rewrite the expression as 
+We observe that the last term in Eq. \ref{soft-limit-sum} is regulated in the soft limit, but it still contains collinear divergences. To isolate and remove them, we rewrite the expression as 
 \begin{equation}
   \langle \Delta^{(\um)}F_{\mathrm{LM}}(\um) \rangle = \langle S_{(\um)}F_{\mathrm{LM}}(\um) \rangle + \sum_{i=1}^{N_p} \langle \bar{S}_{(\um)}C_{i\um} \Delta^{(\um)} F_{\mathrm{LM}}(\um) \rangle + \langle \bar{S}_{(\um)} \bar{C}_{i\um} \Delta^{(\um)} \omega^{\um i} F_{\mathrm{LM}}(\um) \rangle \, ,
 \end{equation}
 where the final term on the right-hand side is completely finite and can be integrated in four dimensions. \\
-The collinear limits are a local phenomenon. Their analysis requires only the identification of the partons involved in the splitting: specifically, whether they are quarks or gluons and if they are in the initial or final state. The remaining details of the hard scattering process are irrelevant. When a final-state parton $\um$ becomes collinear with another final-state parton $i$, the process is described by $[i\um]^* \to i(z) + \um(\bar{z})$. In this splitting, the variable $z = 1 - E_{\um}/E_{[i\um]}$ defines the energy fraction carried by parton $i$, while parton $\um$ carries the complementary fraction $1-z$. Conversely, when an outgoing parton $\um$ becomes collinear with an incoming parton $i$, they are clustered into a parton $[i\um]$. This process is described as $i \to [i\um]^* + \um$, with $z = 1 - E_{\um}/E_i$. The specific identity of the parton $[i\um]$ that enters the hard process depends on this configuration, leading to different splitting functions in Eq. \ref{ampl-coll}: a gluon clustered with any type of parton preserves the latter's flavours, while a quark clustered with an antiquark gives a gluon. It is precisely this property that ensures the modularity of the NSC scheme, as previously discussed. \\
+The collinear limits are a local phenomenon. Their analysis requires only the identification of the partons involved in the splitting: specifically, whether they are quarks or gluons and if they are in the initial or final state. The remaining details of the hard scattering process are irrelevant. When a final-state parton $\um$ becomes collinear with another final-state parton $i$, the process is described by $[i\um]^* \to i(z) + \um(\bar{z})$. In this splitting, the variable $z = 1 - E_{\um}/E_{i\um}$ defines the energy fraction carried by parton $i$, while parton $\um$ carries the complementary fraction $1-z$. Conversely, when an outgoing parton $\um$ becomes collinear with an incoming parton $i$, they are clustered into a parton $[i\um]$. This process is described as $i \to [i\um]^* + \um$, with $z = 1 - E_{\um}/E_i$. The specific identity of the parton $[i\um]$ that enters the hard process depends on this configuration, leading to different splitting functions in Eq. \ref{ampl-coll}: a gluon clustered with any type of parton preserves the latter's flavours, while a quark clustered with an antiquark gives a gluon. It is precisely this property that ensures the modularity of the NSC scheme, as previously discussed. \\
 
 
 \begin{figure}[!ht]
@@ -629,7 +632,7 @@ Moreover, we introduce the following definition
 \begin{equation}
   \hat{P}_{qq}^{(0)}(z) = C_F \left[ 2 \mathcal{D}_0 (z)-(1+z)+\frac{3}{2} \delta(1-z) \right],
 \end{equation}
-that is the Leading-Order Altarelli-Parisi splitting kernel, and
+that is the Leading-Order Altarelli-Parisi splitting kernel (see Eq. \ref{altarelli-parisi}), and
 \begin{equation}
   \mathcal{P}_{qq}^{\mathrm{fin}}= - \frac{C_F}{\epsilon} \left[2 \sum_{n=1}^{\infty} \frac{(-2\epsilon)^n}{n!} \, \mathcal{D}_n(z)+(1-z)^{-2\epsilon} \, P_{qq, \mathrm{reg}}(z)+(1-z) \right] \, .
 \end{equation}
@@ -740,7 +743,7 @@ where $a$ and $b$  indicate the initial-state partons, and where we have introdu
 \begin{equation}
   I_{\mathrm{C}}(\epsilon) = \sum_{i=1}^{N_p} \frac{\Gamma_{i,f_i}}{\epsilon}  \, ,
 \end{equation}
-con $N_p$  being the total number of partons involved.
+with $N_p$  being the total number of partons involved.
 
  
 
@@ -748,12 +751,46 @@ con $N_p$  being the total number of partons involved.
 
 \chapter{NLO QCD corrections with $\theta$-parameters in the NSC Subtraction Scheme}
 \label{NSC-SS-parameters}
+Among the criteria used to evaluate the quality of a subtraction scheme are computational efficiency and numerical stability in the evaluation of results. This is critically important because the complex processes that take place at the LHC, involving high-multiplicity final states, require sophisticated numerical integration over particularly large and complex phase spaces. To have greater control over this integration, ensure that we are sampling the smallest and most physically relevant phase space possible, and minimize the computational cost, it is convenient to introduce into the NSC Subtraction Scheme a set of tunable parameters. These parameters allow us to modulate the boundaries of the soft and collinear regions, effectively controlling the integration limits we use.
 
-Il lavoro esposto nel capitolo precedente può essere ulteriormente generalizzato, come è stato fatto nei paper \cite{Devoto:2023rpv,Devoto:2025kin}. In questo capitolo ripercorriamo tali risultati, implementando theta parameters. Lo facciamo perché uno dei principali difetti di NSC SS è che la sua efficienza è un po' impattata dalla numerical integration of the subtraction terms. \\
+\section{Processes}
+Before delving into the technical details of the parameter implementation, we first describe the class of processes for which we will derive and show the explicit form of the subtraction terms. Following the scheme of the papers \cite{Devoto:2023rpv,Devoto:2025kin}, we will now consider processes that are more general than the illustrative examples introduced in Section \ref{modularity-scheme}. In particular, as in \cite{Devoto:2023rpv}, we will begin by considering the production of an arbitrary number of gluons and a colorless final state $X$ in $q \bar{q}$ annihilation, thus restricting ourselves to the case where all resolved and unresolved final-state partons are gluons; that is, a process which at Leading Order has the form
+
+\begin{equation}
+  \mathcal{A}^{\mathrm{LO}}: \quad a_q + b_{\bar{q}} \to X + N \, g \, ,
+\end{equation}
+where $N$ is the number of produced jets. The NLO cross section for this process receives a real-emission contribution from
+\begin{equation}
+  \mathcal{A}^{\mathrm{NLO}}: \quad a_q + b_{\bar{q}} \to X + (N+1) \, g \, .
+\end{equation}
+Then, to proceed with the generalization of the scheme, we will analyze, as in \cite{Devoto:2025kin}, the partonic channel whose Leading Order process has the form
+\begin{equation}
+  \mathcal{B}^{\mathrm{LO}}: \quad a_g + b_q \to X + N_g \, g \, ,
+\end{equation}
+where $N_g=N-1$. This configuration receives NLO contributions from the following three processes
+\begin{equation}
+  \begin{aligned}
+    &\mathcal{B}_1^{\mathrm{NLO}} : \quad a_g + b_q \to X + (N_g+1) \, g \, , \\
+    & \mathcal{B}_2^{\mathrm{NLO}} : \quad a_g + b_q \to X + (N_g-1) \, g +q + q'\bar{q}'\, , \quad q' \neq q \, , \\
+    & \mathcal{B}_3^{\mathrm{NLO}} : \quad a_g + b_q \to X + (N_g-1) \, g +q + q\bar{q}\,  .
+  \end{aligned}
+\end{equation}
+
+\section{$\theta$-parameters}
+To modulate the width of the phase space region subject to integration in our subtraction scheme, we introduce constraints on the operators responsible for the soft and collinear projections (defined in \ref{projections}). This is achieved by augmenting them with Heaviside Theta functions, which restrict the integration range via dedicated parameters $\theta$. Specifically, since the integration is carried out in hyperspherical coordinates, we redefine the soft-limit operator by imposing an upper bound on the energy integration variable $E_\um$. This bound is proportional to a new parameter, $\theta_s$, which effectively defines the maximum energy for a parton to be considered soft within the subtraction
+\begin{equation}
+S_\um^{\theta_s} = \theta{(E_\um < \theta_s \, E_{\mathrm{max}})} \, S_\um \,.
+\end{equation}
+Conversely, for the collinear-limit operator, we restrict the angular integration. Using a parameter $\theta_i$, we limit the separation angle $\theta_{ij}$ between the two partons ($i$ and $j$) that become collinear. In practice, this is implemented by bounding the angular variable $\eta_{ij}$ (a function of $\theta_{ij}$), thus defining the region around a parton's momentum where another parton is considered collinear
+\begin{equation}
+C_{ij}^{\theta_i} = \theta{(\eta_{ij} < \theta_i )} \, C_{ij}\, .
+\end{equation}
+
+\section{Soft limit}
+
 
 Specificare che nel caso 2310, $n_f=0$, pertanto non serve fare somma di contributi diversi per ottenere anomalous dimension.
 
-\section{Draft}
 Soft limit
 \begin{equation}
   \langle S_\um^{\theta_s} F_\mathrm{LM}(\um) \rangle = \int [\mathrm{d}p_\um] \theta(E_\um < \theta_s E_{\mathrm{max}}) (-g^2_{s,b}) \sum _{(ij)}^{N_p} \frac{p_i \cdot p_j}{(p_i \cdot p_\um)(p_j \cdot p_\um)} (\vec{T}_i \cdot \vec{T}_j) F_\mathrm{LM}
@@ -777,6 +814,8 @@ Coefficient
   \end{split}
 \end{equation}
 
+\section{Collinear and Soft-Collinear limits}
+
 Final state \\
 Collinear limit
 \begin{equation}
@@ -793,6 +832,12 @@ Collinear limit
 \end{equation}
 
 \clearpage
+
+\chapter{Conclusion}
+1-2 pages max, summarize the whole thesis, and give some outlook/ideas of future work.
+
+\clearpage
+
 
 \bookmarksetupnext{level = -1}
 \begin{appendices}

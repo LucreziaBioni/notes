@@ -18,10 +18,14 @@
 \contentsline {subsection}{\numberline {2.6.2}Final state}{19}{subsection.2.6.2}%
 \contentsline {subsection}{\numberline {2.6.3}Hard-collinear operator}{21}{subsection.2.6.3}%
 \contentsline {chapter}{\numberline {3}NLO QCD corrections with $\theta $-parameters in the NSC Subtraction Scheme}{22}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Draft}{22}{section.3.1}%
-\contentsline {chapter}{\sffamily Appendices}{24}{section*.5}%
-\contentsline {chapter}{\numberline {A}Useful definitions}{26}{appendix.a.A}%
-\contentsline {section}{\numberline {A.1}Constants}{26}{section.a.A.1}%
-\contentsline {section}{\numberline {A.2}Partitions at NLO}{26}{section.a.A.2}%
-\contentsline {section}{\numberline {A.3}Splitting functions}{27}{section.a.A.3}%
-\contentsline {chapter}{Bibliography}{29}{appendix*.6}%
+\contentsline {section}{\numberline {3.1}Processes}{22}{section.3.1}%
+\contentsline {section}{\numberline {3.2}$\theta $-parameters}{23}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Soft limit}{23}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Collinear and Soft-Collinear limits}{24}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Conclusion}{25}{chapter.4}%
+\contentsline {chapter}{\sffamily Appendices}{26}{section*.5}%
+\contentsline {chapter}{\numberline {A}Useful definitions}{28}{appendix.a.A}%
+\contentsline {section}{\numberline {A.1}Constants}{28}{section.a.A.1}%
+\contentsline {section}{\numberline {A.2}Partitions at NLO}{28}{section.a.A.2}%
+\contentsline {section}{\numberline {A.3}Splitting functions}{29}{section.a.A.3}%
+\contentsline {chapter}{Bibliography}{31}{appendix*.6}%
