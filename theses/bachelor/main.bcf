@@ -2409,8 +2409,10 @@
     <bcf:citekey order="41" intorder="2">Devoto:2025kin</bcf:citekey>
     <bcf:citekey order="42" intorder="1">Devoto:2023rpv</bcf:citekey>
     <bcf:citekey order="43" intorder="1">Devoto:2025kin</bcf:citekey>
-    <bcf:citekey order="44" intorder="1">Devoto:2023rpv</bcf:citekey>
-    <bcf:citekey order="45" intorder="1">ellis</bcf:citekey>
+    <bcf:citekey order="44" intorder="1">Catani:1996vz</bcf:citekey>
+    <bcf:citekey order="45" intorder="1">Devoto:2023rpv</bcf:citekey>
+    <bcf:citekey order="46" intorder="1">Devoto:2023rpv</bcf:citekey>
+    <bcf:citekey order="47" intorder="1">ellis</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="ynt">

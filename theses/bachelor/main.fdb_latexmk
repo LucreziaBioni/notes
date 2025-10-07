@@ -1,14 +1,14 @@
 # Fdb version 4
-["biber main"] 0 "main.bcf" "main.bbl" "main" 1759757389.29649 -1
+["biber main"] 1759839238.6564 "main.bcf" "main.bbl" "main" 1759839281.53834 0
   "bibl.bib" 1758812628.28698 9056 9fe92f2305cbf5011a78c9f11cecd518 ""
-  "main.bcf" 1759757389.09718 111007 d422fcba7208adf0fed41562a16f11ea "pdflatex"
+  "main.bcf" 1759839281.4075 111146 206e6a13a8c841924ccf8cf8cfa66898 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1759757386.91161 "/home/lucrezia/notes/theses/bachelor/main.tex" "main.pdf" "main" 1759757389.29671 0
+["pdflatex"] 1759839279.53329 "/home/lucrezia/notes/theses/bachelor/main.tex" "main.pdf" "main" 1759839281.53856 0
   "/etc/texmf/web2c/texmf.cnf" 1757435331.11015 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/lucrezia/notes/theses/bachelor/main.tex" 1759757386.64605 93104 37f1da8831b5c638eab9cac7568117e1 ""
+  "/home/lucrezia/notes/theses/bachelor/main.tex" 1759839279.30049 98899 d7e14365a37247b88a94ce11a7ea9937 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcss1440.tfm" 1136768653 1536 20b080237b56d4b67bdb3a5b0a64b2f8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcss1728.tfm" 1136768653 1536 364bdffde34bf3d55decb399e48992cc ""
@@ -312,11 +312,11 @@
   "imgs/splitting.png" 1759399568.69299 72214 510ec01060066184176b4da4c18023f7 ""
   "imgs/unimi.jpg" 1757433835.956 151126 6aaf40e13c5552fffc380ab31d9b98c8 ""
   "imports.tex" 1757435708.66534 14757 32af4fa02af9a5d07c969a4d1badbe38 ""
-  "main.aux" 1759757389.09219 25250 fab89c8d96ba3617972ed21a0a61a2f8 "pdflatex"
-  "main.bbl" 1759755303.21132 34148 018a5bf606091bb77265b26448ddf1e8 "biber main"
-  "main.run.xml" 1759757389.09844 2340 1b757ab86a6d4d5749f3b0003150b0d9 "pdflatex"
-  "main.tex" 1759757386.64605 93104 37f1da8831b5c638eab9cac7568117e1 ""
-  "main.toc" 1759757389.09844 2501 73df758b1e3f354f08cf77fe2b3878fe "pdflatex"
+  "main.aux" 1759839281.4015 26227 3cc94d58810256e9ad40885796dc5a62 "pdflatex"
+  "main.bbl" 1759839239.21124 34148 018a5bf606091bb77265b26448ddf1e8 "biber main"
+  "main.run.xml" 1759839281.4091 2340 1b757ab86a6d4d5749f3b0003150b0d9 "pdflatex"
+  "main.tex" 1759839279.30049 98899 d7e14365a37247b88a94ce11a7ea9937 ""
+  "main.toc" 1759839281.4091 2667 443d5537468827de8e5192bcfd306303 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"

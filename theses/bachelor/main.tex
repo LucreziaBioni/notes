@@ -457,6 +457,7 @@ I_{\mathrm{T}}(\epsilon) = I_{\mathrm{V}}(\epsilon) + I_{\mathrm{S}} (\epsilon)+
 is finite as $\epsilon \to 0$, where $I_{\mathrm{V}}(\epsilon)$ is related to $I_1(\epsilon)$.
   
 \section{Soft limit}
+\label{section-soft-limit}
 Let $\um$ be the index that characterizes the unresolved parton. To define the expression of the last term on the right-hand side of Eq. \ref{subtraction-flm} in the soft limit, it is necessary to integrate over the phase space of the parton $\um$ in Eq. \ref{ampl-soft}, i.e., the result of the action of the soft operator on the squared matrix element. In this case, we can express Eq. \ref{subtraction-flm} as
 \begin{equation}
   \langle \Delta^{(\um)}F_{\mathrm{LM}}(\um) \rangle = \langle S_{(\um)}F_{\mathrm{LM}}(\um) \rangle + \langle \bar{S}_{(\um)}F_{\mathrm{LM}}(\um) \rangle \, ,
@@ -738,6 +739,7 @@ What allows us to recover the conventional quark anomalous dimension is the fact
 The study of all possible combinations of partons that can become collinear allows us to express the integrated soft-collinear counterterm in a general form, which reads
 \begin{equation}
   \left< \bar{S}_{i\um} C_{i\um} \Delta^{(\um)} F_{\mathrm{LM}}(\um)\right> = [\alpha_s] \left< I_{\mathrm{C}}(\epsilon) \cdot F_{\mathrm{LM}} \right> + \frac{[\alpha_s]}{\epsilon} \left[\left< P_{aa}^{\mathrm{gen}} \otimes F_{\mathrm{LM}} \right> + \left< F_{\mathrm{LM}} \otimes P_{bb}^{\mathrm{gen}}  \right>\right] \, , 
+  \label{soft-collinear-integrated}
 \end{equation}
 where $a$ and $b$  indicate the initial-state partons, and where we have introduced the hard collinear operator
 \begin{equation}
@@ -785,37 +787,72 @@ Conversely, for the collinear-limit operator, we restrict the angular integratio
 \begin{equation}
 C_{ij}^{\theta_i} = \theta{(\eta_{ij} < \theta_i )} \, C_{ij}\, .
 \end{equation}
+As anticipated, the implementation of the $\theta_s$ and $\theta_i$ parameters modifies only the real-emission corrections, while leaving the virtual corrections and those related to PDF renormalization unchanged. Therefore, the focus of this chapter will be on the new form taken by Eqs. \ref{soft-regulated} and \ref{soft-collinear-integrated}, with particular attention paid to the $I_{\mathrm{S}}(\epsilon)$ and $I_{\mathrm{C}}(\epsilon)$ operators. We will explicitly verify that the introduction of these parameters does not alter the scheme's cancellation of infrared poles. Specifically, we will demonstrate that the terms proportional to $1/\epsilon^2$ and $1/\epsilon$ in the sum $I_{\mathrm{S}}(\epsilon) + I_{\mathrm{C}}(\epsilon)$ remain independent of the $\theta$-parameters. This independence is crucial, as it guarantees that the cancellation of singularities is not compromised by the presence of the new parameters.
 
 \section{Soft limit}
 
-
-Specificare che nel caso 2310, $n_f=0$, pertanto non serve fare somma di contributi diversi per ottenere anomalous dimension.
-
-Soft limit
+The soft limit only requires detailed study when the unresolved parton $\um$ is a gluon. Consequently, the treatment for the processes $\mathcal{A}^{\mathrm{NLO}}, \mathcal{B}_1^{\mathrm{NLO}}, \mathcal{B}_2^{\mathrm{NLO}}$, and $\mathcal{B}_3^{\mathrm{NLO}}$  is analogous. The factorization of the squared matrix element is given by Eq. \ref{ampl-soft}, which must now be integrated over the phase space of the gluon $\um$, taking into account the introduction of the $\theta_s$ parameter
 \begin{equation}
-  \langle S_\um^{\theta_s} F_\mathrm{LM}(\um) \rangle = \int [\mathrm{d}p_\um] \theta(E_\um < \theta_s E_{\mathrm{max}}) (-g^2_{s,b}) \sum _{(ij)}^{N_p} \frac{p_i \cdot p_j}{(p_i \cdot p_\um)(p_j \cdot p_\um)} (\vec{T}_i \cdot \vec{T}_j) F_\mathrm{LM}
+  \langle S_\um^{\theta_s} F_\mathrm{LM}(\um) \rangle = \int [\mathrm{d}p_\um] \theta(E_\um < \theta_s E_{\mathrm{max}}) (-g^2_{s,b}) \sum _{(ij)}^{N_p} \frac{p_i \cdot p_j}{(p_i \cdot p_\um)(p_j \cdot p_\um)} (\vec{T}_i \cdot \vec{T}_j) F_\mathrm{LM} \, .
 \end{equation}
+The subsequent calculations follow the same procedure outlined in Section \ref{section-soft-limit}. After performing the soft phase-space integration with the energy cutoff, the soft-integrated counterterm, now including the parameter, takes the form
 \begin{equation}
-  \langle S_\um^{\theta_s} F_\mathrm{LM}(\um) \rangle = - [\alpha_s] \frac{\left(2E_{\mathrm{max}}/\mu\right)^{-2\epsilon}}{\epsilon^2} \theta_s^{-2\epsilon}\sum_{(ij)}^{N_p} \langle \eta_{(ij)}^{-\epsilon} K_{ij} (\vec{T}_i \cdot \vec{T}_j) \cdot F_\mathrm{LM} \rangle
+  \langle S_\um^{\theta_s} F_\mathrm{LM}(\um) \rangle = - [\alpha_s] \frac{\left(2E_{\mathrm{max}}/\mu\right)^{-2\epsilon}}{\epsilon^2} \theta_s^{-2\epsilon}\sum_{(ij)}^{N_p} \langle \eta_{(ij)}^{-\epsilon} K_{ij} (\vec{T}_i \cdot \vec{T}_j) \cdot F_\mathrm{LM} \rangle \, = [\alpha_s] \langle I_{\mathrm{S}}\cdot F_{\mathrm{LM}} \rangle ,
 \end{equation}
-
+where $N_p = N+2$ is the number of initial- and final-state partons. This result shows that the parameter $\theta_s$ enters the counterterm via the multiplicative factor $\theta_s^{-2\epsilon}$, which modifies the effective scale of the soft divergence but does not alter the fundamental pole structure in $\epsilon$. To see this explicitly, it is useful to expand the operator $ I_{\mathrm{S}}$ in powers of $\epsilon$. This expansion allows us to see the nature of the coefficients multiplying the $1/\epsilon^2$ and $1/\epsilon$ terms.  First of all, for the sake of clarity, we write explicitly the expression of the operator including the $\theta_s$ parameter
 \begin{equation}
-  \begin{split}
-  & = \frac{1}{\epsilon^2} \sum_{i=1}^{N_p} T_i^2 + \frac{1}{\epsilon}\left[-\sum_{i=1}^{N_p} 2 \log{\left(\frac{2 E_{\mathrm{max}}\theta_s}{\mu} \right)} \vec{T}_i^2 - \sum_{i\neq j}^{N_p} f_1(\eta_{ij}) (\vec{T}_i \cdot \vec{T}_j) \right] + \\
+  I_{\mathrm{S}} = -\frac{1}{\epsilon^2} \left(\frac{2E_{\mathrm{max}}}{\mu}\right)^{-2\epsilon} \, \theta_s^{-2\epsilon} \, \sum_{i \neq j }{N_p} \eta_{ij}^{-\epsilon} \, K_{ij} \, \left( \vec{T}_i \cdot \vec{T}_j\right) \,. 
+\end{equation}
+Now we define the following function 
+\begin{equation}
+  f_k(x) = \frac{x^{-k\epsilon}-1}{\epsilon} \, ,
+\end{equation}
+which staisifes. $f_k(x) \sim \mathcal{O}(\epsilon)^0 $. This definition is particularly useful because it makes explicit that the $\epsilon$-expansion of factors like $(2E_{\mathrm{max}}/\mu)^{-\epsilon}$ and $\eta_{ij}^{-\epsilon}$ begins at 1.Furthermore, we employ the following expansion for the function $K_{ij}$ defined in \ref{k-function}
+\begin{equation}
+  K_{ij} = 1+ K_{ij}^{(2)} \epsilon^2 + \mathcal{O}(\epsilon^3) \, , \qquad  K_{ij}^{(2)} = \mathrm{Li}_2(1-\eta_{ij}) - \frac{\pi^2}{6} \, , 
+\end{equation}
+and we get 
+\begin{equation}
+  I_{\mathrm{S}} = - \frac{1}{\epsilon^2} \left[1+\epsilon f_2 \left(\frac{2 E_{\mathrm{max}} \theta_s}{\mu}\right)\right] \sum_{i \neq j}^{N_p} (1+\epsilon f_1(\eta_{ij}))(1+ \epsilon^2 K_{ij}^{(2)} + \mathcal{O}(\epsilon^3)) \left( \vec{T}_i \cdot \vec{T}_j\right) \,.
+\end{equation}
+At this stage, we have neglected terms of $\mathcal{O}(\epsilon)$ in the overall prefactor. Since we are ultimately interested in terms up to $\mathcal{O}(\epsilon^0)$, this expression can be simplified further
+\begin{equation}
+  \begin{aligned}
+   I_{\mathrm{S}} & = - \frac{1}{\epsilon^2} \left[1+\epsilon f_2 \left(\frac{2 E_{\mathrm{max}} \theta_s}{\mu}\right)\right] \sum_{i \neq j}^{N_p}\left( \vec{T}_i \cdot \vec{T}_j\right) - \frac{1}{\epsilon} \sum_{i \neq j}^{N_p} f_1(\eta_{ij}) \left( \vec{T}_i \cdot \vec{T}_j\right)  \\
+  & - \sum_{i \neq j}^{N_p} \left[f_2 \left(\frac{2 E_{\mathrm{max}} \theta_s}{\mu}\right) f_1(\eta_{ij}) + K_{ij}^{(2)} \right] \left( \vec{T}_i \cdot \vec{T}_j\right) + \mathcal{O}(\epsilon) \, . 
+  \end{aligned}
+\end{equation}
+We can further simplify terms where only the color charge operators depend on the summation indices $i$ and $j$. In such cases, the summation over one of the indices can be performed by exploiting color conservation. This fundamental property, which holds for the color-space vector $\ket{\mathcal{M}}_c$ of any QCD amplitude, is expressed as
+\begin{equation}
+  \sum_{k=1}^{N_p} \vec{T}_k  \ket{\mathcal{M}}_c = 0 \, .
+\end{equation}
+A detailed treatment of this formalism can be found in \cite{Catani:1996vz}. It follows that 
+\begin{equation}
+  \sum_{k=1}^{N_p} \, {}_c \bra{\mathcal{M}} \left( \vec{T}_i \cdot \vec{T}_j\right) \ket{\mathcal{M}}_c= - \vec{T}^2_i |\mathcal{M}|^2 \, , 
+\end{equation}
+and we get
+\begin{equation}
+  \begin{aligned}
+  I_{\mathrm{S}}  &= \frac{1}{\epsilon^2} \sum_{i=1}^{N_p} T_i^2 + \frac{1}{\epsilon}\left[-\sum_{i=1}^{N_p} 2 \log{\left(\frac{2 E_{\mathrm{max}}\theta_s}{\mu} \right)} \vec{T}_i^2 - \sum_{i\neq j}^{N_p} f_1(\eta_{ij}) (\vec{T}_i \cdot \vec{T}_j) \right] + \\
   &  + \sum_{i=1}^{N_p} 2 \log^2{\left(\frac{2 E_{\mathrm{max}}\theta_s}{\mu} \right)}\vec{T}_i^2 - \sum_{i\neq j}^{N_p} \left[ f_2 \left(2 E_{\mathrm{max}}\theta_s\right) f_1(\eta_{ij}) + K_{ij}^{(2)}\right] (\vec{T}_i \cdot \vec{T}_j) + \mathcal{O}(\epsilon)
-  \end{split}
+  \end{aligned}
 \end{equation}
-
-Coefficient
+The coefficient preceding the $1/\epsilon^2$ pole shows no dependence on $\theta_s$. Therefore, as demonstrated in \cite{Devoto:2023rpv}, its cancellation is guaranteed. We must now analyze the coefficient of the $1/\epsilon$ term in detail, which we rewrite as follows
 \begin{equation}
   \begin{split}
   & c_{-1}(\theta_s) = -\sum_{i=1}^{N_p} 2 \log{\left(\frac{2 E_{\mathrm{max}}\theta_s}{\mu} \right)} \vec{T}_i^2 - \sum_{i\neq j}^{N_p} f_1(\eta_{ij}) (\vec{T}_i \cdot \vec{T}_j) = \\
   & = -\sum_{i=1}^{N_p} \left( 2 \mathrm{Li}^{\theta_s} + 2 \log{\left(\frac{2 E_i}{\mu} \right) } \right) \vec{T}_i^2 - \sum_{i\neq j}^{N_p} f_1(\eta_{ij}) (\vec{T}_i \cdot \vec{T}_j)
   \end{split}
 \end{equation}
+We will compare this term with the corresponding coefficient from the $I_{\mathrm{C}}$ operator, which we denote as $\tilde{c}_{-1}(\theta_s)$. If the sum $c_{-1}(\theta_s) + \tilde{c}_{-1}(\theta_s)$ is independent of the $\theta_s$ parameter, then the cancellation of the infrared poles remains intact.
 
 \section{Collinear and Soft-Collinear limits}
 
+\subsection{Initial state}
+
+\subsection{Final state}
+
+Specificare che nel caso 2310, $n_f=0$, pertanto non serve fare somma di contributi diversi per ottenere anomalous dimension.
 Final state \\
 Collinear limit
 \begin{equation}

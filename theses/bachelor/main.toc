@@ -21,11 +21,13 @@
 \contentsline {section}{\numberline {3.1}Processes}{22}{section.3.1}%
 \contentsline {section}{\numberline {3.2}$\theta $-parameters}{23}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Soft limit}{23}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Collinear and Soft-Collinear limits}{24}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Conclusion}{25}{chapter.4}%
-\contentsline {chapter}{\sffamily Appendices}{26}{section*.5}%
-\contentsline {chapter}{\numberline {A}Useful definitions}{28}{appendix.a.A}%
-\contentsline {section}{\numberline {A.1}Constants}{28}{section.a.A.1}%
-\contentsline {section}{\numberline {A.2}Partitions at NLO}{28}{section.a.A.2}%
-\contentsline {section}{\numberline {A.3}Splitting functions}{29}{section.a.A.3}%
-\contentsline {chapter}{Bibliography}{31}{appendix*.6}%
+\contentsline {section}{\numberline {3.4}Collinear and Soft-Collinear limits}{25}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Initial state}{25}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Final state}{25}{subsection.3.4.2}%
+\contentsline {chapter}{\numberline {4}Conclusion}{26}{chapter.4}%
+\contentsline {chapter}{\sffamily Appendices}{27}{section*.5}%
+\contentsline {chapter}{\numberline {A}Useful definitions}{29}{appendix.a.A}%
+\contentsline {section}{\numberline {A.1}Constants}{29}{section.a.A.1}%
+\contentsline {section}{\numberline {A.2}Partitions at NLO}{29}{section.a.A.2}%
+\contentsline {section}{\numberline {A.3}Splitting functions}{30}{section.a.A.3}%
+\contentsline {chapter}{Bibliography}{32}{appendix*.6}%
