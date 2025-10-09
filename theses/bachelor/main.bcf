@@ -2387,32 +2387,49 @@
     <bcf:citekey order="21" intorder="1">Caola:2017dug</bcf:citekey>
     <bcf:citekey order="22" intorder="1">Frixione:1995ms</bcf:citekey>
     <bcf:citekey order="22" intorder="2">Catani:1996vz</bcf:citekey>
-    <bcf:citekey order="23" intorder="1">Frixione:1995ms</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">Catani:1996vz</bcf:citekey>
     <bcf:citekey order="24" intorder="1">Caola:2017dug</bcf:citekey>
     <bcf:citekey order="25" intorder="1">Catani:1998bh</bcf:citekey>
-    <bcf:citekey order="26" intorder="1">Catani:1999ss</bcf:citekey>
-    <bcf:citekey order="27" intorder="1">Devoto:2025kin</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">Caola:1902</bcf:citekey>
-    <bcf:citekey order="29" intorder="1">Caola:1907</bcf:citekey>
-    <bcf:citekey order="30" intorder="1">Asteriadis:1910</bcf:citekey>
-    <bcf:citekey order="31" intorder="1">Caola:1902</bcf:citekey>
-    <bcf:citekey order="32" intorder="1">Caola:1907</bcf:citekey>
-    <bcf:citekey order="33" intorder="1">Caola:1902</bcf:citekey>
-    <bcf:citekey order="34" intorder="1">Caola:1907</bcf:citekey>
-    <bcf:citekey order="35" intorder="1">Catani:1998bh</bcf:citekey>
-    <bcf:citekey order="36" intorder="1">Asteriadis:1910</bcf:citekey>
-    <bcf:citekey order="37" intorder="1">Devoto:2025kin</bcf:citekey>
-    <bcf:citekey order="38" intorder="1">Devoto:2025kin</bcf:citekey>
-    <bcf:citekey order="39" intorder="1">Asteriadis:1910</bcf:citekey>
-    <bcf:citekey order="40" intorder="1">Devoto:2025kin</bcf:citekey>
-    <bcf:citekey order="41" intorder="1">Devoto:2023rpv</bcf:citekey>
-    <bcf:citekey order="41" intorder="2">Devoto:2025kin</bcf:citekey>
-    <bcf:citekey order="42" intorder="1">Devoto:2023rpv</bcf:citekey>
-    <bcf:citekey order="43" intorder="1">Devoto:2025kin</bcf:citekey>
-    <bcf:citekey order="44" intorder="1">Catani:1996vz</bcf:citekey>
-    <bcf:citekey order="45" intorder="1">Devoto:2023rpv</bcf:citekey>
-    <bcf:citekey order="46" intorder="1">Devoto:2023rpv</bcf:citekey>
-    <bcf:citekey order="47" intorder="1">ellis</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">Caola:1902</bcf:citekey>
+    <bcf:citekey order="26" intorder="2">Caola:1907</bcf:citekey>
+    <bcf:citekey order="26" intorder="3">Asteriadis:1910</bcf:citekey>
+    <bcf:citekey order="26" intorder="4">Devoto:2023rpv</bcf:citekey>
+    <bcf:citekey order="26" intorder="5">Devoto:2025kin</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">Catani:1999ss</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">Devoto:2025kin</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">Caola:1902</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">Caola:1907</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">Asteriadis:1910</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">Caola:1902</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">Caola:1907</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">Asteriadis:1910</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">Caola:1902</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">Caola:1907</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">Asteriadis:1910</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">Catani:1998bh</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">Caola:1907</bcf:citekey>
+    <bcf:citekey order="40" intorder="1">Asteriadis:1910</bcf:citekey>
+    <bcf:citekey order="41" intorder="1">Caola:1902</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">Caola:1907</bcf:citekey>
+    <bcf:citekey order="43" intorder="1">Asteriadis:1910</bcf:citekey>
+    <bcf:citekey order="44" intorder="1">Caola:1907</bcf:citekey>
+    <bcf:citekey order="45" intorder="1">Devoto:2025kin</bcf:citekey>
+    <bcf:citekey order="46" intorder="1">Devoto:2025kin</bcf:citekey>
+    <bcf:citekey order="47" intorder="1">Asteriadis:1910</bcf:citekey>
+    <bcf:citekey order="48" intorder="1">Devoto:2025kin</bcf:citekey>
+    <bcf:citekey order="49" intorder="1">Devoto:2025kin</bcf:citekey>
+    <bcf:citekey order="50" intorder="1">Catani:1996vz</bcf:citekey>
+    <bcf:citekey order="51" intorder="1">Catani:1998bh</bcf:citekey>
+    <bcf:citekey order="52" intorder="1">Devoto:2023rpv</bcf:citekey>
+    <bcf:citekey order="53" intorder="1">Devoto:2025kin</bcf:citekey>
+    <bcf:citekey order="54" intorder="1">Devoto:2025kin</bcf:citekey>
+    <bcf:citekey order="55" intorder="1">Devoto:2023rpv</bcf:citekey>
+    <bcf:citekey order="55" intorder="2">Devoto:2025kin</bcf:citekey>
+    <bcf:citekey order="56" intorder="1">Devoto:2023rpv</bcf:citekey>
+    <bcf:citekey order="57" intorder="1">Devoto:2025kin</bcf:citekey>
+    <bcf:citekey order="58" intorder="1">Devoto:2023rpv</bcf:citekey>
+    <bcf:citekey order="59" intorder="1">Devoto:2023rpv</bcf:citekey>
+    <bcf:citekey order="60" intorder="1">ellis</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="ynt">
