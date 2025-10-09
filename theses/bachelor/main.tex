@@ -698,9 +698,11 @@ We can summarize these results with a general expression for the soft-regulated 
 where $\Gamma_{1,a}$ is defined as in Eq. \ref{generalized-anom-dim}, replacing $q$ with the specific parton considered.
 
 \subsection{Final state}
+\label{final-state-section}
 Let us now consider a situation where a final-state gluon $\um$ becomes collinear with another final-state gluon $i$. This can occur, for example, in the case of the $\mathcal{P}_2^{\mathrm{NLO}}$ process. In this case, the function $F_{\mathrm{LM}}$ depends on the energy fraction $z=1-E_\um/E_{i\um}=E_i/E_{i\um}$, and, under the action of the collinear operator, it factorizes in the following way
 \begin{equation}
   C_{i \um} \Delta^{(\um)} F_{\mathrm{LM}} (\um) = \frac{g^2_{s,b}}{p_i \cdot p_\um} z P_{gg}(z) F_{\mathmakebox{LM}}(i\um)\, ,
+  \label{collinear-factorization}
 \end{equation}
 where the argument of the function $F_{LM}$ on the right-hand side shows the dependence on the momentum of the single final-state gluon $[i\um]$ resulting from the merging of the two collinear gluons, and
 \begin{equation}
@@ -954,6 +956,7 @@ If we also include the soft limit, we obtain the soft-collinear integrated count
 which is valid for any initial-state parton $a$, whether it is a quark or a gluon. We recall that the Altarelli-Parisi splitting kernels $\hat{P}_{aa}^{(0)}$ are defined in Eq.~\ref{altarelli-parisi}, and that $\mathcal{P}_{aa}^{\mathrm{fin}}$ is defined as in Eq.~\ref{P-qq-finite}. We are particularly interested in examining the second line of Eq.~\ref{blue}, as it contains the terms that actually contribute to the operator $I_{\mathrm{C}}(\epsilon)$. Also in this case, it is useful to perform an expansion in $\epsilon$. Making use of the following equations
 \begin{equation}
   [\mathrm{d}\eta_{a\um \, \theta_a}] = -\frac{\theta_a^{-\epsilon}}{\epsilon} + \epsilon \mathrm{Li}_2 (\theta_a)+ \mathcal{O}(\epsilon)^2 \, ,
+  \label{de-eta}
 \end{equation}
 and
 \begin{equation}
@@ -975,22 +978,28 @@ where $L_i^{\theta_a}= \log{(E_{\mathrm{max}}\theta_a)/E_i}$. In particular, we 
 and we observe that it depends only on the parameter $\theta_s$ and not on $\theta_a$. Furthermore, it has the same form but opposite sign compared to the expression in Eq.~\ref{coefficient-soft}.
 
 \subsection{Final state}
+In the case of the $\mathcal{A}^{\mathrm{NLO}}$ process, the only possibility is that one of the gluons, which we label $\um$, becomes collinear to a final-state gluon $i$, producing a single final-state gluon that we denote as $[i\um]$. This scenario is also one of the possibilities for the $\mathcal{B}_1^{\mathrm{NLO}}$ process. In this case, applying the operator that performs the collinear limit leads to the factorization shown in Eq.~\ref{collinear-factorization}, with the addition of the constraint function $\theta(\eta_{i\um}<\theta_i)$. The integration over the phase space of the partons involved in the collinear limit, namely $i$ and $\um$, therefore takes the following form
+\begin{equation}
+  \begin{aligned}
+    \int [\mathrm{d}p_i] \int [\mathrm{d}p_\um] \, C_{i\um} \Delta^{(\um)} F_{\mathrm{LM}} & = \int [\mathrm{d}p_i] \int [\mathrm{d}p_\um] \, \frac{g^2_{s,b}}{pi \cdot p_\um} \, z \, P_{gg}(z) \, F_{\mathrm{LM}}(i \um) \\
+    &= \int \frac{\mathrm{d}\Omega^{d-2}}{2(2\pi)^{d-1}} 2^{-2\epsilon} \int_0^1 \frac{\mathrm{d}\eta_{i\um}}{(\eta_{i\um}(1-\eta_{i\um}))^{\epsilon}} \nonumber \\
+    &\quad \times \int [\mathrm{d}\Omega_i] \int \mathrm{d}E_\um E_\um^{1-2\epsilon} \int \mathrm{d}E_i E_i^{1-2\epsilon} \frac{g_{s,b}^2 \,  P_{gg} \, F_{\mathrm{LM}} (i\um) }{(1-z) E_{i\um}^{2}\eta_{i\um}} \, .
+  \end{aligned}
+\end{equation}
+Following steps analogous to those in Section~\ref{final-state-section}, we obtain
+\begin{equation}
+  \langle C_{i\um}^{\theta_i} \Delta^\um F_{\mathrm{LM}} (\um) \rangle = [\alpha_s] [\mathrm{d}\eta_{i\um \, \theta_i}] \int [\mathrm{d}p_i] \left( \frac{2 E_i}{\mu}\right)^{-2 \epsilon} \int_0^1 \mathrm{d}z \, z^{1-2\epsilon} (1-z)^{-2\epsilon} P_{gg}(z) F_{\mathrm{LM}} \, ,
+\end{equation}
+where $[\mathrm{d}\eta_{i\um \, \theta_i}]$ is defined as in Eq.~\ref{de-eta}, but substituting partons $a$ and $a\um$ with $i$ and $i\um$. Including also the soft limit, with its respective parameter $\theta_s$, and following a procedure analogous to that in Section~\ref{final-state-section}, we obtain
+\begin{equation}
+  \begin{split}
+  \langle C_{i\mathfrak{m}}^{\theta_i} \bar{S}_{\mathfrak{m}}^{\theta_s} \Delta^{\mathfrak{m}} F_{\mathrm{LM}}(\mathfrak{m})\rangle &= -[\alpha_s] \,[\mathrm{d}\eta_{i\um \, \theta_i}] \, \bigl< \left(\frac{2E_i}{\mu}\right)^{-2\epsilon} \gamma^{2,2}_{z,g \to g, g} \, F_{\mathrm{LM}} \bigr> \, , 
+  \end{split}
+\end{equation}
 
 Specificare che nel caso 2310, $n_f=0$, pertanto non serve fare somma di contributi diversi per ottenere anomalous dimension.
 Final state \\
-Collinear limit
-\begin{equation}
-  \langle C_{i\um}^{\theta_i} \Delta^\um F_{\mathrm{LM}} (\um) \rangle = \int \dots \int [\mathrm{d}p_i] \int [\mathrm{d}p_\um] \frac{g^2_{s,b}}{pi \cdot p_\um} z P_{gg}(z) F_{\mathrm{LM}}(i \um)
-\end{equation}
-\begin{equation}
-  \langle C_{i\um}^{\theta_i} \Delta^\um F_{\mathrm{LM}} (\um) \rangle = [\alpha_s] [\mathrm{d}\eta_{i\um \, \theta_i}] \int \dots \int [\mathrm{d}p_i] \left( \frac{2 E_i}{\mu}\right)^{-2 \epsilon} \int_0^1 \mathrm{d}z \, z^{1-2\epsilon} (1-z)^{-2\epsilon} P_{gg}(z) F_{\mathrm{LM}}
-\end{equation}
-\begin{equation}
-  \begin{split}
-  &\langle C_{i\mathfrak{m}}^{\theta_i} \bar{S}_{\mathfrak{m}}^{\theta_s} \Delta^{\mathfrak{m}} F_{\mathrm{LM}}(\mathfrak{m})\rangle = [\alpha_s] \langle \bigg\{ \frac{1}{\epsilon}(\gamma_g + 2 \vec{T}_g^2 \mathrm{Li}^{\theta_s}) - 2 \log{\frac{2 E_i}{\mu}}\gamma_g + \\ 
-  & \quad - 4 \log{\frac{2 E_i}{\mu}}\vec{T}_g^2 \mathrm{Li}^{\theta_s} - \log{\theta_i} \gamma_g - 2 \vec{T}_g^2 \mathrm{Li}^{\theta_s} \log{\theta_i} \bigg\} F_{\mathrm{LM}} \rangle
-  \end{split}
-\end{equation}
+
 
 \clearpage
 
