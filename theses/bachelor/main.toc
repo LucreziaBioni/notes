@@ -22,13 +22,15 @@
 \contentsline {section}{\numberline {3.1}Processes}{26}{section.3.1}%
 \contentsline {section}{\numberline {3.2}$\theta $-parameters}{27}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Soft limit}{27}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Collinear and Soft-Collinear limits}{28}{section.3.4}%
+\contentsline {section}{\numberline {3.4}Collinear and Soft-Collinear limits}{29}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}Initial state}{29}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}Final state}{30}{subsection.3.4.2}%
-\contentsline {chapter}{\numberline {4}Conclusion}{31}{chapter.4}%
-\contentsline {chapter}{\sffamily Appendices}{32}{section*.5}%
-\contentsline {chapter}{\numberline {A}Useful definitions}{34}{appendix.a.A}%
-\contentsline {section}{\numberline {A.1}Constants}{34}{section.a.A.1}%
-\contentsline {section}{\numberline {A.2}Partitions at NLO}{34}{section.a.A.2}%
-\contentsline {section}{\numberline {A.3}Splitting functions}{35}{section.a.A.3}%
-\contentsline {chapter}{Bibliography}{37}{appendix*.6}%
+\contentsline {subsection}{\numberline {3.4.3}Hard-collinear operator}{32}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Cancellation of poles}{33}{subsection.3.4.4}%
+\contentsline {chapter}{\numberline {4}Conclusion}{34}{chapter.4}%
+\contentsline {chapter}{\sffamily Appendices}{35}{section*.5}%
+\contentsline {chapter}{\numberline {A}Useful definitions}{37}{appendix.a.A}%
+\contentsline {section}{\numberline {A.1}Constants}{37}{section.a.A.1}%
+\contentsline {section}{\numberline {A.2}Partitions at NLO}{37}{section.a.A.2}%
+\contentsline {section}{\numberline {A.3}Splitting functions}{38}{section.a.A.3}%
+\contentsline {chapter}{Bibliography}{40}{appendix*.6}%

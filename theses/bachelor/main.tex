@@ -675,7 +675,7 @@ It is also useful to introduce the \emph{generalized initial-state anomalous dim
   \Gamma_{a,q} = \left(\frac{2E_a}{\mu}\right)^{-2\epsilon} \frac{\Gamma^2(1-\epsilon)}{\Gamma(1-2\epsilon)} \left(\gamma_q + \vec{T}_q^2 \,\frac{1-e^{-2\epsilon L_a}}{\epsilon}\right) \, ,
   \label{generalized-anom-dim}
 \end{equation}
-where $\gamma_q$ is the anomalous dimension of the initial-state parton $a=q$, which can be found in Appendix \ref{anomalous-dimension}, and $L_a =\log{(E_{\mathrm{max}}/E_a)}$. Therefore, the integrated soft-collinear counterterm for a gluon $\um$ going collinear to a quark $a$ in the initial state reads
+where $\gamma_q$ is the anomalous dimension of the initial-state parton $a=q$, which can be found in Appendix \ref{anomalous-dimension}, and $L_a =\log{(E_{\mathrm{max}}/E_a)}$. Therefore, the integrated hard-collinear counterterm for a gluon $\um$ going collinear to a quark $a$ in the initial state reads
 \begin{equation}
   \left< C_{a\um} \bar{S}_\um \Delta^{(\um)} F_{\mathrm{LM}} (\um) \right> = [\alpha_s] \left< \frac{\Gamma_{a,q}}{\epsilon} F_{\mathrm{LM}} \right> + \frac{[\alpha_s]}{\epsilon}\left< \mathcal{P}_{qq}^{\mathrm{gen}} \otimes F_{\mathrm{LM}} \right> \, ,
   \label{initial-state-collinear}
@@ -686,7 +686,7 @@ where we also used the shorthand notation
   \label{convolution}
 \end{equation}
 \\
-Let us now consider the situation where a final-state gluon $\um$ becomes collinear with an initial-state gluon $a$. The calculation remains analogous to the previous case, but the form of some functions changes. Specifically, the splitting function is now $P_{gg}$, whose expression is given in Eq. \ref{splitting-functions} and illustrated in Fig.\ref{hadron-collision-pict}. Furthermore, the leading-order Altarelli-Parisi splitting kernel is now $\hat{P}_{gg}^{(0)}(z)$, reported in \ref{altarelli-parisi}. The integrated soft-collinear counterterm in this case has the same form as in Eq. \ref{initial-state-collinear}, but uses the generalized anomalous dimension for a gluon $\Gamma_{a,g}$ (defined as in \ref{generalized-anom-dim}, with $g$ in place of $q$), and the term from Eq. \ref{convolution} now involves the generalized splitting function $\mathcal{P}_{gg}^{\mathrm{gen}}$. This function has the form \ref{gen-splitt-funct}, adapted for the case of a gluon collinear to another gluon. \\
+Let us now consider the situation where a final-state gluon $\um$ becomes collinear with an initial-state gluon $a$. The calculation remains analogous to the previous case, but the form of some functions changes. Specifically, the splitting function is now $P_{gg}$, whose expression is given in Eq. \ref{splitting-functions} and illustrated in Fig.\ref{hadron-collision-pict}. Furthermore, the leading-order Altarelli-Parisi splitting kernel is now $\hat{P}_{gg}^{(0)}(z)$, reported in \ref{altarelli-parisi}. The integrated hard-collinear counterterm in this case has the same form as in Eq. \ref{initial-state-collinear}, but uses the generalized anomalous dimension for a gluon $\Gamma_{a,g}$ (defined as in \ref{generalized-anom-dim}, with $g$ in place of $q$), and the term from Eq. \ref{convolution} now involves the generalized splitting function $\mathcal{P}_{gg}^{\mathrm{gen}}$. This function has the form \ref{gen-splitt-funct}, adapted for the case of a gluon collinear to another gluon. \\
 
 Finally, we consider the case where a final-state quark $\um$ becomes collinear with another initial-state parton $a$, which can be either a quark or a gluon. As stated previously, quarks do not give rise to soft singularities. Therefore, in this scenario, the term involving the anomalous dimension in Eq. \ref{initial-state-collinear} is absent. Only the generalized splitting function remains, which can be obtained from Eq. \ref{kernel-pqq} by replacing $qq$ with $qg$ in the case of a quark becoming colliner to a initial state gluon, and $qq$ with $gq$ in the case of a quark becoming collinear to an initial state quark (see Fig. \ref{hadron-collision-pict})". \\
 
@@ -738,7 +738,7 @@ In constrast to the initial state case, the function $F_{\mathrm{LM}}$ does not 
   &= [\alpha_s] \, \frac{1}{\epsilon} \int[\mathrm{d}p_i] \left(\frac{2E_i}{\mu} \right)^{-2\epsilon} \frac{\Gamma^2(1-\epsilon)}{\Gamma(1-2\epsilon)} \nonumber \\
   & \times \left[ - \int_0^1 \mathrm{d}z \, S_z \, z^{1-2\epsilon} (1-z)^{-2\epsilon} P_{gg}(z) - \frac{C_A}{\epsilon} \left(1-\frac{E_{\text{max}}}{E_i}\right) \right] F_{\mathrm{LM}} .
 \end{align}
-Putting together the obtained results, the integrated soft-collinear counterterm for a gluon $\um$ going collinear to a quark $i$ in the final state reads
+Putting together the obtained results, the integrated hard-collinear counterterm for a gluon $\um$ going collinear to a quark $i$ in the final state reads
 \begin{equation}
   \left<  C_{i\um} \bar{S}_{\um} \Delta^{(\um)} F_{\mathrm{LM}}\right> = \frac{[\alpha_s]}{\epsilon} \left< \Gamma_{i,g \to gg} \, F_{\mathrm{LM}}\right> \, ,
 \end{equation}
@@ -761,6 +761,7 @@ and $L_i=\log{\left(E_{\mathrm{max}}/E_i\right)}$. We observe that the quantity 
 The sum of the two contributions allows us to recover the generalized collinear anomalous dimension, which we define as
 \begin{equation}
   \Gamma_{i,g} = \Gamma_{i,g \to gg} + 2n_f \Gamma_{i,g \to q \bar{q}} \, ,
+  \label{an-dim-gluon}
 \end{equation}
 which, when expanded in $\epsilon$, takes the form 
 \begin{equation}
@@ -772,6 +773,7 @@ and contains precisely the conventional gluon anomalous dimension $\gamma_g$. \\
 We are left to analyze the cases in which a gluon $\um$ becomes collinear to a quark $i$ in the final state, and the opposite case, i.e., in which a quark $\um$ becomes collinear to a quark $i$ in the final state. Again, the calculations are analogous to to those presented above, but the splitting functions differ: when a gluon $\um$ is collinear to a quark $i$, one uses $P_{qq}(z)$, while in the opposite case one uses $P_{qg}(z)$, both of which can be found in Eq. \ref{splitting-functions} and Fig. \ref{hadron-collision-pict}. Also in this latter case, the soft limit is absent, and the delta function in \ref{gen-an-dim} vanishes. To obtain the conventional collinear anomalous dimension, it is again necessary to sum the two contributions, yielding
 \begin{equation}
   \Gamma_{i,q} = \Gamma_{i,q \to qg} + \Gamma_{i,q \to gq} \,.
+  \label{an-dim-quark}
 \end{equation}
 This quantity can be expanded  in $\epsilon$ as 
 \begin{equation}
@@ -881,6 +883,7 @@ where $N_g=N-1$. This configuration receives NLO contributions from the followin
     & \mathcal{B}_3^{\mathrm{NLO}} : \quad a_g + b_q \to X + (N_g-1) \, g +q + q\bar{q}\,  .
   \end{aligned}
 \end{equation}
+We observe that, for each of the three processes $\mathcal{B}_{1,2,3}^{\mathrm{NLO}}$, in order to yield a singular contribution to $\mathcal{B}^{\mathrm{LO}}$, a parton must be removed in a manner that reproduces the initial and final states of the leading-order process. While multiple possibilities exist for this in the $\mathcal{B}_1^{\mathrm{NLO}}$ process, the situation is more restrictive for $\mathcal{B}_2^{\mathrm{NLO}}$ and $\mathcal{B}_3^{\mathrm{NLO}}$. For these, the only possibility is the clustering of a quark-antiquark pair, specifically $q'\bar{q}'$ or $q\bar{q}$, respectively, into a single gluon. Given that the collinear limit is identical for the quark pairs in both $\mathcal{B}_{2}^{\mathrm{NLO}}$ and $\mathcal{B}_{3}^{\mathrm{NLO}}$, it is sufficient to analyze the former case, as it contains all the relevant information required for the latter.
 
 \section{$\theta$-parameters}
 To modulate the width of the phase space region subject to integration in our subtraction scheme, we introduce constraints on the operators responsible for the soft and collinear projections (defined in \ref{projections}). This is achieved by augmenting them with Heaviside Theta functions, which restrict the integration range via dedicated parameters $\theta$. Specifically, since the integration is carried out in hyperspherical coordinates, we redefine the soft-limit operator by imposing an upper bound on the energy integration variable $E_\um$. This bound is proportional to a new parameter, $\theta_s$, which effectively defines the maximum energy for a parton to be considered soft within the subtraction
@@ -918,11 +921,11 @@ The coefficient preceding the $1/\epsilon^2$ pole shows no dependence on $\theta
 \begin{equation}
   \begin{aligned}
   c_{-1}(\theta_s) & = -\sum_{i=1}^{N_p} 2 \log{\left(\frac{2 E_{\mathrm{max}}\theta_s}{\mu} \right)} \vec{T}_i^2 - \sum_{i\neq j}^{N_p} f_1(\eta_{ij}) (\vec{T}_i \cdot \vec{T}_j)  \\
-  & = -\sum_{i=1}^{N_p} \left( 2 \mathrm{Li}^{\theta_s} + 2 \log{\left(\frac{2 E_i}{\mu} \right) } \right) \vec{T}_i^2 - \sum_{i\neq j}^{N_p} f_1(\eta_{ij}) (\vec{T}_i \cdot \vec{T}_j) \, ,
+  & = -\sum_{i=1}^{N_p} \left( 2{L_i}^{\theta_s} + 2 \log{\left(\frac{2 E_i}{\mu} \right) } \right) \vec{T}_i^2 - \sum_{i\neq j}^{N_p} f_1(\eta_{ij}) (\vec{T}_i \cdot \vec{T}_j) \, ,
   \label{coefficient-soft}
   \end{aligned}
 \end{equation}
-with $\mathrm{Li}^{\theta_s}=\log{\left(E_{\mathrm{max}}\theta_s/E_i\right)}$. We will compare this term with the corresponding coefficient from the $I_{\mathrm{C}}$ operator, which we denote as $\tilde{c}_{-1}(\theta_s)$. If the sum $c_{-1}(\theta_s) + \tilde{c}_{-1}(\theta_s)$ is independent of the $\theta_s$ parameter, then the cancellation of the infrared poles remains intact.
+with ${L_i}^{\theta_s}=\log{\left(E_{\mathrm{max}}\theta_s/E_i\right)}$. We will compare this term with the corresponding coefficient from the $I_{\mathrm{C}}$ operator, which we denote as $\tilde{c}_{-1}(\theta_s)$. If the sum $c_{-1}(\theta_s) + \tilde{c}_{-1}(\theta_s)$ is independent of the $\theta_s$ parameter, then the cancellation of the infrared poles remains intact.
 
 \section{Collinear and Soft-Collinear limits}
 We now proceed to a detailed analysis of the real corrections in the collinear and soft-collinear limits. Our discussion will focus specifically on the structure and properties of the integrated collinear operator, $I_{\mathrm{C}}$.
@@ -945,7 +948,7 @@ Proceeding with the integration and performing a change of variables as in Secti
   \int [\mathrm{d}p_\um]\, C_{a\um}^{\theta_a}  F_{\mathrm{LM}} (\um) &= [\alpha_s]\,  [\mathrm{d}\eta_{a\um \, \theta_a}] \left(\frac{2E_a}{\mu}\right)^{-2\epsilon} \int_{z_{\mathrm{min}}}^{1} \mathrm{d}z \, (1-z)^{-2\epsilon} \, P_{qq}(z) \, \frac{1}{z} \, F_{\mathrm{LM}}(z\cdot a_q ) \, .
   \end{aligned}
 \end{equation}
-If we also include the soft limit, we obtain the soft-collinear integrated counterterm, following a procedure analogous to that outlined in Section~\ref{initial-state-section}
+If we also include the soft limit, we obtain the hard-collinear integrated counterterm, following a procedure analogous to that outlined in Section~\ref{initial-state-section}
 \begin{equation}
   \begin{aligned}
     \left< C_{a\um}^{\theta_a} \bar{S}_\um^{\theta_s} \Delta^{(\um)} F_{\mathrm{LM}} (\um) \right>  &= [\alpha_s] \bigl< [\mathrm{d}\eta_{a\um \, \theta_a}] \left(\frac{2E_a}{\mu}\right)^{-2\epsilon} \int_{0}^{1} \mathrm{d}z \, \left[\hat{P}_{aa}^{(0)}-\epsilon \mathcal{P}_{aa}^{\mathrm{fin}}\right] \frac{1}{z} \, F_{\mathrm{LM}}(z\cdot a) \\
@@ -993,12 +996,78 @@ Following steps analogous to those in Section~\ref{final-state-section}, we obta
 where $[\mathrm{d}\eta_{i\um \, \theta_i}]$ is defined as in Eq.~\ref{de-eta}, but substituting partons $a$ and $a\um$ with $i$ and $i\um$. Including also the soft limit, with its respective parameter $\theta_s$, and following a procedure analogous to that in Section~\ref{final-state-section}, we obtain
 \begin{equation}
   \begin{split}
-  \langle C_{i\mathfrak{m}}^{\theta_i} \bar{S}_{\mathfrak{m}}^{\theta_s} \Delta^{\mathfrak{m}} F_{\mathrm{LM}}(\mathfrak{m})\rangle &= -[\alpha_s] \,[\mathrm{d}\eta_{i\um \, \theta_i}] \, \bigl< \left(\frac{2E_i}{\mu}\right)^{-2\epsilon} \gamma^{2,2}_{z,g \to g, g} \, F_{\mathrm{LM}} \bigr> \, , 
+  \langle C_{i\mathfrak{m}}^{\theta_i} \bar{S}_{\mathfrak{m}}^{\theta_s} \Delta^{\mathfrak{m}} F_{\mathrm{LM}}(\mathfrak{m})\rangle &= -[\alpha_s] \,[\mathrm{d}\eta_{i\um \, \theta_i}] \, \bigl< \left(\frac{2E_i}{\mu}\right)^{-2\epsilon} \gamma^{2,2 \quad \theta_s}_{z,g \to g, g} \, F_{\mathrm{LM}} \bigr> \, , 
+  \label{coll-par-ggg}
   \end{split}
 \end{equation}
+where $\gamma^{2,2 \quad \theta_s}_{z,g \to g, g}$ is defined in the general case as
+\begin{align}
+  \gamma^{nk \quad \theta_s}_{g(z),f_{[i\um]}} (L_i) 
+  &= - \int_0^1 \mathrm{d}z \, \bar{S}_z \left[z^{-n\epsilon}(1-z)^{-k\epsilon}g(z)P_{f_{[i\um]}f_i}(z)\right] \nonumber \\
+  &\quad + 2 \delta_{f_{[i\um]}f_i} \vec{T}^2_{f_{[i\um]}} \frac{1-e^{-k \epsilon L_i^{\theta_s}}}{k\epsilon} g(1) ,
+  \label{gen-an-dim-theta}
+\end{align}
+and $L_i^{\theta_s}=\log{\left(E_{\mathrm{max}}\theta_s/E_i\right)}$. In the case of corrections to the $\mathcal{A}^{\mathrm{LO}}$ process, this contribution is sufficient to recover the conventional collinear anomalous dimension, since, dealing only with gluons, one can set $n_f$ to zero. In the more general case of corrections to the $\mathcal{B}^{\mathrm{LO}}$ process, however, it is necessary to sum multiple contributions, as illustrated in Sec.~\ref{final-state-section}. This requirement arises from the additional factor $z_{i\um}$ in the integral of the collinear splitting functions. Therefore, to the case where both partons becoming collinear are gluons, we must add a further contribution, which this time originates from the $\mathcal{B}_2^{\mathrm{NLO}}$ process. Specifically, the only way to obtain $\mathcal{B}^{\mathrm{LO}}$ from $\mathcal{B}_2^{\mathrm{NLO}}$ is to cluster the quark $q'$ and the antiquark $\bar{q}'$ into a gluon. For this to occur, either $q'$ or $\bar{q}'$ must be designated as the potentially-unresolved parton, and then the only collinear limit to consider is $q'$ becoming collinear to $\bar{q}'$. As stated in Section~\ref{section-coll-soft}, and considering the symmetries under the exchange of the quark $q'$ and the antiquark $\bar{q}'$ together with the flavour independence of the splitting function, this contribution carries a multiplicative factor of $2n_f$. We therefore obtain the following result
+\begin{equation}
+  \langle C_{i\mathfrak{m}}^{\theta_i} \bar{S}_{\mathfrak{m}}^{\theta_s} \Delta^{\mathfrak{m}} F_{\mathrm{LM}}(\mathfrak{m})\rangle = -2 \, n_f \, [\alpha_s] \,[\mathrm{d}\eta_{i\um \, \theta_i}] \, \bigl< \left(\frac{2E_i}{\mu}\right)^{-2\epsilon} \gamma^{2,2}_{z,g \to q, \bar{q}} \, F_{\mathrm{LM}} \bigr> \, . 
+  \label{coll-par-gqq}
+\end{equation}
+We note that in this case we have not used the superscript $\theta_s$ on $\gamma^{2,2}_{z,g \to q, \bar{q}}$ because it does not depend on this parameter: since the unresolved parton is a quark, there is no soft limit, and the second term in Eq.~\ref{gen-an-dim-theta} vanishes. The results from Eqs.~\ref{coll-par-ggg} and \ref{coll-par-gqq} can be combined as in Eq.~\ref{an-dim-gluon}.
 
-Specificare che nel caso 2310, $n_f=0$, pertanto non serve fare somma di contributi diversi per ottenere anomalous dimension.
-Final state \\
+Beyond the cases just listed, there are no further possibilities to obtain the $\mathcal{A}^{\mathrm{LO}}$ and $\mathcal{B}^{\mathrm{LO}}$ processes from $\mathcal{A}^{\mathrm{NLO}}$ and $\mathcal{B}_2^{\mathrm{NLO}}$, respectively. However, there are two additional possibilities for the $\mathcal{B}_1^{\mathrm{NLO}}$ process, and it is necessary to sum their contributions as done in Section~\ref{final-state-section} in order to obtain the generalized collinear anomalous dimension. The first possibility is that a gluon $\um$ becomes collinear to a final-state quark $i$. The calculation is analogous to the previous case, and yields the following result:
+\begin{equation}
+  \langle C_{i\mathfrak{m}}^{\theta_i} \bar{S}_{\mathfrak{m}}^{\theta_s} \Delta^{\mathfrak{m}} F_{\mathrm{LM}}(\mathfrak{m})\rangle = -[\alpha_s] \,[\mathrm{d}\eta_{i\um \, \theta_i}] \, \bigl< \left(\frac{2E_i}{\mu}\right)^{-2\epsilon} \gamma^{2,2 \quad \theta_s}_{z,q \to q, g} \, F_{\mathrm{LM}} \bigr> \, . 
+\end{equation}
+The final possibility is that an unresolved quark $\um$ becomes collinear to a final-state gluon $i$. We recall that in this case $S_q=0$, but the calculation remains analogous to the previous cases, and we obtain
+\begin{equation}
+  \langle C_{i\mathfrak{m}}^{\theta_i} \bar{S}_{\mathfrak{m}}^{\theta_s} \Delta^{\mathfrak{m}} F_{\mathrm{LM}}(\mathfrak{m})\rangle = -[\alpha_s] \,[\mathrm{d}\eta_{i\um \, \theta_i}] \, \bigl< \left(\frac{2E_i}{\mu}\right)^{-2\epsilon} \gamma^{2,2}_{z,q \to g, q} \, F_{\mathrm{LM}} \bigr> \, . 
+\end{equation}
+Again, we note that also in this case there is no dependence on the parameter $\theta_s$. The sum of the last two contributions is analogous to Eq.~\ref{an-dim-quark}. \\
+
+Since our goal is to construct the $I_{\mathrm{C}}(\epsilon)$ operator in this case, we sum the various contributions. For convenience, we denote the set of final-state partons as $\mathcal{H}_f = \mathcal{H}_{f,g} + \mathcal{H}_{f,q}$, where $\mathcal{H}_{f,g}$ is the set of final-state gluons and $\mathcal{H}_{f,q}$ is the set of final-state quarks. Thus, the hard-collinear integrated counterterm is
+\begin{equation}
+  \begin{aligned}
+     \sum_{i \in \mathcal{H}_f} \langle C_{i\mathfrak{m}}^{\theta_i} \bar{S}_{\mathfrak{m}}^{\theta_s} \Delta^{\mathfrak{m}} F_{\mathrm{LM}}(\mathfrak{m})\rangle =& - [\alpha_s] \biggl< \Biggl[ \sum_{i \in \mathcal{H}_{f,g}} [\mathrm{d}\eta_{i\um \, \theta_i}] \left(\frac{2E_i}{\mu}\right)^{-2\epsilon}(\gamma^{2,2 \quad \theta_s}_{z,g \to g, g}+ \gamma^{2,2}_{z,g \to q, \bar{q}}) \\
+     & + \sum_{i \in \mathcal{H}_{f,q}} [\mathrm{d}\eta_{i\um \, \theta_i}] \left(\frac{2E_i}{\mu}\right)^{-2\epsilon}(\gamma^{2,2 \quad \theta_s}_{z,q \to q, g}+ \gamma^{2,2}_{z,q \to g, q}) \Biggr] F_{\mathrm{LM}} \biggr> \, .
+  \end{aligned}
+\end{equation}
+where, to avoid overloading the notation, we have left implicit on the left-hand side of the equation that the function $F_{\mathrm{LM}}$ is the one corresponding to the process to which the contribution refers, as explained in the course of this paragraph. We can expand the obtained quantities in $\epsilon$ to highlight the coefficient in front of the $1/\epsilon$ pole, making use of Eqs.~\ref{expansion-an-dim-gluon}, \ref{expansion-an-dim-quark}, and \ref{de-eta}
+\begin{equation}
+  \begin{aligned}
+     \sum_{i \in \mathcal{H}_f} \langle C_{i\mathfrak{m}}^{\theta_i} \bar{S}_{\mathfrak{m}}^{\theta_s} \Delta^{\mathfrak{m}} F_{\mathrm{LM}}(\mathfrak{m})\rangle &= \Bigl<  \Bigl[\sum_{i \in \mathcal{H}_{f,g}} \Bigl( \frac{1}{\epsilon}(\gamma_g +  2 L_i^{\theta_s} \,\vec{T}_g^2) - 2 \log{\left(\frac{2E_i}{\mu}\right)}\gamma_g \\
+      & - 4 \, \vec{T}_g^2 \, L_i^{\theta_s} \log{\left(\frac{2E_i}{\mu}\right)} - \log{(\theta_i)} \, \gamma_g - 2 \log{(\theta_i)} \, \vec{T}_g^2 \, L_i^{\theta_s}  \Bigr) \\
+      & +\sum_{i \in \mathcal{H}_{f,q}} \Bigl( \frac{1}{\epsilon}(\gamma_q+  2 L_i^{\theta_s} \,\vec{T}_q^2) - 2 \log{\left(\frac{2E_i}{\mu}\right)}\gamma_q\\
+      & - 4 \, \vec{T}_q^2 \, L_i^{\theta_s} \log{\left(\frac{2E_i}{\mu}\right)} - \log{(\theta_i)} \, \gamma_q - 2 \log{(\theta_i)} \, \vec{T}_q^2 \, L_i^{\theta_s}  \Bigr)  \Bigr]\, F_{\mathrm{LM}} \, \Bigr > \, .
+  \end{aligned}
+\end{equation}
+
+\subsection{Hard-collinear operator}
+We can therefore express the integrated hard-collinear counterterm in a general form that includes the parameters we have implemented
+\begin{equation}
+  \begin{aligned}
+    \sum_{i \in \mathcal{H}_f} \langle C_{i\mathfrak{m}}^{\theta_i} \bar{S}_{\mathfrak{m}}^{\theta_s} \Delta^{\mathfrak{m}} F_{\mathrm{LM}}(\mathfrak{m})\rangle &= [\alpha_s]\langle I_{\mathrm{C}}(\epsilon) \cdot F_{\mathrm{LM}} \rangle \\
+    & + [\alpha_s] \bigl< [\mathrm{d}\eta_{a\um \, \theta_a}] \left(\frac{2E_a}{\mu}\right)^{-2\epsilon} \int_{0}^{1} \mathrm{d}z \, \left[\hat{P}_{aa}^{(0)}-\epsilon \mathcal{P}_{aa}^{\mathrm{fin}}\right] \frac{1}{z} \, F_{\mathrm{LM}}(z\cdot a) \bigr> \\
+    & + [\alpha_s] \bigl< [\mathrm{d}\eta_{b\um \, \theta_b}] \left(\frac{2E_b}{\mu}\right)^{-2\epsilon} \int_{0}^{1} \mathrm{d}z \, \left[\hat{P}_{bb}^{(0)}-\epsilon \mathcal{P}_{bb}^{\mathrm{fin}}\right] \frac{1}{z} \, F_{\mathrm{LM}}(z\cdot b) \bigr> \, ,
+  \end{aligned}
+\end{equation}
+with
+\begin{equation}
+  \begin{aligned}
+    I_{\mathrm{C}} (\epsilon) = &\sum_{i \in \mathcal{H}} \Biggl( \frac{1}{\epsilon}\, \left(\, \gamma_i+  2 \,L_i^{\theta_s} \,\vec{T}_i^2 \right) - 2 \log{\left(\frac{2E_i}{\mu}\right)}\, \gamma_i  - 4 \, \vec{T}_q^2 \, L_i^{\theta_s} \log{\left(\frac{2E_i}{\mu}\right)} \\
+    & - \log{(\theta_i)} \, \gamma_i - 2 \log{(\theta_i)} \, \vec{T}_i^2 \, L_i^{\theta_s} \Biggr) \, ,
+  \end{aligned}
+\end{equation}
+where $\mathcal{H}$ is the set of all resolved partons, both initial and final state. The coefficient of the $1/\epsilon$ pole has the following structure
+\begin{equation}
+  \begin{aligned}
+  \tilde{c}_{-1}(\theta_s) & = \sum_{i \in \mathcal{H}} \frac{1}{\epsilon} \left( \gamma_i + 2 \, L_i^{\theta_s} \, \vec{T}_i^2 \right) \, .
+  \label{coefficient-collinear}
+  \end{aligned}
+\end{equation}
+
+\subsection{Cancellation of poles}
+We now wish to verify that the pole cancellation demonstrated in Section~\ref{pole-cancellation-section} remains valid with the introduction of the $\theta$ parameters. This verification is crucial as it ensures the consistency of our subtraction scheme and the finiteness of our final results. As stated earlier, the virtual operator $I_{\mathrm{V}}(\epsilon)$ and the contributions related to PDF renormalization are unaffected by the introduction of the $\theta_i$ and $\theta_s$ parameters, since these parameters only regulate the phase space for real emissions. Therefore, the key test is to ensure that the $\theta_s$ dependence cancels in the sum of the soft and collinear operators. By examining Eqs.~\ref{coefficient-soft} and \ref{coefficient-collinear}, a complete cancellation of these terms is observed: the terms containing $L_i^{\theta_s}$ appear with exactly the same coefficient but opposite signs in $I_{\mathrm{S}}(\epsilon)$ and $I_{\mathrm{C}}(\epsilon)$. This precise cancellation confirms that our modified subtraction scheme maintains the infrared safety of the calculation. The $\theta_i$ parameters, which control the collinear partitioning, appear only in finite terms and thus do not affect the pole structure.
+
 
 
 \clearpage
