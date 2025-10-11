@@ -55,9 +55,13 @@ sorting = ynt
 
 \newpage
 
+\newgeometry{left=25mm, right=25mm, top=25mm, bottom=25mm}
+\pagestyle{contents}
+
 \toc
 
-\pagestyle{contents}
+\restoregeometry
+\pagestyle{body}
 
 \mainmatter
 
@@ -1073,7 +1077,13 @@ We now wish to verify that the pole cancellation demonstrated in Section~\ref{po
 \clearpage
 
 \chapter{Conclusion}
-1-2 pages max, summarize the whole thesis, and give some outlook/ideas of future work.
+
+Throughout this thesis, we have highlighted and understood the importance of computing QCD corrections in modern particle physics. These corrections are crucial because they enable precise theoretical predictions that can be directly compared with experimental data from hadron colliders, such as the LHC at CERN. Indeed, these corrections are essential to account for higher-order perturbative effects and to reduce the theoretical uncertainties associated with leading-order predictions. We have also seen, however, that evaluating NLO contributions is challenging, as they feature infrared divergences that emerge when the involved partons become soft or collinear. It is therefore necessary to handle these divergences with a consistent subtraction procedure. \\
+Among the various subtraction methods developed over the last few decades, we chose to examine the Nested Soft-Collinear (NSC) Subtraction Scheme, as it possesses a number of qualities that make it promising. We have seen how this method, in fact, allows for the removal of infrared divergences by exploiting the factorization of amplitudes in their singular limits, and explicitly shows their local cancellation. The NSC subtraction scheme has proven to be effective, and has been extended to next-to-next-to-leading order (NNLO) accuracy. However, to handle processes occurring at the LHC involving high-multiplicity final states, it is necessary to improve its numerical stability and computational efficiency.\\
+Therefore, in this work, we have introduced a generalization of the NSC Subtraction Scheme through the implementation of a set of tunable $\theta$-parameters. These parameters act as regulators that restrict the subtraction terms to specific regions of the unresolved phase space, ensuring efficiency in Monte Carlo integration implementations. Specifically, we introduced the parameter $\theta_s$, which limits the energy of unresolved partons in the soft limit. Furthermore, we introduced the parameter $\theta_i$, which constrains their angular separation in the collinear limit.\\
+A crucial point of our study was to verify that the addition of the $\theta$-parameters preserves the fundamental properties of the NSC subtraction scheme. We observed that this implementation modifies only the soft and collinear (real) corrections, while it does not alter the virtual corrections or those arising from the renormalization of the PDFs. Nevertheless, it does not compromise the cancellation of the $1/\epsilon$ and $1/\epsilon^2$ poles, thus allowing finite results to be obtained. This confirms that the modified scheme provides the same physical predictions as the original one.\\
+The implementation presented here constitutes a step forward in improving the flexibility and performance of subtraction schemes used in perturbative QCD. Future developments could include a qualitative numerical analysis of the effects of varying the $\theta_s$ and $\theta_i$ parameters in scattering processes. Furthermore, it would be appropriate to extend this approach to NNLO order and test its suitability in more complex scenarios.\\
+This thesis has thus shown how the introduction of $\theta$-parameters into the NSC Subtraction Scheme preserves its theoretical consistency while enhancing its adaptability and potential computational efficiency. This development represents a significant step toward even more effective tools for precision calculations in QCD, which are indispensable for testing the Standard Model and exploring possible signals of new Physics beyond it.
 
 \clearpage
 
@@ -1175,5 +1185,7 @@ Finally, for reference, we also use the conventional leading-order Altarelli-Par
 \bookmarksetupnext{level = -1}
 \pagestyle{biblio}
 \printbibliography[heading = bibintoc, title = {Bibliography}]
+
+\chapter*{Ringraziamenti}
 
 \end{document}

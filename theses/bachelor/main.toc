@@ -28,9 +28,9 @@
 \contentsline {subsection}{\numberline {3.4.3}Hard-collinear operator}{32}{subsection.3.4.3}%
 \contentsline {subsection}{\numberline {3.4.4}Cancellation of poles}{33}{subsection.3.4.4}%
 \contentsline {chapter}{\numberline {4}Conclusion}{34}{chapter.4}%
-\contentsline {chapter}{\sffamily Appendices}{35}{section*.5}%
-\contentsline {chapter}{\numberline {A}Useful definitions}{37}{appendix.a.A}%
-\contentsline {section}{\numberline {A.1}Constants}{37}{section.a.A.1}%
-\contentsline {section}{\numberline {A.2}Partitions at NLO}{37}{section.a.A.2}%
-\contentsline {section}{\numberline {A.3}Splitting functions}{38}{section.a.A.3}%
-\contentsline {chapter}{Bibliography}{40}{appendix*.6}%
+\contentsline {chapter}{\sffamily Appendices}{36}{section*.5}%
+\contentsline {chapter}{\numberline {A}Useful definitions}{38}{appendix.a.A}%
+\contentsline {section}{\numberline {A.1}Constants}{38}{section.a.A.1}%
+\contentsline {section}{\numberline {A.2}Partitions at NLO}{38}{section.a.A.2}%
+\contentsline {section}{\numberline {A.3}Splitting functions}{39}{section.a.A.3}%
+\contentsline {chapter}{Bibliography}{41}{appendix*.6}%
