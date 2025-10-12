@@ -802,13 +802,13 @@ with $N_p$  being the total number of partons involved.
 
 \section{Cancellation of poles}
 \label{pole-cancellation-section}
-Having determined the general form of the operators $I_{\mathrm{S}}(\epsilon)$ and $I_{\mathrm{C}}(\epsilon)$, we can now show that the total operator $I_{\mathrm{T}} (\epsilon)=I_{\mathrm{S}}(\epsilon)+I_{\mathrm{C}}(\epsilon)+I_{\mathrm{V}}(\epsilon)$ is finite as $\epsilon \to 0$, meaning that all the poles in $\epsilon$ cancel. To do this, we expand the various operators in powers of $\epsilon$ and then perform the sum. \\
+Having determined the general form of the operators $I_{\mathrm{S}}(\epsilon)$ and $I_{\mathrm{C}}(\epsilon)$, we can now show that the total operator $I_{\mathrm{T}} (\epsilon)=I_{\mathrm{S}}(\epsilon)+I_{\mathrm{C}}(\epsilon)+I_{\mathrm{V}}(\epsilon)$ is finite as $\epsilon \to 0$, meaning that all the poles in $\epsilon$ cancel\footnote{Details can be found in Appendix C of \cite{Devoto:2025kin}.}. To do this, we expand the various operators in powers of $\epsilon$ and then perform the sum. \\
 
 We start with the soft operator $I_{\mathrm{S}}(\epsilon)$ defined in Eq.~\ref{I-s-operator}. For the purpose of its expansion, we define the following function
 \begin{equation}
   f_k(x) = \frac{x^{-k\epsilon}-1}{\epsilon} \, ,
 \end{equation}
-which satisfies $f_k(x) \sim \mathcal{O}(\epsilon^0) $. This definition is particularly useful because it makes explicit that the $\epsilon$-expansion of factors like $(2E_{\mathrm{max}}/\mu)^{-\epsilon}$ and $\eta_{ij}^{-\epsilon}$ begins at $1$. Furthermore, we employ the following expansion for the function $K_{ij}$ defined in \ref{k-function}
+which satisfies $f_k(x) \sim \mathcal{O}(\epsilon^0) $. This definition is particularly useful because it makes explicit that the $\epsilon$-expansion of factors like $(2E_{\mathrm{max}}/\mu)^{-\epsilon}$ and $\eta_{ij}^{-\epsilon}$ begins at $1$. Furthermore, we employ the following expansion for the function $K_{ij}$ defined in Eq. \ref{k-function}
 \begin{equation}
   K_{ij} = 1+ K_{ij}^{(2)} \epsilon^2 + \mathcal{O}(\epsilon^3) \, , \qquad  K_{ij}^{(2)} = \mathrm{Li}_2(1-\eta_{ij}) - \frac{\pi^2}{6} \, , 
 \end{equation}
@@ -827,7 +827,7 @@ We can further simplify terms where only the color charge operators depend on th
 \begin{equation}
   \sum_{k=1}^{N_p} \vec{T}_k  \ket{\mathcal{M}}_c = 0 \, .
 \end{equation}
-A detailed treatment of this formalism can be found in \cite{Catani:1996vz}. It follows that 
+A detailed treatment of this formalism can be found in Ref. \cite{Catani:1996vz}. It follows that 
 \begin{equation}
   \sum_{k=1}^{N_p} \, {}_c \bra{\mathcal{M}} \left( \vec{T}_i \cdot \vec{T}_j\right) \ket{\mathcal{M}} {}_c= - \vec{T}^2_i |\mathcal{M}|^2 \, ,
   \label{color-conservation}
@@ -847,7 +847,7 @@ where the parameters $\lambda_{ij}$ are $1$ if $i$ and $j$ are both incoming or 
 \begin{equation}
   \mathcal{V}_i^{\mathrm{sing}}= \frac{\vec{T}_i^2}{\epsilon^2} + \frac{\gamma_i}{\epsilon} \,. 
 \end{equation}
-Using the same property as in Eq.~\ref{color-conservation}, it is also possible to expand the operator $I_{\mathrm{V}}(\epsilon)$ in powers of $\epsilon$\footnote{Details can be found in Appendix C of \cite{Devoto:2025kin}.}. By summing the soft and virtual operators, we obtain
+Using the same property as in Eq.~\ref{color-conservation}, it is also possible to expand the operator $I_{\mathrm{V}}(\epsilon)$ in powers of $\epsilon$. By summing the soft and virtual operators, we obtain
 \begin{equation}
   I_{\mathrm{S}}(\epsilon)+I_{\mathrm{V}}(\epsilon)= - \frac{1}{\epsilon} \sum_{i=1}^{N_p} \left[2 L_i \vec{T}_i^2 + \gamma _i\right] + \mathcal{O}(\epsilon^0)\, .
   \label{IsIv-sum}
@@ -857,71 +857,71 @@ Thus, we observe that the summation of the soft and virtual operators results in
   I_{\mathrm{C}}(\epsilon)= \frac{1}{\epsilon}\sum_{i=1}^{N_p} \left( 2 L_i \vec{T}_i^2 + \gamma _i \right) + \mathcal{O}(\epsilon^0)\, .
   \label{Ic-expanded}
 \end{equation}
-From the comparison of Eqs.~\ref{IsIv-sum} and \ref{Ic-expanded}, it is clear that the operator $I_{\mathrm{T}}(\epsilon)$ is finite. Furthermore, as demonstrated in \cite{Devoto:2025kin}, the initial-state singularities present in Eq.~\ref{initial-state-collinear} also cancel, due to the singular terms in the PDFs renormalization.
+From the comparison of Eqs.~\ref{IsIv-sum} and \ref{Ic-expanded}, it is clear that the operator $I_{\mathrm{T}}(\epsilon)$ is finite. Furthermore, as demonstrated in \cite{Devoto:2025kin}, the initial-state singularities present in Eq.~\ref{initial-state-collinear} also cancel, due to the singular terms in the PDFs renormalization and exploiting the relation $\mathcal{P}_{ab}^{\mathrm{gen}}+\hat{P}_{ab}(0) \sim \mathcal{O}(\epsilon)$, where $\hat{P}_{ab}(0)$ are the Altarelli-Parisi splitting functions.
 
 \clearpage
 
 \chapter{NLO QCD corrections with $\theta$-parameters in the NSC Subtraction Scheme}
 \label{NSC-SS-parameters}
-Among the criteria used to evaluate the quality of a subtraction scheme are computational efficiency and numerical stability in the evaluation of results. This is critically important because the complex processes that take place at the LHC, involving high-multiplicity final states, require sophisticated numerical integration over particularly large and complex phase spaces. To have greater control over this integration, ensure that we are sampling the smallest and most physically relevant phase space possible, and minimize the computational cost, it is convenient to introduce into the NSC Subtraction Scheme a set of tunable parameters. These parameters allow us to modulate the boundaries of the soft and collinear regions, effectively controlling the integration limits we use.
+Among the criteria used to evaluate the quality of a subtraction scheme are computational efficiency and numerical stability in the evaluation of the physical results (such as cross sections and differential distributions) that are produced. This is critically important because the complex processes that take place at the LHC, involving high-multiplicity final states, require sophisticated numerical integration over particularly large and complex phase spaces. To have greater control over this integration, ensure that we are sampling the smallest and most physically relevant phase space possible, and minimize the computational cost, it is convenient to introduce a set of tunable parameters into the NSC Subtraction Scheme. These parameters allow us to modulate the boundaries of the soft and collinear regions, effectively controlling the integration limits we use.
 
 \section{Processes}
-Before delving into the technical details of the parameter implementation, we first describe the class of processes for which we will derive and show the explicit form of the subtraction terms. Following the scheme of the papers \cite{Devoto:2023rpv,Devoto:2025kin}, we will now consider processes that are more general than the illustrative examples introduced in Section \ref{modularity-scheme}. In particular, as in \cite{Devoto:2023rpv}, we will begin by considering the production of an arbitrary number of gluons and a colorless final state $X$ in $q \bar{q}$ annihilation, thus restricting ourselves to the case where all resolved and unresolved final-state partons are gluons; that is, a process which at leading-order has the form
+Before delving into the technical details of the parameter implementation, we first describe the class of processes for which we will derive and show the explicit form of the subtraction terms. Following the scheme of the papers \cite{Devoto:2023rpv,Devoto:2025kin}, we will now consider processes that are more general than the illustrative examples introduced in Section \ref{modularity-scheme}. In particular, as in \cite{Devoto:2023rpv}, we will begin by considering the production of an arbitrary number of gluons and a colorless final state $X$ in $q \bar{q}$ annihilation, thus restricting ourselves to the case where all resolved and unresolved final-state partons are gluons. At leading-order, we write this process as
 
 \begin{equation}
   \mathcal{A}^{\mathrm{LO}}: \quad a_q + b_{\bar{q}} \to X + N \, g \, ,
 \end{equation}
-where $N$ is the number of produced jets. The NLO cross section for this process receives a real-emission contribution from
+where $N$ is the number of produced jets. The NLO cross section for this process receives a real-emission contribution from the process
 \begin{equation}
   \mathcal{A}^{\mathrm{NLO}}: \quad a_q + b_{\bar{q}} \to X + (N+1) \, g \, .
 \end{equation}
-Then, to proceed with the generalization of the scheme, we will analyze, as in \cite{Devoto:2025kin}, the partonic channel whose leading-order process has the form
+Then, to proceed with the generalization of the scheme, we will analyze, as in \cite{Devoto:2025kin}, the partonic channel whose leading-order process has the form \cite{Devoto:2025kin}
 \begin{equation}
-  \mathcal{B}^{\mathrm{LO}}: \quad a_g + b_q \to X + N_g \, g \, ,
+  \mathcal{B}^{\mathrm{LO}}: \quad a_g + b_q \to X + N_g \, g + q \, ,
 \end{equation}
 where $N_g=N-1$. This configuration receives NLO contributions from the following three processes
 \begin{equation}
   \begin{aligned}
-    &\mathcal{B}_1^{\mathrm{NLO}} : \quad a_g + b_q \to X + (N_g+1) \, g \, , \\
+    &\mathcal{B}_1^{\mathrm{NLO}} : \quad a_g + b_q \to X + (N_g+1) \, g + q\, , \\
     & \mathcal{B}_2^{\mathrm{NLO}} : \quad a_g + b_q \to X + (N_g-1) \, g +q + q'\bar{q}'\, , \quad q' \neq q \, , \\
     & \mathcal{B}_3^{\mathrm{NLO}} : \quad a_g + b_q \to X + (N_g-1) \, g +q + q\bar{q}\,  .
   \end{aligned}
 \end{equation}
-We observe that, for each of the three processes $\mathcal{B}_{1,2,3}^{\mathrm{NLO}}$, in order to yield a singular contribution to $\mathcal{B}^{\mathrm{LO}}$, a parton must be removed in a manner that reproduces the initial and final states of the leading-order process. While multiple possibilities exist for this in the $\mathcal{B}_1^{\mathrm{NLO}}$ process, the situation is more restrictive for $\mathcal{B}_2^{\mathrm{NLO}}$ and $\mathcal{B}_3^{\mathrm{NLO}}$. For these, the only possibility is the clustering of a quark-antiquark pair, specifically $q'\bar{q}'$ or $q\bar{q}$, respectively, into a single gluon. Given that the collinear limit is identical for the quark pairs in both $\mathcal{B}_{2}^{\mathrm{NLO}}$ and $\mathcal{B}_{3}^{\mathrm{NLO}}$, it is sufficient to analyze the former case, as it contains all the relevant information required for the latter.
+We observe that, for each of the three processes $\mathcal{B}_{1,2,3}^{\mathrm{NLO}}$ a parton must be removed in a manner that reproduces the initial and final states of the process $\mathcal{B}^{\mathrm{LO}}$, in order to yield a singular configuration associated with this leading-order process. While multiple possibilities exist for this in the $\mathcal{B}_1^{\mathrm{NLO}}$ process, the situation is more restrictive for $\mathcal{B}_2^{\mathrm{NLO}}$ and $\mathcal{B}_3^{\mathrm{NLO}}$. For these, the only possibility is the clustering of a quark-antiquark pair, specifically $q'\bar{q}'$ or $q\bar{q}$, respectively, into a single gluon. Given that the collinear limit is identical for the quark pairs in both $\mathcal{B}_{2}^{\mathrm{NLO}}$ and $\mathcal{B}_{3}^{\mathrm{NLO}}$, it is sufficient to analyze the former case, as it contains all the relevant information required for the latter.
 
 \section{$\theta$-parameters}
-To modulate the width of the phase space region subject to integration in our subtraction scheme, we introduce constraints on the operators responsible for the soft and collinear projections (defined in \ref{projections}). This is achieved by augmenting them with Heaviside Theta functions, which restrict the integration range via dedicated parameters $\theta$. Specifically, since the integration is carried out in hyperspherical coordinates, we redefine the soft-limit operator by imposing an upper bound on the energy integration variable $E_\um$. This bound is proportional to a new parameter, $\theta_s$, which effectively defines the maximum energy for a parton to be considered soft within the subtraction
+To modulate the volume of the phase space region subject to integration in our subtraction scheme, we introduce constraints on the operators responsible for the soft and collinear projections (defined in \ref{projections}). This is achieved by augmenting them with Heaviside theta functions, which restrict the integration range via dedicated parameters $\theta$. Specifically, since the integration is carried out in hyperspherical coordinates, we redefine the soft-limit operator by imposing an upper bound on the energy integration variable $E_\um$. This bound is proportional to a new parameter, $\theta_s$, which effectively defines the maximum energy for a parton to be considered soft within the subtraction
 \begin{equation}
 S_\um^{\theta_s} = \theta{(E_\um < \theta_s \, E_{\mathrm{max}})} \, S_\um \,.
 \end{equation}
-Conversely, for the collinear-limit operator, we restrict the angular integration. Using a parameter $\theta_i$, we limit the separation angle $\theta_{ij}$ between the two partons ($i$ and $j$) that become collinear. In practice, this is implemented by bounding the angular variable $\eta_{ij}$ (a function of $\theta_{ij}$), thus defining the region around a parton's momentum where another parton is considered collinear
+Conversely, for the collinear-limit operator, we restrict the angular integration. Using a parameter $\theta_i$, we limit the separation angle $\theta_{ij}$ between the two partons ($i$ and $j$) that become collinear. In practice, this is implemented by bounding the angular variable $\eta_{ij}$, thus defining the region of the angular phase space of a parton where another parton is considered collinear
 \begin{equation}
 C_{ij}^{\theta_i} = \theta{(\eta_{ij} < \theta_i )} \, C_{ij}\, .
 \end{equation}
-As anticipated, the implementation of the $\theta_s$ and $\theta_i$ parameters modifies only the real-emission corrections, while leaving the virtual corrections and those related to PDF renormalization unchanged. Therefore, the focus of this chapter will be on the new form taken by Eqs. \ref{I-s-operator} and \ref{IC-def}, that is, the $I_{\mathrm{S}}(\epsilon)$ and $I_{\mathrm{C}}(\epsilon)$ operators. We will explicitly verify that the introduction of these parameters does not alter the scheme's cancellation of infrared poles presented in Section \ref{pole-cancellation-section}. Specifically, we will demonstrate that the terms proportional to $1/\epsilon^2$ and $1/\epsilon$ in the sum $I_{\mathrm{S}}(\epsilon) + I_{\mathrm{C}}(\epsilon)$ remain independent of the $\theta$-parameters. This independence is crucial, as it guarantees that the cancellation of singularities is not compromised by the presence of the new parameters.
+The implementation of the $\theta_s$ and $\theta_i$ parameters modifies only the real-emission corrections, while leaving the virtual corrections and those related to PDF renormalization unchanged. Therefore, the focus of this chapter will be on the new form taken by Eqs. \ref{I-s-operator} and \ref{IC-def}, that is, the $I_{\mathrm{S}}(\epsilon)$ and $I_{\mathrm{C}}(\epsilon)$ operators. We will explicitly verify that the introduction of these parameters does not alter the scheme's cancellation of infrared poles presented in Section \ref{pole-cancellation-section}. Specifically, we will demonstrate that the terms proportional to $1/\epsilon^2$ and $1/\epsilon$ in the sum $I_{\mathrm{S}}(\epsilon) + I_{\mathrm{C}}(\epsilon)$ remain independent of the $\theta$-parameters. This independence is crucial, as it guarantees that the cancellation of singularities is not compromised by the presence of the new parameters.
 
 \section{Soft limit}
 
-The soft limit only requires detailed study when the unresolved parton $\um$ is a gluon. Consequently, the treatment for the processes $\mathcal{A}^{\mathrm{NLO}}, \mathcal{B}_1^{\mathrm{NLO}}, \mathcal{B}_2^{\mathrm{NLO}}$, and $\mathcal{B}_3^{\mathrm{NLO}}$  is analogous. The factorization of the squared matrix element is given by Eq. \ref{ampl-soft}, which must now be integrated over the phase space of the gluon $\um$, taking into account the introduction of the $\theta_s$ parameter
+The soft limit only requires detailed study when the unresolved parton $\um$ is a gluon. Consequently, the treatment for the processes $\mathcal{A}^{\mathrm{NLO}}, \mathcal{B}_1^{\mathrm{NLO}}, \mathcal{B}_2^{\mathrm{NLO}}$, and $\mathcal{B}_3^{\mathrm{NLO}}$  is analogous. The factorization of the squared matrix element is given by Eq. \ref{ampl-soft}, which must be integrated over the phase space of the gluon $\um$, now taking into account the $\theta_s$ parameter
 \begin{equation}
   \langle S_\um^{\theta_s} F_\mathrm{LM}(\um) \rangle = \int [\mathrm{d}p_\um] \theta(E_\um < \theta_s E_{\mathrm{max}}) (-g^2_{s,b}) \sum _{(ij)}^{N_p} \frac{p_i \cdot p_j}{(p_i \cdot p_\um)(p_j \cdot p_\um)} (\vec{T}_i \cdot \vec{T}_j) F_\mathrm{LM} \, .
 \end{equation}
-The subsequent calculations follow the same procedure outlined in Section \ref{section-soft-limit}. After performing the soft phase-space integration with the energy cutoff, the soft-integrated counterterm, now including the parameter, takes the form
+The subsequent calculations follow the same procedure outlined in Section \ref{section-soft-limit}. After performing the soft phase-space integration with the energy cutoff, the soft-integrated counterterm takes the form
 \begin{equation}
   \langle S_\um^{\theta_s} F_\mathrm{LM}(\um) \rangle = - [\alpha_s] \frac{\left(2E_{\mathrm{max}}/\mu\right)^{-2\epsilon}}{\epsilon^2} \theta_s^{-2\epsilon}\sum_{(ij)}^{N_p} \langle \eta_{(ij)}^{-\epsilon} K_{ij} (\vec{T}_i \cdot \vec{T}_j) \cdot F_\mathrm{LM} \rangle \, = [\alpha_s] \langle I_{\mathrm{S}}\cdot F_{\mathrm{LM}} \rangle ,
 \end{equation}
 where $N_p = N+2$ is the number of initial- and final-state partons. This result shows that the parameter $\theta_s$ enters the counterterm via the multiplicative factor $\theta_s^{-2\epsilon}$, which modifies the effective scale of the soft divergence but does not alter the fundamental pole structure in $\epsilon$. To see this explicitly, it is useful to expand the operator $ I_{\mathrm{S}} (\epsilon)$ in powers of $\epsilon$. This expansion allows us to see the nature of the coefficients multiplying the $1/\epsilon^2$ and $1/\epsilon$ terms.  First of all, for the sake of clarity, we write explicitly the expression of the operator including the $\theta_s$ parameter
 \begin{equation}
-  I_{\mathrm{S}} (\epsilon)= -\frac{1}{\epsilon^2} \left(\frac{2E_{\mathrm{max}}}{\mu}\right)^{-2\epsilon} \, \theta_s^{-2\epsilon} \, \sum_{i \neq j }^{N_p} \eta_{ij}^{-\epsilon} \, K_{ij} \, \left( \vec{T}_i \cdot \vec{T}_j\right) \,. 
+  I_{\mathrm{S}} (\epsilon, \theta_s)= -\frac{1}{\epsilon^2} \left(\frac{2E_{\mathrm{max}}}{\mu}\right)^{-2\epsilon} \, \theta_s^{-2\epsilon} \, \sum_{i \neq j }^{N_p} \eta_{ij}^{-\epsilon} \, K_{ij} \, \left( \vec{T}_i \cdot \vec{T}_j\right) \,. 
 \end{equation}
 Its expansion follows a procedure analogous to that carried out in Section~\ref{pole-cancellation-section}. By retracing the same steps, one obtains
 \begin{equation}
   \begin{aligned}
-  I_{\mathrm{S}} (\epsilon) &= \frac{1}{\epsilon^2} \sum_{i=1}^{N_p} T_i^2 + \frac{1}{\epsilon}\left[-\sum_{i=1}^{N_p} 2 \log{\left(\frac{2 E_{\mathrm{max}}\theta_s}{\mu} \right)} \vec{T}_i^2 - \sum_{i\neq j}^{N_p} f_1(\eta_{ij}) (\vec{T}_i \cdot \vec{T}_j) \right]  \\
+  I_{\mathrm{S}} (\epsilon, \theta_s) &= \frac{1}{\epsilon^2} \sum_{i=1}^{N_p} T_i^2 + \frac{1}{\epsilon}\left[-\sum_{i=1}^{N_p} 2 \log{\left(\frac{2 E_{\mathrm{max}}\theta_s}{\mu} \right)} \vec{T}_i^2 - \sum_{i\neq j}^{N_p} f_1(\eta_{ij}) (\vec{T}_i \cdot \vec{T}_j) \right]  \\
   &  + \sum_{i=1}^{N_p} 2 \log^2{\left(\frac{2 E_{\mathrm{max}}\theta_s}{\mu} \right)}\vec{T}_i^2 - \sum_{i\neq j}^{N_p} \left[ f_2 \left(2 E_{\mathrm{max}}\theta_s\right) f_1(\eta_{ij}) + K_{ij}^{(2)}\right] (\vec{T}_i \cdot \vec{T}_j) + \mathcal{O}(\epsilon)
   \end{aligned}
 \end{equation}
-The coefficient preceding the $1/\epsilon^2$ pole shows no dependence on $\theta_s$. Therefore, as demonstrated in \cite{Devoto:2023rpv}, its cancellation is guaranteed. We must now analyze the coefficient of the $1/\epsilon$ term in detail, which we rewrite as follows
+The residue of the $1/\epsilon^2$ pole shows no dependence on $\theta_s$. Therefore, as demonstrated in \cite{Devoto:2023rpv}, its cancellation with $I_{\mathrm{V}}(\epsilon)$ is guaranteed. We must now analyze the coefficient of the $1/\epsilon$ term in detail, which we rewrite as follows
 \begin{equation}
   \begin{aligned}
   c_{-1}(\theta_s) & = -\sum_{i=1}^{N_p} 2 \log{\left(\frac{2 E_{\mathrm{max}}\theta_s}{\mu} \right)} \vec{T}_i^2 - \sum_{i\neq j}^{N_p} f_1(\eta_{ij}) (\vec{T}_i \cdot \vec{T}_j)  \\
@@ -929,12 +929,13 @@ The coefficient preceding the $1/\epsilon^2$ pole shows no dependence on $\theta
   \label{coefficient-soft}
   \end{aligned}
 \end{equation}
-with ${L_i}^{\theta_s}=\log{\left(E_{\mathrm{max}}\theta_s/E_i\right)}$. We will compare this term with the corresponding coefficient from the $I_{\mathrm{C}}$ operator, which we denote as $\tilde{c}_{-1}(\theta_s)$. If the sum $c_{-1}(\theta_s) + \tilde{c}_{-1}(\theta_s)$ is independent of the $\theta_s$ parameter, then the cancellation of the infrared poles remains intact.
+with ${L_i}^{\theta_s}=\log{\left(E_{\mathrm{max}}\theta_s/E_i\right)}$. We will compare this term with the corresponding coefficient from the $I_{\mathrm{C}}$ operator, which we denote as $\tilde{c}_{-1}(\theta_s)$. If the sum $c_{-1}(\theta_s) + \tilde{c}_{-1}(\theta_s)$ is independent of the $\theta_s$ parameter\footnote{We will also demonstrate that $\tilde{c}_{-1}$ is indepedent of $\theta_i$}, then the cancellation of the infrared poles remains intact.
 
 \section{Collinear and Soft-Collinear limits}
-We now proceed to a detailed analysis of the real corrections in the collinear and soft-collinear limits. Our discussion will focus specifically on the structure and properties of the integrated collinear operator, $I_{\mathrm{C}}$.
+We now proceed with a detailed analysis of the real corrections in the collinear and soft-collinear limits. Our discussion will focus specifically on the structure and properties of the integrated collinear operator, $I_{\mathrm{C}}$.
 
 \subsection{Initial state}
+\label{initial-state-parameters-section}
 For the specific processes under investigation, the final-state gluon $\um_g$ is the only unresolved parton that can produce a collinear singularity with an incoming parton and still contribute to $\mathcal{A}^{\mathrm{LO}}$ or $\mathcal{B}^{\mathrm{LO}}$. This gluon can become collinear to another gluon (denoted $a_g$ in processes $\mathcal{B}_1^{\mathrm{NLO}}, \mathcal{B}_2^{\mathrm{NLO}}$, and $\mathcal{B}_3^{\mathrm{NLO}}$) or to a quark (such as $b_q$ in processes $\mathcal{B}_1^{\mathrm{NLO}}, \mathcal{B}_2^{\mathrm{NLO}}$, and $\mathcal{B}3^{\mathrm{NLO}}$, or $a_q$ and $b_{\bar{q}}$ in process $\mathcal{A}^{\mathrm{NLO}}$). Given that the derivation of the soft-subtracted collinear counterterm is analogous for both initial-state quarks and gluons, we will detail the calculation for a representative case, specifically focusing on an initial-state quark. The setup for the calculation follows the same framework presented in Section~\ref{initial-state-section}. However, we do not perform the same angular integration as in Eq.~\ref{angular-integral}, since we must account for the presence of the function $\theta(\eta_{a\um}<\theta_a)$ in the definition of the operator $C_{a\um}^{\theta_a}$. We therefore express the integration over the phase space of the unresolved parton $\um$ as follows
 \begin{equation}
   \begin{aligned}
@@ -952,7 +953,7 @@ Proceeding with the integration and performing a change of variables as in Secti
   \int [\mathrm{d}p_\um]\, C_{a\um}^{\theta_a}  F_{\mathrm{LM}} (\um) &= [\alpha_s]\,  [\mathrm{d}\eta_{a\um \, \theta_a}] \left(\frac{2E_a}{\mu}\right)^{-2\epsilon} \int_{z_{\mathrm{min}}}^{1} \mathrm{d}z \, (1-z)^{-2\epsilon} \, P_{qq}(z) \, \frac{1}{z} \, F_{\mathrm{LM}}(z\cdot a_q ) \, .
   \end{aligned}
 \end{equation}
-If we also include the soft limit, we obtain the hard-collinear integrated counterterm, following a procedure analogous to that outlined in Section~\ref{initial-state-section}
+If we also include the soft limit, we obtain the hard-collinear integrated counterterm, following a procedure identical to that outlined in Section~\ref{initial-state-section}
 \begin{equation}
   \begin{aligned}
     \left< C_{a\um}^{\theta_a} \bar{S}_\um^{\theta_s} \Delta^{(\um)} F_{\mathrm{LM}} (\um) \right>  &= [\alpha_s] \bigl< [\mathrm{d}\eta_{a\um \, \theta_a}] \left(\frac{2E_a}{\mu}\right)^{-2\epsilon} \int_{0}^{1} \mathrm{d}z \, \left[\hat{P}_{aa}^{(0)}-\epsilon \mathcal{P}_{aa}^{\mathrm{fin}}\right] \frac{1}{z} \, F_{\mathrm{LM}}(z\cdot a) \\
@@ -982,14 +983,15 @@ where $L_i^{\theta_a}= \log{(E_{\mathrm{max}}\theta_a)/E_i}$. In particular, we 
     \tilde{c}_{-1}(\theta_s)= \gamma_a + 2 L_a^{\theta_s} \,\vec{T}_a^2 \, ,
     \label{coefficient-collinear-initial}
 \end{equation}
-and we observe that it depends only on the parameter $\theta_s$ and not on $\theta_a$. Furthermore, it has the same form but opposite sign compared to the expression in Eq.~\ref{coefficient-soft}.
+and we observe that it depends only on the parameter $\theta_s$ and not on $\theta_a$. Furthermore, the $\theta_s$-dependent term has the same form but opposite sign compared to the expression in Eq.~\ref{coefficient-soft}.
 
 \subsection{Final state}
+\label{final-state-parameters-section}
 In the case of the $\mathcal{A}^{\mathrm{NLO}}$ process, the only possibility is that one of the gluons, which we label $\um$, becomes collinear to a final-state gluon $i$, producing a single final-state gluon that we denote as $[i\um]$. This scenario is also one of the possibilities for the $\mathcal{B}_1^{\mathrm{NLO}}$ process. In this case, applying the operator that performs the collinear limit leads to the factorization shown in Eq.~\ref{collinear-factorization}, with the addition of the constraint function $\theta(\eta_{i\um}<\theta_i)$. The integration over the phase space of the partons involved in the collinear limit, namely $i$ and $\um$, therefore takes the following form
 \begin{equation}
   \begin{aligned}
-    \int [\mathrm{d}p_i] \int [\mathrm{d}p_\um] \, C_{i\um} \Delta^{(\um)} F_{\mathrm{LM}} & = \int [\mathrm{d}p_i] \int [\mathrm{d}p_\um] \, \frac{g^2_{s,b}}{pi \cdot p_\um} \, z \, P_{gg}(z) \, F_{\mathrm{LM}}(i \um) \\
-    &= \int \frac{\mathrm{d}\Omega^{d-2}}{2(2\pi)^{d-1}} 2^{-2\epsilon} \int_0^1 \frac{\mathrm{d}\eta_{i\um}}{(\eta_{i\um}(1-\eta_{i\um}))^{\epsilon}} \nonumber \\
+    \int [\mathrm{d}p_i] \int [\mathrm{d}p_\um] \, C_{i\um} \Delta^{(\um)} F_{\mathrm{LM}} & = \int [\mathrm{d}p_i] \int [\mathrm{d}p_\um] \, \theta{(\eta_{i\um} < \theta_i )} \, \frac{g^2_{s,b}}{p_i \cdot p_\um} \, z \, P_{gg}(z) \, F_{\mathrm{LM}}(i \um) \\
+    &= \int \frac{\mathrm{d}\Omega^{d-2}}{2(2\pi)^{d-1}} 2^{-2\epsilon} \int_0^{\theta_i} \frac{\mathrm{d}\eta_{i\um}}{(\eta_{i\um}(1-\eta_{i\um}))^{\epsilon}} \nonumber \\
     &\quad \times \int [\mathrm{d}\Omega_i] \int \mathrm{d}E_\um E_\um^{1-2\epsilon} \int \mathrm{d}E_i E_i^{1-2\epsilon} \frac{g_{s,b}^2 \,  P_{gg} \, F_{\mathrm{LM}} (i\um) }{(1-z) E_{i\um}^{2}\eta_{i\um}} \, .
   \end{aligned}
 \end{equation}
@@ -997,7 +999,7 @@ Following steps analogous to those in Section~\ref{final-state-section}, we obta
 \begin{equation}
   \langle C_{i\um}^{\theta_i} \Delta^\um F_{\mathrm{LM}} (\um) \rangle = [\alpha_s] [\mathrm{d}\eta_{i\um \, \theta_i}] \int [\mathrm{d}p_i] \left( \frac{2 E_i}{\mu}\right)^{-2 \epsilon} \int_0^1 \mathrm{d}z \, z^{1-2\epsilon} (1-z)^{-2\epsilon} P_{gg}(z) F_{\mathrm{LM}} \, ,
 \end{equation}
-where $[\mathrm{d}\eta_{i\um \, \theta_i}]$ is defined as in Eq.~\ref{de-eta}, but substituting partons $a$ and $a\um$ with $i$ and $i\um$. Including also the soft limit, with its respective parameter $\theta_s$, and following a procedure analogous to that in Section~\ref{final-state-section}, we obtain
+where $[\mathrm{d}\eta_{i\um \, \theta_i}]$ is defined as in Eq.~\ref{de-eta}, but substituting partons $a$ and $a\um$ with $i$ and $i\um$. Including also the soft limit, with its respective parameter $\theta_s$, and following a procedure detailed in Section~\ref{final-state-section}, we obtain
 \begin{equation}
   \begin{split}
   \langle C_{i\mathfrak{m}}^{\theta_i} \bar{S}_{\mathfrak{m}}^{\theta_s} \Delta^{\mathfrak{m}} F_{\mathrm{LM}}(\mathfrak{m})\rangle &= -[\alpha_s] \,[\mathrm{d}\eta_{i\um \, \theta_i}] \, \bigl< \left(\frac{2E_i}{\mu}\right)^{-2\epsilon} \gamma^{2,2 \quad \theta_s}_{z,g \to g, g} \, F_{\mathrm{LM}} \bigr> \, , 
@@ -1011,7 +1013,7 @@ where $\gamma^{2,2 \quad \theta_s}_{z,g \to g, g}$ is defined in the general cas
   &\quad + 2 \delta_{f_{[i\um]}f_i} \vec{T}^2_{f_{[i\um]}} \frac{1-e^{-k \epsilon L_i^{\theta_s}}}{k\epsilon} g(1) ,
   \label{gen-an-dim-theta}
 \end{align}
-and $L_i^{\theta_s}=\log{\left(E_{\mathrm{max}}\theta_s/E_i\right)}$. In the case of corrections to the $\mathcal{A}^{\mathrm{LO}}$ process, this contribution is sufficient to recover the conventional collinear anomalous dimension, since, dealing only with gluons, one can set $n_f$ to zero. In the more general case of corrections to the $\mathcal{B}^{\mathrm{LO}}$ process, however, it is necessary to sum multiple contributions, as illustrated in Sec.~\ref{final-state-section}. This requirement arises from the additional factor $z_{i\um}$ in the integral of the collinear splitting functions. Therefore, to the case where both partons becoming collinear are gluons, we must add a further contribution, which this time originates from the $\mathcal{B}_2^{\mathrm{NLO}}$ process. Specifically, the only way to obtain $\mathcal{B}^{\mathrm{LO}}$ from $\mathcal{B}_2^{\mathrm{NLO}}$ is to cluster the quark $q'$ and the antiquark $\bar{q}'$ into a gluon. For this to occur, either $q'$ or $\bar{q}'$ must be designated as the potentially-unresolved parton, and then the only collinear limit to consider is $q'$ becoming collinear to $\bar{q}'$. As stated in Section~\ref{section-coll-soft}, and considering the symmetries under the exchange of the quark $q'$ and the antiquark $\bar{q}'$ together with the flavour independence of the splitting function, this contribution carries a multiplicative factor of $2n_f$. We therefore obtain the following result
+and $L_i^{\theta_s}=\log{\left(E_{\mathrm{max}}\theta_s/E_i\right)}$. In the case of corrections to the $\mathcal{A}^{\mathrm{LO}}$ process, this contribution is sufficient to recover the conventional collinear anomalous dimension, since, dealing only with gluons, one can set $n_f$ to zero. In the more general case of corrections to the $\mathcal{B}^{\mathrm{LO}}$ process, however, it is necessary to sum multiple contributions, as illustrated in Sec.~\ref{final-state-section}. This requirement arises from the additional factor $z_{i\um}$ in the integral of the collinear splitting functions. Therefore, we must add a further contribution to the case where both partons becoming collinear are gluons, which this time originates from the $\mathcal{B}_2^{\mathrm{NLO}}$ process. Specifically, the only way to obtain $\mathcal{B}^{\mathrm{LO}}$ from $\mathcal{B}_2^{\mathrm{NLO}}$ is to cluster the quark $q'$ and the antiquark $\bar{q}'$ into a gluon. For this to occur, either $q'$ or $\bar{q}'$ must be designated as the potentially-unresolved parton, and then the only collinear limit to consider is $q'$ becoming collinear to $\bar{q}'$. As stated in Section~\ref{section-coll-soft}, and considering the symmetries under the exchange of the quark $q'$ and the antiquark $\bar{q}'$ together with the flavour independence of the splitting function, this contribution carries a multiplicative factor of $2n_f$. We therefore obtain the following result
 \begin{equation}
   \langle C_{i\mathfrak{m}}^{\theta_i} \bar{S}_{\mathfrak{m}}^{\theta_s} \Delta^{\mathfrak{m}} F_{\mathrm{LM}}(\mathfrak{m})\rangle = -2 \, n_f \, [\alpha_s] \,[\mathrm{d}\eta_{i\um \, \theta_i}] \, \bigl< \left(\frac{2E_i}{\mu}\right)^{-2\epsilon} \gamma^{2,2}_{z,g \to q, \bar{q}} \, F_{\mathrm{LM}} \bigr> \, . 
   \label{coll-par-gqq}
@@ -1028,14 +1030,14 @@ The final possibility is that an unresolved quark $\um$ becomes collinear to a f
 \end{equation}
 Again, we note that also in this case there is no dependence on the parameter $\theta_s$. The sum of the last two contributions is analogous to Eq.~\ref{an-dim-quark}. \\
 
-Since our goal is to construct the $I_{\mathrm{C}}(\epsilon)$ operator in this case, we sum the various contributions. For convenience, we denote the set of final-state partons as $\mathcal{H}_f = \mathcal{H}_{f,g} + \mathcal{H}_{f,q}$, where $\mathcal{H}_{f,g}$ is the set of final-state gluons and $\mathcal{H}_{f,q}$ is the set of final-state quarks. Thus, the hard-collinear integrated counterterm is
+Since our goal is to construct the $I_{\mathrm{C}}(\epsilon)$ operator in the presence of the $\theta$ parameters, we sum the various contributions. For convenience, we denote the set of final-state partons as $\mathcal{H}_f = \mathcal{H}_{f,g} + \mathcal{H}_{f,q}$, where $\mathcal{H}_{f,g}$ is the set of final-state gluons and $\mathcal{H}_{f,q}$ is the set of final-state quarks. Thus, the hard-collinear integrated counterterm is
 \begin{equation}
   \begin{aligned}
      \sum_{i \in \mathcal{H}_f} \langle C_{i\mathfrak{m}}^{\theta_i} \bar{S}_{\mathfrak{m}}^{\theta_s} \Delta^{\mathfrak{m}} F_{\mathrm{LM}}(\mathfrak{m})\rangle =& - [\alpha_s] \biggl< \Biggl[ \sum_{i \in \mathcal{H}_{f,g}} [\mathrm{d}\eta_{i\um \, \theta_i}] \left(\frac{2E_i}{\mu}\right)^{-2\epsilon}(\gamma^{2,2 \quad \theta_s}_{z,g \to g, g}+ \gamma^{2,2}_{z,g \to q, \bar{q}}) \\
      & + \sum_{i \in \mathcal{H}_{f,q}} [\mathrm{d}\eta_{i\um \, \theta_i}] \left(\frac{2E_i}{\mu}\right)^{-2\epsilon}(\gamma^{2,2 \quad \theta_s}_{z,q \to q, g}+ \gamma^{2,2}_{z,q \to g, q}) \Biggr] F_{\mathrm{LM}} \biggr> \, .
   \end{aligned}
 \end{equation}
-where, to avoid overloading the notation, we have left implicit on the left-hand side of the equation that the function $F_{\mathrm{LM}}$ is the one corresponding to the process to which the contribution refers, as explained in the course of this paragraph. We can expand the obtained quantities in $\epsilon$ to highlight the coefficient in front of the $1/\epsilon$ pole, making use of Eqs.~\ref{expansion-an-dim-gluon}, \ref{expansion-an-dim-quark}, and \ref{de-eta}
+where the arguments of the $F_{\mathrm{LM}}$ functions on the right-hand side are understood. We can expand the obtained quantities in $\epsilon$ to highlight the coefficient in front of the $1/\epsilon$ pole, making use of Eqs.~\ref{expansion-an-dim-gluon}, \ref{expansion-an-dim-quark}, and \ref{de-eta}
 \begin{equation}
   \begin{aligned}
      \sum_{i \in \mathcal{H}_f} \langle C_{i\mathfrak{m}}^{\theta_i} \bar{S}_{\mathfrak{m}}^{\theta_s} \Delta^{\mathfrak{m}} F_{\mathrm{LM}}(\mathfrak{m})\rangle &= \Bigl<  \Bigl[\sum_{i \in \mathcal{H}_{f,g}} \Bigl( \frac{1}{\epsilon}(\gamma_g +  2 L_i^{\theta_s} \,\vec{T}_g^2) - 2 \log{\left(\frac{2E_i}{\mu}\right)}\gamma_g \\
@@ -1046,10 +1048,10 @@ where, to avoid overloading the notation, we have left implicit on the left-hand
 \end{equation}
 
 \subsection{Hard-collinear operator}
-We can therefore express the integrated hard-collinear counterterm in a general form that includes the parameters we have implemented
+We can combine the results of Sections \ref{initial-state-parameters-section} and \ref{final-state-parameters-section} to express the integrated hard-collinear counterterm in a general form that includes the parameters we have implemented
 \begin{equation}
   \begin{aligned}
-    \sum_{i \in \mathcal{H}_f} \langle C_{i\mathfrak{m}}^{\theta_i} \bar{S}_{\mathfrak{m}}^{\theta_s} \Delta^{\mathfrak{m}} F_{\mathrm{LM}}(\mathfrak{m})\rangle &= [\alpha_s]\langle I_{\mathrm{C}}(\epsilon) \cdot F_{\mathrm{LM}} \rangle \\
+    \sum_{i \in \mathcal{H}_f} \langle C_{i\mathfrak{m}}^{\theta_i} \bar{S}_{\mathfrak{m}}^{\theta_s} \Delta^{\mathfrak{m}} F_{\mathrm{LM}}(\mathfrak{m})\rangle &= [\alpha_s]\langle I_{\mathrm{C}}(\epsilon, \theta_s, \theta_i) \cdot F_{\mathrm{LM}} \rangle \\
     & + [\alpha_s] \bigl< [\mathrm{d}\eta_{a\um \, \theta_a}] \left(\frac{2E_a}{\mu}\right)^{-2\epsilon} \int_{0}^{1} \mathrm{d}z \, \left[\hat{P}_{aa}^{(0)}-\epsilon \mathcal{P}_{aa}^{\mathrm{fin}}\right] \frac{1}{z} \, F_{\mathrm{LM}}(z\cdot a) \bigr> \\
     & + [\alpha_s] \bigl< [\mathrm{d}\eta_{b\um \, \theta_b}] \left(\frac{2E_b}{\mu}\right)^{-2\epsilon} \int_{0}^{1} \mathrm{d}z \, \left[\hat{P}_{bb}^{(0)}-\epsilon \mathcal{P}_{bb}^{\mathrm{fin}}\right] \frac{1}{z} \, F_{\mathrm{LM}}(z\cdot b) \bigr> \, ,
   \end{aligned}
@@ -1057,7 +1059,7 @@ We can therefore express the integrated hard-collinear counterterm in a general 
 with
 \begin{equation}
   \begin{aligned}
-    I_{\mathrm{C}} (\epsilon) = &\sum_{i \in \mathcal{H}} \Biggl( \frac{1}{\epsilon}\, \left(\, \gamma_i+  2 \,L_i^{\theta_s} \,\vec{T}_i^2 \right) - 2 \log{\left(\frac{2E_i}{\mu}\right)}\, \gamma_i  - 4 \, \vec{T}_q^2 \, L_i^{\theta_s} \log{\left(\frac{2E_i}{\mu}\right)} \\
+    I_{\mathrm{C}} (\epsilon, \theta_s, \theta_i) = &\sum_{i \in \mathcal{H}} \Biggl( \frac{1}{\epsilon}\, \left(\, \gamma_i+  2 \,L_i^{\theta_s} \,\vec{T}_i^2 \right) - 2 \log{\left(\frac{2E_i}{\mu}\right)}\, \gamma_i  - 4 \, \vec{T}_q^2 \, L_i^{\theta_s} \log{\left(\frac{2E_i}{\mu}\right)} \\
     & - \log{(\theta_i)} \, \gamma_i - 2 \log{(\theta_i)} \, \vec{T}_i^2 \, L_i^{\theta_s} \Biggr) \, ,
   \end{aligned}
 \end{equation}
@@ -1070,7 +1072,11 @@ where $\mathcal{H}$ is the set of all resolved partons, both initial and final s
 \end{equation}
 
 \subsection{Cancellation of poles}
-We now wish to verify that the pole cancellation demonstrated in Section~\ref{pole-cancellation-section} remains valid with the introduction of the $\theta$ parameters. This verification is crucial as it ensures the consistency of our subtraction scheme and the finiteness of our final results. As stated earlier, the virtual operator $I_{\mathrm{V}}(\epsilon)$ and the contributions related to PDF renormalization are unaffected by the introduction of the $\theta_i$ and $\theta_s$ parameters, since these parameters only regulate the phase space for real emissions. Therefore, the key test is to ensure that the $\theta_s$ dependence cancels in the sum of the soft and collinear operators. By examining Eqs.~\ref{coefficient-soft} and \ref{coefficient-collinear}, a complete cancellation of these terms is observed: the terms containing $L_i^{\theta_s}$ appear with exactly the same coefficient but opposite signs in $I_{\mathrm{S}}(\epsilon)$ and $I_{\mathrm{C}}(\epsilon)$. This precise cancellation confirms that our modified subtraction scheme maintains the infrared safety of the calculation. The $\theta_i$ parameters, which control the collinear partitioning, appear only in finite terms and thus do not affect the pole structure.
+We now wish to verify that the pole cancellation demonstrated in Section~\ref{pole-cancellation-section} remains valid with the introduction of the $\theta$ parameters. This verification is crucial as it ensures the consistency of our subtraction scheme and the finiteness of our final results. As stated earlier, the virtual operator $I_{\mathrm{V}}(\epsilon)$ and the contributions related to PDF renormalization are unaffected by the introduction of the $\theta_i$ and $\theta_s$ parameters, since these parameters only regulate the phase space for real emissions. Therefore, the key test is to ensure that the $\theta_s$ dependence cancels in the sum of the soft and collinear operators. By examining Eqs.~\ref{coefficient-soft} and \ref{coefficient-collinear}, a complete cancellation of these terms is observed: the terms containing $L_i^{\theta_s}$ appear with exactly the same coefficient but opposite signs in $I_{\mathrm{S}}(\epsilon)$ and $I_{\mathrm{C}}(\epsilon)$. This precise cancellation confirms that our modified subtraction scheme maintains the infrared safety of the calculation. 
+The $\theta_i$ parameters, which control the collinear partitioning, appear only in finite terms and thus do not affect the pole structure.\\
+Clearly, both $\theta_s$ and $\theta_i$ appear in the finite remainders of Eq. \ref{identity-flm}. The $\mathcal{O}(\mathrm{NLO})$ piece, implemented numerically, will also depend on these parameters. The physical result, summing the finite reminders and the $\mathcal{O}(\mathrm{NLO})$ piece, should be independent of these parameters. Checking that this is true is therefore an extremely powerful check on both the calculation of the counterterms as well as the implementation of the subtractions in a numerical code. Given the complexity of these calculations at NNLO, having such a powerful check on the results is extremely helpful in identifying errors and verifying the correcteness of the physical result.
+
+
 
 
 
