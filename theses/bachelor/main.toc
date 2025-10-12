@@ -25,7 +25,7 @@
 \contentsline {section}{\numberline {3.4}Collinear and Soft-Collinear limits}{29}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}Initial state}{29}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}Final state}{30}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Hard-collinear operator}{32}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.3}Hard-collinear operator}{33}{subsection.3.4.3}%
 \contentsline {subsection}{\numberline {3.4.4}Cancellation of poles}{33}{subsection.3.4.4}%
 \contentsline {chapter}{\numberline {4}Conclusion}{34}{chapter.4}%
 \contentsline {chapter}{\sffamily Appendices}{36}{section*.5}%

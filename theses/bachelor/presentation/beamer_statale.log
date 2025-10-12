@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2025.10.9)  12 OCT 2025 19:52
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2025.10.9)  12 OCT 2025 23:35
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/home/lucreziabioni/notes/theses/bachelor/presentation/beamer_statale
@@ -1218,14 +1218,14 @@ Package rerunfilecheck Info: File `beamer_statale.out' has not changed.
 Here is how much of LuaTeX's memory you used:
  28191 strings out of 476553
  100000,1977958 words of node,token memory allocated
- 7094 words of node memory still in use:
-   73 hlist, 14 vlist, 9 rule, 33 disc, 12 local_par, 4 math, 180 glue, 70 kern, 36 penalty, 338 glyph, 218 attribute, 75 glue_spec, 218 attribute_list, 4 write, 74 pdf_literal, 34 pdf_colorstack nodes
-   avail lists: 2:200,3:231,4:173,5:216,6:28,7:1394,8:1,9:278,10:14,11:86
+ 7137 words of node memory still in use:
+   73 hlist, 14 vlist, 9 rule, 32 disc, 12 local_par, 4 math, 181 glue, 71 kern, 36 penalty, 344 glyph, 218 attribute, 75 glue_spec, 218 attribute_list, 4 write, 74 pdf_literal, 34 pdf_colorstack nodes
+   avail lists: 2:200,3:231,4:173,5:218,6:28,7:1408,8:1,9:278,10:14,11:84
  49295 multiletter control sequences out of 65536+600000
  97 fonts using 12796751 bytes
  128i,15n,132p,476b,1090s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texlive/texmf-dist/fonts/truetype/google/carlito/Carlito-Regular.ttf></usr/share/texlive/texmf-dist/fonts/truetype/google/carlito/Carlito-Bold.ttf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on beamer_statale.pdf (2 pages, 235948 bytes).
+Output written on beamer_statale.pdf (2 pages, 236112 bytes).
 
 PDF statistics: 68 PDF objects out of 1000 (max. 8388607)
  39 compressed objects within 1 object stream

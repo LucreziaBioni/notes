@@ -349,6 +349,41 @@
       \verb hep-ph/9908523
       \endverb
     \endentry
+    \entry{Huber:2005yg}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f2d907d8c452adfa5e65e96acf33fae9}{%
+           family={Huber},
+           familyi={H\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=8c595244b5ae2c05b3eaf8fb63c3d17b}{%
+           family={Maitre},
+           familyi={M\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{10c689ed109571502d0284d56b93eff2}
+      \strng{fullhash}{10c689ed109571502d0284d56b93eff2}
+      \strng{bibnamehash}{10c689ed109571502d0284d56b93eff2}
+      \strng{authorbibnamehash}{10c689ed109571502d0284d56b93eff2}
+      \strng{authornamehash}{10c689ed109571502d0284d56b93eff2}
+      \strng{authorfullhash}{10c689ed109571502d0284d56b93eff2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Comput. Phys. Commun.}
+      \field{title}{{HypExp, a Mathematica package for expanding hypergeometric functions about integer-valued parameters}}
+      \field{volume}{175}
+      \field{year}{2006}
+      \field{pages}{122\bibrangedash 144}
+      \range{pages}{23}
+      \verb{eprint}
+      \verb hep-ph/0507094
+      \endverb
+    \endentry
     \entry{Salam:2010nqg}{article}{}
       \name{author}{1}{}{%
         {{hash=cdd9546b48e743df2da267f924c11cb4}{%
