@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2025.10.9)  12 OCT 2025 23:35
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2025.10.9)  13 OCT 2025 10:55
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/home/lucreziabioni/notes/theses/bachelor/presentation/beamer_statale
@@ -1166,22 +1166,11 @@ LaTeX Font Info:    Font shape `TU/Caladea(0)/m/it' will be
 (Font)              scaled to size 6.0pt on input line 37.
 LaTeX Font Info:    Font shape `TU/Caladea(0)/m/it' will be
 (Font)              scaled to size 5.0pt on input line 37.
-
-
-LaTeX Warning: File `imgs/clowe-2.png' not found on input line 37.
-
-
-./slides.tex:37: Package luatex.def Error: File `imgs/clowe-2.png' not found: using draft setting.
-
-See the luatex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.37 \end{frame}
-              
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+<imgs/standard-model.png, id=26, 1027.84pt x 983.675pt>
+File: imgs/standard-model.png Graphic file (type png)
+<use imgs/standard-model.png>
+Package luatex.def Info: imgs/standard-model.png  used on input line 37.
+(luatex.def)             Requested size: 199.1693pt x 190.60757pt.
 LaTeX Font Info:    Font shape `TU/Caladea(0)/m/n' will be
 (Font)              scaled to size 10.95pt on input line 37.
 LaTeX Font Info:    Font shape `TU/Caladea(0)/m/it' will be
@@ -1191,12 +1180,14 @@ LaTeX Font Info:    Font shape `TU/Carlito(0)/m/n' will be
 LaTeX Font Info:    Font shape `TU/Carlito(0)/b/n' will be
 (Font)              scaled to size 12.0pt on input line 37.
 
-Overfull \vbox (14.95424pt too high) detected at line 37
+Overfull \vbox (4.93137pt too high) detected at line 37
  []
 
 [2
 
-<./assets/logo_RGB.png>])
+<./assets/logo_RGB.png><./imgs/standard-model.png>] [3
+
+])
 \tf@nav=\write6
 
 \openout6 = beamer_statale.nav
@@ -1216,19 +1207,19 @@ Package rerunfilecheck Info: File `beamer_statale.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 28191 strings out of 476553
+ 28169 strings out of 476553
  100000,1977958 words of node,token memory allocated
- 7137 words of node memory still in use:
-   73 hlist, 14 vlist, 9 rule, 32 disc, 12 local_par, 4 math, 181 glue, 71 kern, 36 penalty, 344 glyph, 218 attribute, 75 glue_spec, 218 attribute_list, 4 write, 74 pdf_literal, 34 pdf_colorstack nodes
-   avail lists: 2:200,3:231,4:173,5:218,6:28,7:1408,8:1,9:278,10:14,11:84
- 49295 multiletter control sequences out of 65536+600000
- 97 fonts using 12796751 bytes
+ 1708 words of node memory still in use:
+   18 hlist, 8 vlist, 4 rule, 5 disc, 3 local_par, 35 glue, 9 kern, 11 penalty, 55 glyph, 41 attribute, 75 glue_spec, 41 attribute_list, 4 write, 10 pdf_colorstack nodes
+   avail lists: 2:556,3:339,4:197,5:256,6:37,7:1649,8:1,9:344,10:14,11:96
+ 49271 multiletter control sequences out of 65536+600000
+ 96 fonts using 12670663 bytes
  128i,15n,132p,476b,1090s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texlive/texmf-dist/fonts/truetype/google/carlito/Carlito-Regular.ttf></usr/share/texlive/texmf-dist/fonts/truetype/google/carlito/Carlito-Bold.ttf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on beamer_statale.pdf (2 pages, 236112 bytes).
+</usr/share/texlive/texmf-dist/fonts/truetype/google/carlito/Carlito-Regular.ttf></usr/share/texlive/texmf-dist/fonts/truetype/google/carlito/Carlito-Bold.ttf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on beamer_statale.pdf (3 pages, 543149 bytes).
 
 PDF statistics: 68 PDF objects out of 1000 (max. 8388607)
  39 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 131072)
+ 7 named destinations out of 1000 (max. 131072)
  26 words of extra memory for PDF output out of 10000 (max. 100000000)
 
