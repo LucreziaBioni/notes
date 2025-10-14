@@ -2365,4 +2365,108 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1" intorder="1">Campbell:2017</bcf:citekey>
-    <bcf:citekey order="2" intorde
+    <bcf:citekey order="2" intorder="1">ellis</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">Asteriadis2020</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">ellis</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">Collins:1987pm</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">Melnikov2018</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">Salam:2010nqg</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">ellis</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">Hoeche:2014</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">Hoeche:2014</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">Devoto:2025jql</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">Devoto:2023rpv</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">Altarelli:1977zs</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">Catani:1996vz</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">Campbell:2017</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">Campbell:2017</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">THOOFT1973455</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">Catani:1996vz</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">Melnikov2018</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">PhysRev.52.54</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">Caola:2017dug</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">Frixione:1995ms</bcf:citekey>
+    <bcf:citekey order="22" intorder="2">Catani:1996vz</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">Catani:1996vz</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">Caola:2017dug</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">Catani:1998bh</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">Caola:1902</bcf:citekey>
+    <bcf:citekey order="26" intorder="2">Caola:1907</bcf:citekey>
+    <bcf:citekey order="26" intorder="3">Asteriadis:1910</bcf:citekey>
+    <bcf:citekey order="26" intorder="4">Devoto:2023rpv</bcf:citekey>
+    <bcf:citekey order="26" intorder="5">Devoto:2025kin</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">Catani:1999ss</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">Devoto:2025kin</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">Caola:1902</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">Caola:1907</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">Asteriadis:1910</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">Caola:1902</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">Caola:1907</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">Asteriadis:1910</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">Caola:1902</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">Caola:1907</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">Asteriadis:1910</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">Catani:1998bh</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">Caola:1907</bcf:citekey>
+    <bcf:citekey order="40" intorder="1">Asteriadis:1910</bcf:citekey>
+    <bcf:citekey order="41" intorder="1">Caola:1902</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">Caola:1907</bcf:citekey>
+    <bcf:citekey order="43" intorder="1">Asteriadis:1910</bcf:citekey>
+    <bcf:citekey order="44" intorder="1">Caola:1907</bcf:citekey>
+    <bcf:citekey order="45" intorder="1">Devoto:2025kin</bcf:citekey>
+    <bcf:citekey order="46" intorder="1">Devoto:2025kin</bcf:citekey>
+    <bcf:citekey order="47" intorder="1">Asteriadis:1910</bcf:citekey>
+    <bcf:citekey order="48" intorder="1">Devoto:2025kin</bcf:citekey>
+    <bcf:citekey order="49" intorder="1">Devoto:2025kin</bcf:citekey>
+    <bcf:citekey order="50" intorder="1">Devoto:2025kin</bcf:citekey>
+    <bcf:citekey order="51" intorder="1">Catani:1996vz</bcf:citekey>
+    <bcf:citekey order="52" intorder="1">Catani:1998bh</bcf:citekey>
+    <bcf:citekey order="53" intorder="1">Devoto:2023rpv</bcf:citekey>
+    <bcf:citekey order="54" intorder="1">Devoto:2025kin</bcf:citekey>
+    <bcf:citekey order="55" intorder="1">Devoto:2023rpv</bcf:citekey>
+    <bcf:citekey order="55" intorder="2">Devoto:2025kin</bcf:citekey>
+    <bcf:citekey order="56" intorder="1">Devoto:2023rpv</bcf:citekey>
+    <bcf:citekey order="57" intorder="1">Devoto:2025kin</bcf:citekey>
+    <bcf:citekey order="58" intorder="1">Devoto:2025kin</bcf:citekey>
+    <bcf:citekey order="59" intorder="1">Devoto:2023rpv</bcf:citekey>
+    <bcf:citekey order="60" intorder="1">Huber:2005yg</bcf:citekey>
+    <bcf:citekey order="61" intorder="1">Devoto:2023rpv</bcf:citekey>
+    <bcf:citekey order="62" intorder="1">ellis</bcf:citekey>
+  </bcf:section>
+  <!-- SORTING TEMPLATES -->
+  <bcf:sortingtemplate name="ynt">
+    <bcf:sort order="1">
+      <bcf:sortitem order="1">presort</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="2" final="1">
+      <bcf:sortitem order="1">sortkey</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="3">
+      <bcf:sortitem order="1">sortyear</bcf:sortitem>
+      <bcf:sortitem order="2">year</bcf:sortitem>
+      <bcf:sortitem literal="1" order="3">9999</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="4">
+      <bcf:sortitem order="1">sortname</bcf:sortitem>
+      <bcf:sortitem order="2">author</bcf:sortitem>
+      <bcf:sortitem order="3">editor</bcf:sortitem>
+      <bcf:sortitem order="4">translator</bcf:sortitem>
+      <bcf:sortitem order="5">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="6">title</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="5">
+      <bcf:sortitem order="1">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="2">title</bcf:sortitem>
+    </bcf:sort>
+  </bcf:sortingtemplate>
+  <!-- DATALISTS -->
+  <bcf:datalist section="0"
+                name="ynt/global//global/global"
+                type="entry"
+                sortingtemplatename="ynt"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
+</bcf:controlfile>
