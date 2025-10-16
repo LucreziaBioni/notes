@@ -1,0 +1,62 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[a4paper,top=1cm,bottom=1cm,left=1.5cm,right=1.5cm]{geometry}
+\usepackage{amsmath}
+\newcommand{\um}{\mathfrak{m}}
+
+\title{Thesis presentation}
+\author{Lucrezia Bioni}
+\date{October 2025}
+
+\begin{document}
+
+\maketitle
+
+2 - The Standard model is a robust theoretical framework that classifies the elementary particles and describes their interactions via gauge theories. The SM is formulated within the mathematical framework of Quantum Field Theory (QFT), which unifies the principles of Quantum Mechanics and Special Relativity to describe phenomena at high energies, or equivalently, subatomic scales. Its predictions have been rigorously tested and confirmed by experiments.  Despite its success, there are significant efforts to discover Physics beyond the SM. This is driven by several phenomena that the model cannot explain. These include the existence of dark matter and dark energy, the observed matter-antimatter asymmetry, and the origin of neutrino masses \\
+
+3 - One of the principal methods of research in high-energy physics is collider physics. Colliders artificially accelerate particles to reach extremely high center-of-mass energy, and  enable events with greater momentum transfer and energy deposition. Essential to excite new, heavy elementary particles from the vacuum, and study their properties. \\
+Currently experiments at the energy frontier are conducted at the Large Hadron Collider (LHC) at CERN: in a 27-kilometer ring, proton beams collide at a center-of-mass energy of approximately 13.6 TeV \\
+Not enough to the discovery of new particles. Solutions: \\
+- increase energy: not feasible with existing technology \\
+- increase precision: both experimental (precision measurements serve as a powerful probe for new physics, which may reveal itself as subtle deviations from SM predictions in processes involving only known particles), and theoretical (necessary to interpret the experimental results).  \\
+
+4 - A theoretical description of hadron collisions is complicated by our limited knowledge of the strong force, which binds the elementary constituents of hadrons. Strong interactions are described by Quantum Chromodynamics (QCD), a non-Abelian gauge theory based on the SU(3) symmetry group. The QCD Lagrangian is not analytically solvable, therefore it is extremely difficult to understand proton dynamics from first principles. \\
+A way to overcome these obstacles becomes manifest when we consider how hadrons collide at high energies: \\
+- elastic scattering (they collide but remain intact)\\
+- diffractive dissociation (disintegrate into a small number of hadrons) \\
+- ``hard scattering processes": the elementary partons that compose the hadrons can interact and exchange a large amount of momentum ($\sim 100 \,\text{GeV}$). \\
+Their importance is directly related to a key feature of the strong force: asymptotic freedom, which consists in the weakening of the colour force at short distances: therefore, interacting partons can be approximated as being nearly free, which permits a perturbative description of the strong interaction. \\
+
+5 - Hard scattering can be described in the framework of the collinear factorization theorem: \\
+- colliding hadrons are treated as beams of partons, each carrying a certain fraction of the hadron's total momentum. \\
+- It is possible to decouple the motion of partons from the proton's dynamics because of the separation of energy scales involved. Interactions in the Standard Model typically probe energy scales on the order of $Q \sim 100  \, \text{GeV} - 1 \, \text{TeV}$, while the characteristic energy scale of hadronic structure and confinement is significantly lower, $\Lambda_{\text{QCD}} \sim 100 \, \text{MeV}$. \\
+On the left hand side of the equation there is the production cross section for final states involving QCD jets and other Standard Model particles in hard hadronic collisions \\
+On the right hand side there are unobservable quantities: \\
+- the PDFs extracted from experimental data (The probability of finding a parton with a specific energy fraction is encoded in the Parton Distribution Functions (PDFs)) \\
+- $\mathrm{d}\sigma_{a,b}$ is the partonic cross section \\
+
+6- The partonic cross section can be expanded in powers of the strong and the electroweak coupling constants, $\alpha_{\text{S}}$ and $\alpha$. \\
+we will focus on the calculation of NLO QCD corrections, which account for short-distance, high-energy effects at higher orders in the coupling constant. The NLO correction $\text{d} \hat{\sigma}_{a,b}^{(1,0)} \equiv \text{d} \hat{\sigma}_{a,b}^{\mathrm{NLO}} $ to a partonic cross section consists of three terms: the one-loop (virtual) contribution, the real emission contribution, and the contribution related to parton distribution functions. The last term, $\mathrm{d} \hat{\sigma}_{a,b}^{\mathrm{pdf}}$, is generated by the renormalization of the PDFs at LO, and its expression is known. The other terms, $\mathrm{d} \hat{\sigma}_{a,b}^{\mathrm{V}}$ and $\mathrm{d} \hat{\sigma}_{a,b}^{\mathrm{R}}$, are related to either the emission of an additional leg in the Feynman diagram, i.e., an extra parton in the final state (real correction), or to the emission and reabsorption of a parton through a loop (virtual correction).\\
+
+7 - The treatment of these terms is non-trivial, as they exhibit divergences in specific energy regimes. \\
+- The virtual contributions, for instance, contain ultraviolet (UV) singularities. These are removed through the process of renormalization, a procedure that ensures physical observables, when expressed in terms of appropriately defined renormalized parameters, become insensitive to the high-energy UV region. \\
+- the low-momentum (soft) and small-angle (collinear) kinematic regions produce singularities in both the real and virtual contributions. These infrared (IR) singularities are not independent: the real and virtual corrections are fundamentally linked by their infrared behavior. A precise procedure for removing these divergences is of the highest importance for calculating finite cross-sections. \\
+
+8 - In order to deal with IR divergences, it is convenient to employ dimensional regularization. This technique involves the analytical continuation of momentum space from $4$ to $d=4-2\epsilon$ dimensions, where $\epsilon \in \mathbb{C}$ and $\mathrm{Re}(\epsilon)<0$. In this framework, divergences appear as poles in $1/\epsilon$ in the complex dimensional plane. \\
+- virtual corrections contain explicit infrared and collinear poles in $1/\epsilon$ \\
+- real corrections contain explicit $1/\epsilon$ poles upon integration over the phase space of the additional final-state parton BUT if we do it, we lose all information on the kinematics of the radiated parton \\
+- singularities signal the presence of non-perturbative contributions, but we lack methods to treat non-perturbative QCD effects from first principles \\
+- however, once the $1/\epsilon$ poles are extracted from both the virtual and real corrections, their sum is guaranteed to be free of infrared divergences due to the Bloch-Nordsieck and Kinoshita-Lee-Nauenberg theorems \\
+Problem: the virtual corrections are defined in an $n$-particle phase space, whereas the real corrections inhabit an ($n+1$)-particle phase space: mismatch in the dimensionality of the integration domains \\
+
+9 - We need to find a way to solve the problems pointed with red numbers in the previous slide. \\
+Insights to solve the problems \\
+- factorization of the amplitudes in the soft and collinear limits  \\
+- real emissions unresolved in singular kinematics regions, so we can safely integrate over them \\
+This leads us to define a subtraction method: \\
+- On the right-hand side, the first term is integrable in four-dimensional phase space, since the leading singular behaviour of $F^{ab}_{\mathrm{LM}}$ (proportional to the matrix element of the process) is removed by the subtraction term $\mathcal{S}$. As this integration is performed numerically using Monte Carlo (MC) methods, it is clear that restricting the integration region to the minimal necessary volume is crucial for improving the efficiency of the computation.\\
+- The second term involves only the unresolved parton m, making it possible to integrate over its phase space without affecting the jet observables, and this integration enables the extraction of $1/\epsilon$ poles, which describe the singular behaviour of $\mathcal{S}$ and, consequently, of the amplitude itself. 
+
+
+
+\end{document}

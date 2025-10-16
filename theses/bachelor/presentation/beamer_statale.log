@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2025.10.9)  14 OCT 2025 19:33
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2025.10.9)  16 OCT 2025 19:43
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/home/lucreziabioni/notes/theses/bachelor/presentation/beamer_statale
@@ -1345,14 +1345,14 @@ Package rerunfilecheck Info: File `beamer_statale.out' has not changed.
 Here is how much of LuaTeX's memory you used:
  34037 strings out of 476553
  125016,1977958 words of node,token memory allocated
- 8300 words of node memory still in use:
-   67 hlist, 14 vlist, 4 rule, 57 disc, 10 local_par, 4 math, 180 glue, 81 kern, 29 penalty, 516 glyph, 186 attribute, 75 glue_spec, 186 attribute_list, 6 write, 36 pdf_literal, 1 pdf_dest, 34 pdf_colorstack nodes
-   avail lists: 1:8,2:1679,3:778,4:210,5:329,6:54,7:2452,8:111,9:579,10:15,11:152
+ 8392 words of node memory still in use:
+   67 hlist, 12 vlist, 4 rule, 57 disc, 11 local_par, 4 math, 185 glue, 82 kern, 30 penalty, 523 glyph, 189 attribute, 75 glue_spec, 189 attribute_list, 6 write, 36 pdf_literal, 1 pdf_dest, 34 pdf_colorstack nodes
+   avail lists: 1:8,2:1673,3:777,4:210,5:328,6:53,7:2440,8:111,9:581,10:15,11:152
  54933 multiletter control sequences out of 65536+600000
  108 fonts using 13777743 bytes
  128i,15n,132p,476b,1953s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/truetype/huerta/caladea/Caladea-Regular.ttf></usr/share/texlive/texmf-dist/fonts/truetype/huerta/caladea/Caladea-Italic.ttf></usr/share/texlive/texmf-dist/fonts/truetype/google/carlito/Carlito-Regular.ttf></usr/share/texlive/texmf-dist/fonts/truetype/google/carlito/Carlito-Bold.ttf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on beamer_statale.pdf (9 pages, 1320618 bytes).
+Output written on beamer_statale.pdf (9 pages, 1320652 bytes).
 
 PDF statistics: 153 PDF objects out of 1000 (max. 8388607)
  97 compressed objects within 1 object stream
