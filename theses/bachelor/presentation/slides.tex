@@ -71,7 +71,7 @@
         Solutions: 
         \vspace{0.8em}
         \begin{itemize}
-        \item Increase energy \\$\to$ not feasible with existing technology
+        \item Increase energy \\$\to$ not feasible or extremely expensive\\ \quad with existing technology
         \end{itemize}
         \end{centering}
 
@@ -106,11 +106,12 @@
         \end{itemize}
 
     \vspace{0.5em}
+    \pause
     \begin{colorblock}[black]{statalelightgreen}{Hadron collisions}
         \begin{itemize}
           \item Elastic scattering
           \item Diffractive dissociation
-          \item Hard scattering \\(momentum exchange $\sim 100 \,\text{GeV}$)
+          \item \textcolor{red}{\textbf{Hard scattering}} \\(momentum exchange $\sim 100 \,\text{GeV}$)
         \end{itemize}
       \end{colorblock}
     
@@ -168,7 +169,7 @@
 
     \end{columns}
     \begin{equation*}
-    \text{d}\sigma=\sum_{a, b} \int_0^1 \text{d}x_1 \text{d}x_2 f_{a}(x_1, \mu_\text{F}) f_{b}(x_2,\mu_\text{F}) \, \text{d}\hat \sigma_{a,b}(x_1,x_2,\mu_\text{F},\mu_\text{R};\mathcal{O}) \left(1+ \mathcal{O}\left(\frac{\Lambda_{\text{QCD}}}{Q} \right)^n \right), \, n\geq1
+    \text{d}\sigma=\sum_{a, b} \int_0^1 \text{d}x_1 \text{d}x_2 f_{a}(x_1, \mu_\text{F}) f_{b}(x_2,\mu_\text{F}) \, \textcolor{red}{\text{d}\hat \sigma_{a,b}(x_1,x_2,\mu_\text{F},\mu_\text{R};\mathcal{O})} \left(1+ \mathcal{O}\left(\frac{\Lambda_{\text{QCD}}}{Q} \right)^n \right), \, n\geq1
     \label{fact-theor}
 \end{equation*}
   
@@ -182,7 +183,7 @@
 \vspace{1em}
 The partonic cross section can be expanded in powers of the strong and the electroweak coupling constants, $\alpha_{\text{S}}$ and $\alpha$
     \begin{equation*}
-    \text{d} \hat{\sigma}_{a,b} = \text{d} \hat{\sigma}_{a,b}^{(0,0)} + \textcolor{red}{\alpha_s \text{d} \hat{\sigma}_{a,b}^{(1,0)}} + \alpha_s^2 \text{d} \hat{\sigma}_{a,b}^{(2,0)} + \alpha_s^3 \text{d} \hat{\sigma}_{a,b}^{(3,0)} + \alpha \text{d} \hat{\sigma}_{a,b}^{(0,1)} + \alpha \alpha_s \text{d} \hat{\sigma}_{a,b}^{(1,1)} + \dots 
+    \text{d} \hat{\sigma}_{a,b} = \text{d} \hat{\sigma}_{a,b}^{(0,0)} + \textcolor{magenta}{\alpha_s \text{d} \hat{\sigma}_{a,b}^{(1,0)}} + \alpha_s^2 \text{d} \hat{\sigma}_{a,b}^{(2,0)} + \alpha_s^3 \text{d} \hat{\sigma}_{a,b}^{(3,0)} + \alpha \text{d} \hat{\sigma}_{a,b}^{(0,1)} + \alpha \alpha_s \text{d} \hat{\sigma}_{a,b}^{(1,1)} + \dots 
     \end{equation*}
 
     \begin{columns}
@@ -200,7 +201,7 @@ The partonic cross section can be expanded in powers of the strong and the elect
     \\
     They consist of three terms 
     \begin{equation*}
-    \textcolor{red}{\mathrm{d} \hat{\sigma}_{a,b}^{\mathrm{NLO}}} = \mathrm{d} \hat{\sigma}_{a,b}^{\mathrm{R}} + \mathrm{d} \hat{\sigma}_{a,b}^{\mathrm{V}} + \mathrm{d} \hat{\sigma}_{a,b}^{\mathrm{pdf}}
+    \textcolor{magenta}{\mathrm{d} \hat{\sigma}_{a,b}^{\mathrm{NLO}}} = \textcolor{red}{\mathrm{d} \hat{\sigma}_{a,b}^{\mathrm{R}}} + \textcolor{blue}{\mathrm{d} \hat{\sigma}_{a,b}^{\mathrm{V}}} + \mathrm{d} \hat{\sigma}_{a,b}^{\mathrm{pdf}}
     \end{equation*}       
     
     \end{column}
@@ -211,6 +212,8 @@ The partonic cross section can be expanded in powers of the strong and the elect
         \includegraphics[width=0.8\textwidth]{imgs/real-and-virtual.png}
       \end{figure}    
 \end{frame}
+
+
 
 
 %=======================================================================
@@ -263,7 +266,7 @@ The partonic cross section can be expanded in powers of the strong and the elect
 
   \begin{columns}
 
-    \begin{column}{0.5\textwidth}
+    \begin{column}{0.4\textwidth}
     \begin{colorblock}[black]{statalelightgreen}{Dimensional regularization}
         \begin{equation*}
             d=4-2\epsilon \qquad \epsilon \in \mathbb{C} \, , \mathrm{Re}(\epsilon)<0
@@ -271,11 +274,11 @@ The partonic cross section can be expanded in powers of the strong and the elect
       \end{colorblock}
     \end{column}
 
-    \begin{column}{0.5\textwidth}
+    \begin{column}{0.6\textwidth}
     Divergences appear as poles in $1/\epsilon$ \\
     \begin{itemize}
         \item Virtual $\to$ explicit
-        \item Real $\to$ integration needed \textcolor{red}{\textcircled{1}}
+        \item Real $\to$ phase space integration needed \textcolor{red}{\textcircled{1}}
     \end{itemize}
     \end{column}
     \end{columns}
@@ -283,8 +286,8 @@ The partonic cross section can be expanded in powers of the strong and the elect
     \vspace{1.5em}
 
     \begin{itemize}
-        \item Singularities signal the presence of \textbf{non-perturbative contributions}
-        \item We lack methods to treat non-perturbative QCD effects from first principles
+        \item Singularities signal the presence of long-distance (low-energy) effects
+        \item The division into real and virtual terms is therefore a computational tool
     \end{itemize}
 
     \vspace{1.em}
@@ -307,7 +310,7 @@ Insights \\
     \item \textbf{Factorization} of the amplitudes in the soft and collinear limits 
     \item Real emissions are \textbf{unresolved} in singular kinematics regions
 \end{itemize}
- \vspace{1.em}
+ \vspace{0.5em}
  We adopt a \textbf{subtraction method}
 \begin{equation*}
     2s_{a,b} \mathrm{d} \hat{\sigma}_{a,b}^{\mathrm{R}} = \int [\mathrm{d}p_{\um}] F_{\mathrm{LM}} (\um)=  \textcolor{red}{\int [\mathrm{d}p_{\um}] (F_{\mathrm{LM}}(\um) - \mathcal{S})}  + \textcolor{blue}{\int [\mathrm{d}p_{\um}] \mathcal{S}}
@@ -317,14 +320,79 @@ Insights \\
 \textcolor{red}{$\to$} Singular behaviour removed: numerical integration with Monte Carlo methods \\
 
 
-\begin{colorblock}[black]{statalelightgreen}{}
-\begin{center}
-    Restricting the integration region to the \textbf{minimal necessary volume} is crucial for improving the efficiency of the computation
-\end{center}
-            
-      \end{colorblock}
+  \begin{columns}
 
-      Prova
+    \begin{column}{0.50\textwidth}
+ \begin{colorblock}[black]{statalelightgreen}{}
+\begin{center}
+    Restricting the integration region to the \\\textbf{minimal necessary volume} is crucial for improving the efficiency of the computation
+\end{center}
+\end{colorblock}
+    \end{column}
+
+    \begin{column}{0.50\textwidth}
+    \begin{center}
+        Current calculations require $\sim 106$ CPUh\textsuperscript{[1]} \\
+        $\to$ Further refinements needed for NNLO calculations 
+    \end{center}
+    \end{column}
+    \end{columns}
+
+\vspace{0.3em}
+    {\tiny
+[1] Czakon et al., SciPost Phys. 11, 001 (2021), Tour de force in Quantum Chromodynamics
+}
+
+
+
+
+
+\end{frame}
+
+%=======================================================================
+\begin{frame} {NSC Subtraction Scheme}
+   \framesubtitle{Sequential extraction of singularities}
+
+\begin{itemize}
+    \item FKS (Frixione, Kunszt, Signer) constructs $S$ from the soft and collinear limits
+\end{itemize}
+
+\begin{equation*}
+    S_i A = \lim_{E_i \to 0} A \, , \qquad C_{ij}A = \lim_{\rho_{ij}\to 0}A 
+\end{equation*}
+
+\begin{itemize}
+    \item The singularities are isolated and extracted \textbf{sequentially} in a nested manner
+\end{itemize}
+
+ \begin{colorblock}[black]{statalelightgreen}{}
+ \begin{center}
+\begin{equation*}
+  \langle \Delta^{(\um)}F_{\mathrm{LM}}(\um) \rangle = \langle S_{\um}F_{\mathrm{LM}}(\um) \rangle + \sum_{i=1}^{N_p} \langle \bar{S}_{\um}C_{i\um} \Delta^{(\um)} F_{\mathrm{LM}}(\um) \rangle + \langle \bar{S}_{\um} \bar{C}_{i\um} \Delta^{(\um)} \omega^{\um i} F_{\mathrm{LM}}(\um) \rangle
+\end{equation*}
+  \end{center}
+\end{colorblock}
+
+
+\end{frame}
+%=======================================================================
+
+
+\begin{frame} {Computational cost}
+  \framesubtitle{Subtraction scheme}
+
+\begin{equation*}
+  \langle S_\um F_{\mathrm{LM}} (\um) \rangle = \int \mathrm{d}E_\um E_\um^{d-5} \, \theta(E_{\mathrm{max}}-E_\um)  \int \frac{\mathrm{d}\Omega_{d-1}}{2 (2 \pi)^{d-1}} (-g_{s,b}^2) \sum_{(i \neq j)}^{N_p} \frac{\rho_{ij}}{\rho_{im}\rho_{jm}} (\vec{T}_i \cdot \vec{T}_j) F_{\mathrm{LM}} \, ,
+\end{equation*}
+
+\pause
+\begin{equation*}
+  \langle S_\um F_{\mathrm{LM}} (\um) \rangle = \int \mathrm{d}E_\um E_\um^{d-5} \, \theta(E_\um < \textcolor{red}{\theta_s} E_{\mathrm{max}})  \int \frac{\mathrm{d}\Omega_{d-1}}{2 (2 \pi)^{d-1}} (-g_{s,b}^2) \sum_{(i \neq j)}^{N_p} \frac{\rho_{ij}}{\rho_{im}\rho_{jm}} (\vec{T}_i \cdot \vec{T}_j) F_{\mathrm{LM}} 
+\end{equation*}
+
+\pause
+Third line appears after another click
+
 
 
 \end{frame}

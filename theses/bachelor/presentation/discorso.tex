@@ -2,7 +2,6 @@
 \usepackage{graphicx} % Required for inserting images
 \usepackage[a4paper,top=1cm,bottom=1cm,left=1.5cm,right=1.5cm]{geometry}
 \usepackage{amsmath}
-\newcommand{\um}{\mathfrak{m}}
 
 \title{Thesis presentation}
 \author{Lucrezia Bioni}
@@ -45,7 +44,10 @@ we will focus on the calculation of NLO QCD corrections, which account for short
 8 - In order to deal with IR divergences, it is convenient to employ dimensional regularization. This technique involves the analytical continuation of momentum space from $4$ to $d=4-2\epsilon$ dimensions, where $\epsilon \in \mathbb{C}$ and $\mathrm{Re}(\epsilon)<0$. In this framework, divergences appear as poles in $1/\epsilon$ in the complex dimensional plane. \\
 - virtual corrections contain explicit infrared and collinear poles in $1/\epsilon$ \\
 - real corrections contain explicit $1/\epsilon$ poles upon integration over the phase space of the additional final-state parton BUT if we do it, we lose all information on the kinematics of the radiated parton \\
-- singularities signal the presence of non-perturbative contributions, but we lack methods to treat non-perturbative QCD effects from first principles \\
+-singularities are present signal the presence of long distance (low energy) effects. while the concepts of “real” and “virtual” radiation are
+physically well-defined, their separate contributions to the partonic cross-section are
+not observable. The division into real and virtual terms is therefore a computational tool,
+introduced to organize the calculation and manage the various contributions more effectively. They signal that there  \\
 - however, once the $1/\epsilon$ poles are extracted from both the virtual and real corrections, their sum is guaranteed to be free of infrared divergences due to the Bloch-Nordsieck and Kinoshita-Lee-Nauenberg theorems \\
 Problem: the virtual corrections are defined in an $n$-particle phase space, whereas the real corrections inhabit an ($n+1$)-particle phase space: mismatch in the dimensionality of the integration domains \\
 
@@ -54,8 +56,16 @@ Insights to solve the problems \\
 - factorization of the amplitudes in the soft and collinear limits  \\
 - real emissions unresolved in singular kinematics regions, so we can safely integrate over them \\
 This leads us to define a subtraction method: \\
-- On the right-hand side, the first term is integrable in four-dimensional phase space, since the leading singular behaviour of $F^{ab}_{\mathrm{LM}}$ (proportional to the matrix element of the process) is removed by the subtraction term $\mathcal{S}$. As this integration is performed numerically using Monte Carlo (MC) methods, it is clear that restricting the integration region to the minimal necessary volume is crucial for improving the efficiency of the computation.\\
-- The second term involves only the unresolved parton m, making it possible to integrate over its phase space without affecting the jet observables, and this integration enables the extraction of $1/\epsilon$ poles, which describe the singular behaviour of $\mathcal{S}$ and, consequently, of the amplitude itself. 
+- On the right-hand side, the first term is integrable in four-dimensional phase space, since the leading singular behaviour of $F^{ab}_{\mathrm{LM}}$ is removed by the subtraction term $\mathcal{S}$. As this integration is performed numerically using Monte Carlo (MC) methods, it is clear that restricting the integration region to the minimal necessary volume is crucial for improving the efficiency of the computation.\\
+- The second term involves only the unresolved parton $\um$, making it possible to integrate over its phase space without affecting the jet observables, and this integration enables the extraction of $1/\epsilon$ poles, which describe the singular behaviour of $\mathcal{S}$ and, consequently, of the amplitude itself. 
+- The present calculation, in fact, has an enormous computational cost, of about 106 CPU hours. Therefore, we need further refinements in the handling of real radiation contributions to NNLO.\\
+
+10 - Different subtraction schemes are characterized by different forms for S.
+The FKS subtraction scheme, which constitutes the basis for the NSC method, constructs S
+directly from the soft and collinear limits, introducing two operators that perform soft and collinear projections. \\
+The singularities are isolated and extracted sequentially in a nested manner: first, the soft
+singularities are removed, followed by the collinear and soft-collinear ones, using an identity
+operator constructed as follows
 
 
 
