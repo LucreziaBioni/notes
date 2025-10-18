@@ -1,5 +1,5 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'beamer_statale.blg'
-[40] biber:340> INFO - === Fri Oct 17, 2025, 18:56:33
-[156] Utils.pm:399> ERROR - Cannot find 'beamer_statale.bcf'!
-[156] Biber.pm:136> INFO - ERRORS: 1
+[43] biber:340> INFO - === Sat Oct 18, 2025, 15:30:44
+[127] Utils.pm:399> ERROR - Cannot find 'beamer_statale.bcf'!
+[127] Biber.pm:136> INFO - ERRORS: 1
